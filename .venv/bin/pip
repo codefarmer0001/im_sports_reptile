@@ -1,4 +1,4 @@
-#!/Users/mac/workspace/pythonspace/im_sports_reptile/.venv/bin/python3
+#!/opt/im_sports_reptile/.venv/bin/python
 # -*- coding: utf-8 -*-
 import re
 import sys
