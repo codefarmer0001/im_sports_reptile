@@ -4,6 +4,7 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.chrome.service import Service
+from selenium.webdriver.chrome.options import Options
 from multiprocessing.dummy import Pool as ThreadPool
 import time
 from config import CONFIG
@@ -18,7 +19,11 @@ class DriverPool:
 
     def create_driver(self, account, password):
         service = Service(CONFIG.MAC_ARM64_CHROME)
-        driver = webdriver.Chrome(service=service)  # 这里可以根据需要选择其他浏览器驱动
+        chrome_options = Options()
+        chrome_options.add_argument('--headless')
+        chrome_options.add_argument('--no-sandbox')
+        chrome_options.add_argument('--disable-dev-shm-usage')
+        driver = webdriver.Chrome(service=service, options=chrome_options)  # 这里可以根据需要选择其他浏览器驱动
         try:
         # if 1 == 1:
             # loginYY = LoginYY()
