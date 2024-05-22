@@ -14,4 +14,6 @@ class ProConfig(Config):
     IM_REPTILE_FLAG = "negative"
     MAIN_ACCOUNT = {"account": "rmethan777", "password": "ethan7890"}
     SUB_ACCOUNT = [{"account": "RM6666", "password": "rm957957"}, {"account": "rm8888", "password": "rm999957"}]
+    POST_LIST_URL = "http://35.246.121.176/imList"
+    POST_DETAIL_URL = "http://35.246.121.176/imDetail"
     

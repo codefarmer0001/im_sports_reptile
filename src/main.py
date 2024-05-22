@@ -1,8 +1,8 @@
 from selenium import webdriver
 from selenium.webdriver.chrome.service import Service
-from bs4 import BeautifulSoup
+# from bs4 import BeautifulSoup
 from config import CONFIG
-from time import sleep
+# from time import sleep
 from reptile import LoginYY
 from pool import DriverPool
 import asyncio
