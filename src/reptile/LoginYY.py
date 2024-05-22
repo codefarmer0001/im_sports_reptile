@@ -66,7 +66,7 @@ class LoginYY:
             # print(login_panal_submit)
             # login_panal_submit.click()
             driver.execute_script("arguments[0].click();", login_panal_submit)
-            print(111111111)
+            # print(111111111)
 
             # 主界面，登陆完后的界面
 
@@ -76,7 +76,7 @@ class LoginYY:
             main_panal_dialog_close = main_panal_dialog.find_element(By.XPATH, '//button[@type="button" and @aria-label="Close"]')
             # print(main_panal_dialog_close)
             driver.execute_script("arguments[0].click();", main_panal_dialog_close)
-            print(111111111)
+            # print(111111111)
             # main_panal_dialog_close.click()
 
 
@@ -128,6 +128,7 @@ class LoginYY:
             except Exception as e:
                 print(e)
             
+            print(111111111)
             # 切换到新标签页
             handles = driver.window_handles
             driver.switch_to.window(handles[1])  # 切换到第二个标签页（索引从0开始）
@@ -136,15 +137,21 @@ class LoginYY:
             flag = True
             index = 0
             try:
-                bg_mask = WebDriverWait(driver, 10).until(
-                    EC.visibility_of_element_located((By.CLASS_NAME, 'bg_mask'))
-                )
+            # if 1 == 1:
+                bg_mask = None
+                try:
+                    bg_mask = WebDriverWait(driver, 10).until(
+                        EC.visibility_of_element_located((By.CLASS_NAME, 'bg_mask'))
+                    )
+                except Exception as e:
+                    bg_mask = None
                 
                 print(34567)
                 if bg_mask:
                     while flag:
                     # mask_button rc_tut_btn
                         mask_button = bg_mask.find_element(By.XPATH, './/div[@class="mask_button rc_tut_btn"]')
+                        print(111111111)
                         if mask_button:
                             # print('\n\n\n')
                             # print(index)
