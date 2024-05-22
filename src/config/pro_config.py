@@ -10,6 +10,7 @@ class ProConfig(Config):
 
     # Application config
     MAC_ARM64_CHROME = "src/chrome/mac/arm/chromedriver"
+    LINUX_64_CHROME = "src/chrome/linxu/64/chromedriver"
     YY_MAIN_URL = "https://o3q.mltyz6.com/"
     IM_REPTILE_FLAG = "negative"
     MAIN_ACCOUNT = {"account": "rmethan777", "password": "ethan7890"}
