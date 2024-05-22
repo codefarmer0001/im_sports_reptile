@@ -45,7 +45,9 @@ class LoginYY:
             # print(element)
             login_button = element.find_element(By.XPATH, '//button[@class="el-button el-button--primary login"]')
             # print(login_button.text)
-            login_button.click()
+            # login_button.click()
+            driver.execute_script("arguments[0].click();", login_button)
+            # print(111111111)
 
             # pane-account
             login_panel = WebDriverWait(driver, 10).until(
@@ -62,7 +64,9 @@ class LoginYY:
 
             login_panal_submit = login_panel.find_element(By.XPATH, '//button[@type="submit"]')
             # print(login_panal_submit)
-            login_panal_submit.click()
+            # login_panal_submit.click()
+            driver.execute_script("arguments[0].click();", login_panal_submit)
+            print(111111111)
 
             # 主界面，登陆完后的界面
 
@@ -71,7 +75,9 @@ class LoginYY:
             )
             main_panal_dialog_close = main_panal_dialog.find_element(By.XPATH, '//button[@type="button" and @aria-label="Close"]')
             # print(main_panal_dialog_close)
-            main_panal_dialog_close.click()
+            driver.execute_script("arguments[0].click();", main_panal_dialog_close)
+            print(111111111)
+            # main_panal_dialog_close.click()
 
 
             # # navbar选项
@@ -94,7 +100,6 @@ class LoginYY:
 
             # # 将鼠标移动到元素上
             action_chains.move_to_element(sport_items_lable).perform()
-            
 
             sport_swiper = sport_items.find_element(By.XPATH, './/div[@class="swiper-wrapper"]')
             # print(sport_swiper.get_attribute('outerHTML'))
