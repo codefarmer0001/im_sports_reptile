@@ -127,8 +127,9 @@ class LoginYY:
                             driver.execute_script("arguments[0].click();", taget_item)
             except Exception as e:
                 print(e)
+                pass
             
-            print(111111111)
+            # print(111111111)
             # 切换到新标签页
             handles = driver.window_handles
             driver.switch_to.window(handles[1])  # 切换到第二个标签页（索引从0开始）
@@ -151,7 +152,7 @@ class LoginYY:
                     while flag:
                     # mask_button rc_tut_btn
                         mask_button = bg_mask.find_element(By.XPATH, './/div[@class="mask_button rc_tut_btn"]')
-                        print(111111111)
+                        # print(111111111)
                         if mask_button:
                             # print('\n\n\n')
                             # print(index)

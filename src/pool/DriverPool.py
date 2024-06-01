@@ -20,10 +20,10 @@ class DriverPool:
         self.tasks = []
 
     def create_driver(self, account, password):
-        # service = Service(CONFIG.MAC_ARM64_CHROME)
-        service = Service(CONFIG.LINUX_64_CHROME)
+        service = Service(CONFIG.MAC_ARM64_CHROME)
+        # service = Service(CONFIG.LINUX_64_CHROME)
         chrome_options = webdriver.ChromeOptions()
-        chrome_options.add_argument('--headless')
+        # chrome_options.add_argument('--headless')
         chrome_options.add_argument('--no-sandbox')
         chrome_options.add_argument('--disable-dev-shm-usage')
         driver = webdriver.Chrome(service=service, options=chrome_options)  # 这里可以根据需要选择其他浏览器驱动
