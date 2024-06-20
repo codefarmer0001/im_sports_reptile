@@ -8,6 +8,7 @@ def load_config():
     """
 
     mode = os.environ.get('MODE', 'DEV')
+    print(mode)
     try:
         if mode == 'PRO':
             from .pro_config import ProConfig
@@ -15,6 +16,13 @@ def load_config():
         elif mode == 'DEV':
             from .dev_config import DevConfig
             return DevConfig
+        elif mode == 'DETAIL1':
+            print('\n\n')
+            from .detail1_config import Detail1Config
+            return Detail1Config
+        elif mode == 'DETAIL2':
+            from .detail2_config import Detail2Config
+            return Detail2Config
         else:
             from .dev_config import DevConfig
             return DevConfig

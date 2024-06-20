@@ -23,6 +23,11 @@ from PIL import Image
 from io import BytesIO
 from aip import AipOcr
 
+from myredis import produce, consumer
+
+from logs import getLogger  # 导入日志配置模块
+logger = getLogger('list')
+
 
 # from pool import DriverPool
 
@@ -46,6 +51,7 @@ class LoginYY:
         # url = 'https://o3q.mltyz6.com/'
 
         driver.get(CONFIG.YY_MAIN_URL)
+        print(CONFIG.YY_MAIN_URL)
 
         # try:
         if 1 == 1:
@@ -327,21 +333,25 @@ class LoginYY:
             # sleep(3600)
 
     @staticmethod
-    def reptile_main_list(driver, account, password, pool):
+    def reptile_main_list(driver, account, password):
     # def reptile_main_list(self, driver, account, password, pool):
         LoginYY.login_yy(driver, account, password)
         if CONFIG.IM_REPTILE_FLAG == 'negative':
             # print(1)
-            LoginYY.process_negative(driver, pool)
+            creator = produce()
+            LoginYY.process_negative(driver, creator)
         elif CONFIG.IM_REPTILE_FLAG == 'positive':
             print(2)
-            LoginYY.process_positive(driver, pool)
+            creator = produce()
+            LoginYY.process_positive(driver, creator)
+        elif CONFIG.IM_REPTILE_FLAG == 'detail':
+            consumer(driver, LoginYY)
         sleep(3600)
 
 
 
     @staticmethod
-    def process_negative(driver, pool):
+    def process_negative(driver, produce):
     # def process_negative(self, driver):
         try:
 
@@ -738,20 +748,30 @@ class LoginYY:
             param = json.dumps(result, ensure_ascii=False)
             print(json.loads(param))
 
+            timestamp_millis = int(time.time() * 1000)
+            # print("Current timestamp (milliseconds):", timestamp_millis)
+
+            # 写入日志
+            logger.info(f'传递list参数：{timestamp_millis}-{json.loads(param)}')
+            
             # 发送POST请求
             response = requests.post(CONFIG.POST_LIST_URL, json=json.loads(param))
             
             # 打印响应内容
             print(f'上传list结果：{response.text}')
+            # 写入日志
+            # logger.info(f'传递list参数：{timestamp_millis}-{json.loads(param)}')
+            logger.info(f'上传list结果：{timestamp_millis}-{response.text}')
 
-            asyncio.run(LoginYY.add_detail_tasks(pool, detail_urls))
+            # asyncio.run(LoginYY.add_detail_tasks(pool, detail_urls))
+            LoginYY.add_detail_tasks(produce, detail_urls)
 
             print(f"代码执行时间为：{execution_time} 秒")
             # sleep(2)
             print('\n\n\n\n\n')
             # 退出 iframe
             driver.switch_to.default_content()
-            LoginYY.process_negative(driver, pool)
+            LoginYY.process_negative(driver, produce)
             driver.refresh()
             
             # pass
@@ -759,14 +779,18 @@ class LoginYY:
             print(e)
             # 退出 iframe
             driver.switch_to.default_content()
-            LoginYY.process_negative(driver, pool)
+            LoginYY.process_negative(driver, produce)
             driver.refresh()
 
-    def add_detail_tasks(pool, detail_urls):
+    def add_detail_tasks(produce, detail_urls):
         for href_value in detail_urls:
             print(f'地址：{href_value}')
-            pool.add_task(href_value)
-            pool.start_pool()
+
+            produce.push_msg(href_value)
+
+
+            # pool.add_task(href_value)
+            # pool.start_pool()
         # async with pool:  # 使用异步上下文管理器确保池在任务结束后关闭
         #     await pool.start_pool()
 

@@ -9,7 +9,6 @@ from pool import DriverPool
 import asyncio
 
 
-
 pool = DriverPool(pool_size=3)
 
 async def main():
@@ -30,8 +29,16 @@ async def main():
     try:
 
         mainaAcount = CONFIG.MAIN_ACCOUNT
-        # loginYY = LoginYY(pool)
-        LoginYY.reptile_main_list(driver, mainaAcount['account'], mainaAcount['password'], pool)
+        
+        # if CONFIG.IM_REPTILE_FLAG == 'detail':
+        #     await asyncio.gather(LoginYY.reptile_main_list(driver, mainaAcount['account'], mainaAcount['password']), consumer(driver))
+        #     # print(mainaAcount)
+        #     # consumer(driver)
+        # else:
+        #     creator = produce()
+        #     # loginYY = LoginYY(pool)
+        LoginYY.reptile_main_list(driver, mainaAcount['account'], mainaAcount['password'])
+            
 
     except Exception as e:
         print(e)
@@ -79,7 +86,8 @@ def login_rm():
 
 if __name__ == '__main__':
 
-    asyncio.run(run_tasks())
+    asyncio.run(main())
+    # asyncio.run(run_tasks())
 
     # login_rm()
 
