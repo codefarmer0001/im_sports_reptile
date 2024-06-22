@@ -8,6 +8,9 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.ui import WebDriverWait
+from selenium import webdriver
+from selenium.webdriver.chrome.service import Service
+from selenium.webdriver.chrome.options import Options
 from time import sleep
 from selenium.webdriver.common.action_chains import ActionChains
 import json
@@ -29,14 +32,38 @@ from logs import getLogger  # 导入日志配置模块
 logger = getLogger('list')
 
 
-# from pool import DriverPool
-
 class LoginYY:
 
-    # def __init__(self, pool = None) -> None:
-    #     if pool:
-    #         self.pool = pool
-    #     pass
+
+    @staticmethod
+    def main():
+        # try:
+        # 指定Chrome驱动器路径（注意修改为你实际的驱动器路径）
+        driver_path = CONFIG.MAC_ARM64_CHROME
+        # driver_path = CONFIG.LINUX_64_CHROME
+        # print(driver_path)
+        # 创建Chrome驱动器服务
+        service = Service(driver_path)
+
+        # 创建Chrome浏览器对象
+        chrome_options = webdriver.ChromeOptions()
+        # chrome_options.add_argument('--headless')
+        chrome_options.add_argument('--no-sandbox')
+        chrome_options.add_argument('--disable-dev-shm-usage')
+        driver = webdriver.Chrome(service=service, options=chrome_options)
+        # driver.implicitly_wait(5)  # 设置全局隐式等待时间为5秒
+        try:
+
+            mainaAcount = CONFIG.MAIN_ACCOUNT
+            
+            LoginYY.reptile_main_list(driver, mainaAcount['account'], mainaAcount['password'])
+                
+
+        except Exception as e:
+            print(e)
+            driver.quit()
+            LoginYY.main()
+
 
     @staticmethod
     def get_file_content(filePath):
@@ -55,7 +82,7 @@ class LoginYY:
 
         # try:
         if 1 == 1:
-            login_btn_panl = WebDriverWait(driver, 15).until(
+            login_btn_panl = WebDriverWait(driver, 3).until(
                 EC.visibility_of_element_located((By.CLASS_NAME, 'login_menu'))
             )
 
@@ -68,7 +95,7 @@ class LoginYY:
             print(login_btn_panl)
 
 
-            login_panl = WebDriverWait(driver, 15).until(
+            login_panl = WebDriverWait(driver, 3).until(
                 EC.visibility_of_element_located((By.ID, 'loginModal'))
             )
 
@@ -77,7 +104,7 @@ class LoginYY:
             input_inputcode = login_panl.find_element(By.ID, 'inputcode')
 
             # 创建 WebDriverWait 对象
-            wait = WebDriverWait(driver, 10)
+            wait = WebDriverWait(driver, 3)
 
             # 等待元素加载
             img_code = wait.until(lambda driver: driver.find_element(By.ID, 'pic').get_attribute('src') != '')
@@ -122,7 +149,7 @@ class LoginYY:
 
             try:
 
-                notice_panl = WebDriverWait(driver, 15).until(
+                notice_panl = WebDriverWait(driver, 3).until(
                     EC.visibility_of_element_located((By.ID, 'focus_announce'))
                 )
                 # cancel
@@ -133,7 +160,7 @@ class LoginYY:
             except Exception as e:
                 print('公告界面可能不存在')
 
-            game_panal = WebDriverWait(driver, 15).until(
+            game_panal = WebDriverWait(driver, 3).until(
                 EC.visibility_of_element_located((By.XPATH, './/ul[@class="recreation_list active"]'))
             )
 
@@ -150,7 +177,7 @@ class LoginYY:
                             driver.execute_script("arguments[0].click();", item)
                             break
             
-            sport_dialog = WebDriverWait(driver, 15).until(
+            sport_dialog = WebDriverWait(driver, 3).until(
                 EC.visibility_of_element_located((By.ID, 'Modal_sports'))
             )
             
@@ -166,7 +193,7 @@ class LoginYY:
             try:
                 bg_mask = None
                 try:
-                    bg_mask = WebDriverWait(driver, 10).until(
+                    bg_mask = WebDriverWait(driver, 3).until(
                         EC.visibility_of_element_located((By.CLASS_NAME, 'bg_mask'))
                     )
                 except Exception as e:
@@ -190,148 +217,6 @@ class LoginYY:
 
             # sleep(3600)
 
-
-
-        # except Exception as e:
-        #     print(e)
-
-
-        # # try:
-        # if 1 == 1:
-        #     element = WebDriverWait(driver, 10).until(
-        #         EC.visibility_of_element_located((By.CLASS_NAME, 'buttons'))
-        #     )
-        #     # 登陆界面，打开登陆dialog
-        #     # print(element)
-        #     login_button = element.find_element(By.XPATH, '//button[@class="el-button el-button--primary login"]')
-        #     # print(login_button.text)
-        #     # login_button.click()
-        #     driver.execute_script("arguments[0].click();", login_button)
-        #     # print(111111111)
-
-        #     # pane-account
-        #     login_panel = WebDriverWait(driver, 10).until(
-        #         EC.visibility_of_element_located((By.ID, 'pane-account'))
-        #     )
-        #     # print(login_panel)
-        #     input_user_name = login_panel.find_element(By.XPATH, '//input[@placeholder="请输入用户名"]')
-        #     # print(input_user_name)
-        #     input_user_name.send_keys(account)
-
-        #     input_password = login_panel.find_element(By.XPATH, '//input[@placeholder="请输入密码"]')
-        #     # print(input_password)
-        #     input_password.send_keys(password)
-
-        #     login_panal_submit = login_panel.find_element(By.XPATH, '//button[@type="submit"]')
-        #     # print(login_panal_submit)
-        #     # login_panal_submit.click()
-        #     driver.execute_script("arguments[0].click();", login_panal_submit)
-        #     # print(111111111)
-
-        #     # 主界面，登陆完后的界面
-
-        #     main_panal_dialog = WebDriverWait(driver, 10).until(
-        #         EC.visibility_of_element_located((By.CLASS_NAME, 'home-act-dialog'))
-        #     )
-        #     main_panal_dialog_close = main_panal_dialog.find_element(By.XPATH, '//button[@type="button" and @aria-label="Close"]')
-        #     # print(main_panal_dialog_close)
-        #     driver.execute_script("arguments[0].click();", main_panal_dialog_close)
-        #     # print(111111111)
-        #     # main_panal_dialog_close.click()
-
-
-        #     # # navbar选项
-        #     main_panal_navbar = WebDriverWait(driver, 10).until(
-        #         EC.visibility_of_element_located((By.CLASS_NAME, 'navbar'))
-        #     )
-        #     sport_items = main_panal_navbar.find_element(By.XPATH, './/li[@class="sport"]')
-        #     # print('\n\n\n')
-        #     # print(sport_items.get_attribute('outerHTML'))
-
-        #     sport_items_lable = sport_items.find_element(By.XPATH, './/span[@class="label"]')
-
-        #     # sport_items.click()
-        #     # 创建 ActionChains 对象
-        #     action_chains = ActionChains(driver)
-
-        #     # print('\n\n\n')
-        #     # print(sport_items_lable.get_attribute('outerHTML'))
-        #     # print('\n\n\n')
-
-        #     # # 将鼠标移动到元素上
-        #     action_chains.move_to_element(sport_items_lable).perform()
-
-        #     sport_swiper = sport_items.find_element(By.XPATH, './/div[@class="swiper-wrapper"]')
-        #     # print(sport_swiper.get_attribute('outerHTML'))
-
-        #     try:
-        #         sport_swiper_items = sport_swiper.find_elements(By.XPATH, './/div[@class="plat"]')
-        #         # print(sport_swiper_items)
-        #         if sport_swiper_items:
-        #             for item in sport_swiper_items:
-        #                 # print('\n\n\n')
-        #                 # print(123123)
-        #                 # print(item.get_attribute('outerHTML'))
-        #                 # print('\n\n\n')
-        #                 item_span = item.find_element(By.XPATH, './/span')
-        #                 # print(item_span.get_attribute('innerHTML'))
-        #                 txt = item_span.get_attribute('innerHTML')
-        #                 if txt == 'IM体育':
-        #                     next = sport_items.find_element(By.XPATH, './/div[@aria-label="Next slide" and @aria-disabled="false"]')
-        #                     # print(next.is_enabled())
-        #                     action_chains.move_to_element(next).perform()
-        #                     driver.execute_script("arguments[0].click();", next)
-
-        #                     taget_item = item.find_element(By.XPATH, './/div[@class="main-pic"]')
-        #                     action_chains.move_to_element(taget_item).perform()
-        #                     driver.execute_script("arguments[0].click();", taget_item)
-        #     except Exception as e:
-        #         print(e)
-            
-        #     print(111111111)
-        #     # 切换到新标签页
-        #     handles = driver.window_handles
-        #     driver.switch_to.window(handles[1])  # 切换到第二个标签页（索引从0开始）
-
-        #     action_chains = ActionChains(driver)
-        #     flag = True
-        #     index = 0
-        #     try:
-        #     # if 1 == 1:
-        #         bg_mask = None
-        #         try:
-        #             bg_mask = WebDriverWait(driver, 10).until(
-        #                 EC.visibility_of_element_located((By.CLASS_NAME, 'bg_mask'))
-        #             )
-        #         except Exception as e:
-        #             bg_mask = None
-                
-        #         print(34567)
-        #         if bg_mask:
-        #             while flag:
-        #             # mask_button rc_tut_btn
-        #                 mask_button = bg_mask.find_element(By.XPATH, './/div[@class="mask_button rc_tut_btn"]')
-        #                 print(111111111)
-        #                 if mask_button:
-        #                     # print('\n\n\n')
-        #                     # print(index)
-        #                     # print(mask_button)
-        #                     # print('\n\n\n')
-        #                     index += 1
-        #                     action_chains.move_to_element(mask_button).perform()
-        #                     driver.execute_script("arguments[0].click();", mask_button)
-        #                 else:
-        #                     # print('\n\n\n')
-        #                     # print(1111111)
-        #                     # print('\n\n\n')
-        #                     flag = False
-        #     except Exception as e:
-        #         flag = False
-        #         print("元素失效，请重新定位或等待一段时间后重试")
-            
-
-            # sleep(3600)
-
     @staticmethod
     def reptile_main_list(driver, account, password):
     # def reptile_main_list(self, driver, account, password, pool):
@@ -339,7 +224,7 @@ class LoginYY:
         if CONFIG.IM_REPTILE_FLAG == 'negative':
             # print(1)
             creator = produce()
-            LoginYY.process_negative(driver, creator)
+            LoginYY.process_negative(driver, creator, 0)
         elif CONFIG.IM_REPTILE_FLAG == 'positive':
             print(2)
             creator = produce()
@@ -351,8 +236,16 @@ class LoginYY:
 
 
     @staticmethod
-    def process_negative(driver, produce):
+    def process_negative(driver, produce, process_index):
     # def process_negative(self, driver):
+
+        if process_index > 1000:
+            driver.quit()
+            LoginYY.main()
+
+
+        print(f'\n\n执行次数：{process_index}\n\n')
+
         try:
 
             # 记录开始时间
@@ -363,7 +256,7 @@ class LoginYY:
             action_chains = ActionChains(driver)
             
             # 等待 iframe 出现
-            iframe = WebDriverWait(driver, 10).until(
+            iframe = WebDriverWait(driver, 3).until(
                 EC.presence_of_element_located((By.TAG_NAME, 'iframe'))
             )
             
@@ -381,7 +274,7 @@ class LoginYY:
             
             try:
                 
-                game_element = WebDriverWait(driver, 10).until(
+                game_element = WebDriverWait(driver, 3).until(
                     # EC.visibility_of_element_located((By.CLASS_NAME, 'leftmenu_sports_content'))
                     EC.visibility_of_element_located((By.XPATH, './/div[@class="leftmenu_sports_content default"]'))
                 )
@@ -410,7 +303,7 @@ class LoginYY:
 
 
             # market_2_1
-            game_content = WebDriverWait(driver, 10).until(
+            game_content = WebDriverWait(driver, 3).until(
                 EC.visibility_of_element_located((By.ID, 'market_3_1'))
             )
 
@@ -753,7 +646,7 @@ class LoginYY:
 
             # 写入日志
             logger.info(f'传递list参数：{timestamp_millis}-{json.loads(param)}')
-            
+
             # 发送POST请求
             response = requests.post(CONFIG.POST_LIST_URL, json=json.loads(param))
             
@@ -771,7 +664,7 @@ class LoginYY:
             print('\n\n\n\n\n')
             # 退出 iframe
             driver.switch_to.default_content()
-            LoginYY.process_negative(driver, produce)
+            LoginYY.process_negative(driver, produce, process_index + 1)
             driver.refresh()
             
             # pass
@@ -779,14 +672,14 @@ class LoginYY:
             print(e)
             # 退出 iframe
             driver.switch_to.default_content()
-            LoginYY.process_negative(driver, produce)
+            LoginYY.process_negative(driver, produce, process_index + 1)
             driver.refresh()
 
     def add_detail_tasks(produce, detail_urls):
         for href_value in detail_urls:
             print(f'地址：{href_value}')
 
-            produce.push_msg(href_value)
+            produce.push_detail(href_value)
 
 
             # pool.add_task(href_value)
@@ -808,7 +701,7 @@ class LoginYY:
             
             # print(112345)
             
-            game_element = WebDriverWait(driver, 10).until(
+            game_element = WebDriverWait(driver, 3).until(
                 EC.visibility_of_element_located((By.CLASS_NAME, 'leftmenu_sports_content'))
             )
 
@@ -830,7 +723,7 @@ class LoginYY:
                         break
 
             # market_2_1
-            game_content = WebDriverWait(driver, 10).until(
+            game_content = WebDriverWait(driver, 3).until(
                 EC.visibility_of_element_located((By.ID, 'col_3_1'))
             )
             print('\n\n\n')
@@ -1118,106 +1011,3 @@ class LoginYY:
             print(e)
             # self.process_negative(driver)
             # driver.refresh()
-
-
-
-    def reptile_detail_data(driver, url):
-
-        # 等待 iframe 出现
-        iframe = WebDriverWait(driver, 10).until(
-            EC.presence_of_element_located((By.TAG_NAME, 'iframe'))
-        )
-            
-        # 获取 iframe 的 src 属性
-        iframe_src = iframe.get_attribute('src')
-        print(iframe_src)
-        param = iframe_src.split('?')[1]
-
-        # return
-        # driver.get(f'{url}&{param}')
-
-        # 使用 JavaScript 设置 iframe 的 src 属性
-        driver.execute_script(f"arguments[0].src = '{url}?{param}';", iframe)
-
-        driver.switch_to.frame(iframe)
-
-        game_element = WebDriverWait(driver, 10).until(
-            EC.visibility_of_element_located((By.XPATH, './/div[@class="scr_wrp"]'))
-        )
-        print('\n\n\n')
-        print(game_element)
-        print('\n\n\n')
-        data = {}
-
-        pattern = r'/(\d+)/'  # 匹配斜杠内的数字
-        matches = re.findall(pattern, url)
-        print(matches)
-        data_id = 0
-        data['data_id'] = data_id
-        # 输出匹配到的结果
-        if matches:
-            data['data_id'] = matches[1]
-
-        src_header = game_element.find_element(By.XPATH, './/div[@class="scr_header"]')
-
-        scr_title = src_header.find_element(By.XPATH, './/div[@class="scr_title"]')
-
-        scr_title_span = scr_title.find_element(By.XPATH, './/span')
-
-        scr_title_value = scr_title_span.get_attribute('innerHTML')
-
-        data['title'] = scr_title_value
-
-        scr_rows = game_element.find_elements(By.XPATH, './/div[@class="scr_row"]')
-
-        if scr_rows:
-            for i, row in enumerate(scr_rows):
-
-                scr_title = row.find_element(By.XPATH, './/div[@class="scr_title"]')
-
-                scr_title_value = scr_title.get_attribute('innerHTML')
-
-                team = {}
-                team['name'] = scr_title_value
-
-                # print('\n\n\n')
-                # print(scr_title_value)
-                print('\n\n\n')
-                
-                scr_title_1_scr_details = row.find_element(By.XPATH, './/div[@class="scr_details"]')
-
-                scr_title_1_scr_items = scr_title_1_scr_details.find_elements(By.XPATH, './/div')
-
-                if scr_title_1_scr_items:
-                    for index, item in enumerate(scr_title_1_scr_items):
-                        if index == 0:
-                            team['first'] = item.get_attribute('innerHTML')
-                        if index == 1:
-                            team['full'] = item.get_attribute('innerHTML')
-                        if index == 2:
-                            team['yellow'] = item.get_attribute('innerHTML')
-                        if index == 3:
-                            team['red'] = item.get_attribute('innerHTML')
-                        if index == 4:
-                            team['penalty'] = item.get_attribute('innerHTML')
-
-                if i == 0:
-                    data['home_team'] = team
-                elif i == 1:
-                    data['away_team'] = team
-        
-        # 退出 iframe，回到主文档
-        driver.switch_to.default_content()
-
-        print('\n\n\n')
-        param = json.dumps(data, ensure_ascii=False)
-        print(json.loads(param))
-
-        # 发送POST请求
-        response = requests.post(CONFIG.POST_DETAIL_URL, json=json.loads(param))
-
-        # 打印响应内容
-        print(f'上传detail结果：{response.text}')
-        
-
-        # pass

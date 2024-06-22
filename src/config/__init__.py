@@ -23,6 +23,15 @@ def load_config():
         elif mode == 'DETAIL2':
             from .detail2_config import Detail2Config
             return Detail2Config
+        elif mode == 'DETAIL3':
+            from .detail3_config import Detail3Config
+            return Detail3Config
+        elif mode == 'DETAIL4':
+            from .detail4_config import Detail4Config
+            return Detail4Config
+        elif mode == 'DETAIL5':
+            from .detail5_config import Detail5Config
+            return Detail5Config
         else:
             from .dev_config import DevConfig
             return DevConfig

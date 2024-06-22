@@ -12,9 +12,12 @@ import json
 import re
 import requests
 import time
+import traceback
+import os
 
 from logs import getLogger  # 导入日志配置模块
 logger = getLogger('detail')
+mode = os.environ.get('MODE', 'DEV')
 
 
 # from pool import DriverPool
@@ -24,121 +27,182 @@ class Detail:
     @staticmethod
     def reptile_detail_data(driver, url):
 
-        # 等待 iframe 出现
-        iframe = WebDriverWait(driver, 10).until(
-            EC.presence_of_element_located((By.TAG_NAME, 'iframe'))
-        )
-            
-        # 获取 iframe 的 src 属性
-        iframe_src = iframe.get_attribute('src')
-        # print(iframe_src)
-        param = iframe_src.split('?')[1]
-        print(url)
-        print(param)
-        # return
-        # driver.get(f'{url}&{param}')
-
-        # 使用 JavaScript 设置 iframe 的 src 属性
-        driver.execute_script(f"arguments[0].src = '{url}?{param}';", iframe)
-
-        driver.switch_to.frame(iframe)
-
-        game_element = WebDriverWait(driver, 10).until(
-            EC.visibility_of_element_located((By.XPATH, './/div[@class="scr_wrp"]'))
-        )
-        print('\n\n\n')
-        print(game_element)
-        print('\n\n\n')
-        data = {}
-
-        pattern = r'/(\d+)/'  # 匹配斜杠内的数字
-        matches = re.findall(pattern, url)
-        print(matches)
-        data_id = 0
-        data['data_id'] = data_id
-        # 输出匹配到的结果
-        if matches:
-            data['data_id'] = matches[1]
-
-        src_header = game_element.find_element(By.XPATH, './/div[@class="scr_header"]')
-
-        scr_title = src_header.find_element(By.XPATH, './/div[@class="scr_title"]')
-
-        scr_title_value = ''
         try:
-            scr_title_span = scr_title.find_element(By.XPATH, './/span')
-            scr_title_value = scr_title_span.get_attribute('innerHTML')
-        except Exception as e:
-            # print(e)
-            scr_title_value = scr_title.get_attribute('innerHTML')
+            # 记录开始时间
+            start_time = time.time()
 
+            # return
+            # 等待 iframe 出现
+            # iframe = WebDriverWait(driver, 2).until(
+            #     EC.presence_of_element_located((By.TAG_NAME, 'iframe'))
+            # )
 
-        # scr_title_span = scr_title.find_element(By.XPATH, './/span')
-
-        # scr_title_value = scr_title_span.get_attribute('innerHTML')
-        
-
-        data['title'] = scr_title_value
-
-        scr_rows = game_element.find_elements(By.XPATH, './/div[@class="scr_row"]')
-
-        if scr_rows:
-            for i, row in enumerate(scr_rows):
-
-                scr_title = row.find_element(By.XPATH, './/div[@class="scr_title"]')
-
-                scr_title_value = scr_title.get_attribute('innerHTML')
-
-                team = {}
-                team['name'] = scr_title_value
-
-                # print('\n\n\n')
-                # print(scr_title_value)
-                print('\n\n\n')
+            iframe = driver.find_element(By.TAG_NAME, 'iframe')
                 
-                scr_title_1_scr_details = row.find_element(By.XPATH, './/div[@class="scr_details"]')
+            # 获取 iframe 的 src 属性
+            iframe_src = iframe.get_attribute('src')
+            # print(iframe_src)
+            param = iframe_src.split('?')[1]
+            print(url)
+            print(param)
+            # return
+            # driver.get(f'{url}&{param}')
 
-                scr_title_1_scr_items = scr_title_1_scr_details.find_elements(By.XPATH, './/div')
+            # 使用 JavaScript 设置 iframe 的 src 属性
+            driver.execute_script(f"arguments[0].src = '{url}?{param}';", iframe)
 
-                if scr_title_1_scr_items:
-                    for index, item in enumerate(scr_title_1_scr_items):
-                        if index == 0:
-                            team['first'] = item.get_attribute('innerHTML')
-                        if index == 1:
-                            team['full'] = item.get_attribute('innerHTML')
-                        if index == 2:
-                            team['yellow'] = item.get_attribute('innerHTML')
-                        if index == 3:
-                            team['red'] = item.get_attribute('innerHTML')
-                        if index == 4:
-                            team['penalty'] = item.get_attribute('innerHTML')
+            driver.switch_to.frame(iframe)
 
-                if i == 0:
-                    data['home_team'] = team
-                elif i == 1:
-                    data['away_team'] = team
-        
-        # 退出 iframe，回到主文档
-        driver.switch_to.default_content()
+            flag = 0
 
-        print('\n\n\n')
-        param = json.dumps(data, ensure_ascii=False)
-        print(json.loads(param))
+            try:
+                popup_overlay_div = WebDriverWait(driver, 1).until(
+                    EC.visibility_of_element_located((By.XPATH, './/div[@class="popup_overlay"]'))
+                )
 
-        timestamp_millis = int(time.time() * 1000)
-        # print("Current timestamp (milliseconds):", timestamp_millis)
+                popup_overlay_inner_div = popup_overlay_div.find_element(By.XPATH, './/div[@class="popup_overlay_inner"]')
+                text = popup_overlay_inner_div.get_attribute('innerHTML')
 
-        # 写入日志
-        logger.info(f'上传detail参数：{timestamp_millis}-{json.loads(param)}')
-        # 发送POST请求
-        response = requests.post(CONFIG.POST_DETAIL_URL, json=json.loads(param))
+                if '赔率正在更新' in text:
+                    logger.info(f'获取detail出错：地址 - {url} - {mode} - {text}')
+                    flag = 1
+                    # 退出 iframe，回到主文档
+                    driver.switch_to.default_content()
+            except Exception as e:
+                pass
 
-        # 打印响应内容
-        print(f'上传detail结果：{response.text}')
+            
+            if flag == 0:
 
-        # 写入日志
-        # logger.info(f'上传detail参数：{timestamp_millis}-{json.loads(param)}')
-        logger.info(f'上传detail结果：{timestamp_millis}-{response.text}')
-        
+                game_element = None
+                
+                try:
+                    game_element = driver.find_element(By.XPATH, './/div[@class="scr_wrp"]')
+                except Exception as e:
+                    print(e)
 
-        # pass
+                if not game_element:
+                    game_element = WebDriverWait(driver, 1.5).until(
+                        EC.visibility_of_element_located((By.XPATH, './/div[@class="scr_wrp"]'))
+                    )
+
+                
+
+
+                print('\n\n\n')
+                print(game_element)
+                print('\n\n\n')
+                data = {}
+
+                pattern = r'/(\d+)/'  # 匹配斜杠内的数字
+                matches = re.findall(pattern, url)
+                print(matches)
+                data_id = 0
+                data['data_id'] = data_id
+                # 输出匹配到的结果
+                if matches:
+                    data['data_id'] = matches[1]
+
+                src_header = game_element.find_element(By.XPATH, './/div[@class="scr_header"]')
+
+                scr_title = src_header.find_element(By.XPATH, './/div[@class="scr_title"]')
+
+                scr_title_value = ''
+                try:
+                    scr_title_span = scr_title.find_element(By.XPATH, './/span')
+                    scr_title_value = scr_title_span.get_attribute('innerHTML')
+                except Exception as e:
+                    # print(e)
+                    scr_title_value = scr_title.get_attribute('innerHTML')
+
+
+                # scr_title_span = scr_title.find_element(By.XPATH, './/span')
+
+                # scr_title_value = scr_title_span.get_attribute('innerHTML')
+                
+
+                data['title'] = scr_title_value
+
+                scr_rows = game_element.find_elements(By.XPATH, './/div[@class="scr_row"]')
+
+                if scr_rows:
+                    for i, row in enumerate(scr_rows):
+
+                        scr_title = row.find_element(By.XPATH, './/div[@class="scr_title"]')
+
+                        scr_title_value = scr_title.get_attribute('innerHTML')
+
+                        team = {}
+                        team['name'] = scr_title_value
+
+                        # print('\n\n\n')
+                        # print(scr_title_value)
+                        print('\n\n\n')
+                        
+                        scr_title_1_scr_details = row.find_element(By.XPATH, './/div[@class="scr_details"]')
+
+                        scr_title_1_scr_items = scr_title_1_scr_details.find_elements(By.XPATH, './/div')
+
+                        if scr_title_1_scr_items:
+                            for index, item in enumerate(scr_title_1_scr_items):
+                                if index == 0:
+                                    team['first'] = item.get_attribute('innerHTML')
+                                if index == 1:
+                                    team['full'] = item.get_attribute('innerHTML')
+                                if index == 2:
+                                    team['yellow'] = item.get_attribute('innerHTML')
+                                if index == 3:
+                                    team['red'] = item.get_attribute('innerHTML')
+                                if index == 4:
+                                    team['penalty'] = item.get_attribute('innerHTML')
+
+                        if i == 0:
+                            data['home_team'] = team
+                        elif i == 1:
+                            data['away_team'] = team
+                
+                # 退出 iframe，回到主文档
+                driver.switch_to.default_content()
+
+                print('\n\n\n')
+                param = json.dumps(data, ensure_ascii=False)
+                print(json.loads(param))
+
+                # 记录结束时间
+                end_time = time.time()
+
+                # 计算执行时间
+                execution_time = end_time - start_time
+                print('\n')
+
+                print(f"代码执行时间为：{execution_time} 秒")
+
+                timestamp_millis = int(time.time() * 1000)
+                # print("Current timestamp (milliseconds):", timestamp_millis)
+
+                # 写入日志
+                logger.info(f'上传detail参数：{timestamp_millis} - {mode} - {json.loads(param)}')
+                # 发送POST请求
+                response = requests.post(CONFIG.POST_DETAIL_URL, json=json.loads(param))
+
+                # 打印响应内容
+                print(f'上传detail结果：{response.text}')
+
+                # 写入日志
+                # logger.info(f'上传detail参数：{timestamp_millis}-{json.loads(param)}')
+                logger.info(f'上传detail结果：{timestamp_millis} - {mode} - {response.text}')
+
+                # 记录结束时间
+                end_time = time.time()
+
+                # 计算执行时间
+                execution_time = end_time - start_time
+                print('\n')
+
+                print(f"代码执行时间为：{execution_time} 秒")
+
+                # pass
+        except Exception as e:
+            # 退出 iframe，回到主文档
+            driver.switch_to.default_content()
+            logger.info(f'获取detail出错：地址 - {url} - {mode} - {traceback.print_exc()}')

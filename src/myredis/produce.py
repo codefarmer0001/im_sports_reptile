@@ -1,5 +1,8 @@
 import redis
 from time import sleep
+import os
+
+mode = os.environ.get('MODE')
 
 class produce:
 
@@ -9,10 +12,14 @@ class produce:
         pass
 
 
-    def push_msg(self, msg):
+    def push_detail(self, msg):
         # 向队列中添加任务
         # for i in range(1000):
         self.redis_client.lpush('task_queue', f'{msg}')
             # print(f'Added task_{i} to the queue')
             # sleep(1)
+
+    
+    def push_list(self, task, msg):
+        self.redis_client.lpush(task, f'{msg}')
 

@@ -21265,3 +21265,774 @@
 2024-06-20 13:36:14,332 - detail - INFO - 上传detail参数：1718861774332-{'data_id': '86408917', 'title': '上半场 23', 'home_team': {'name': 'VS - 柏林联合', 'first': '0', 'full': '0', 'yellow': '0', 'red': '0', 'penalty': '0'}, 'away_team': {'name': 'VS - 勒沃库森', 'first': '0', 'full': '0', 'yellow': '0', 'red': '0', 'penalty': '0'}}
 2024-06-20 13:36:16,371 - detail - INFO - 上传detail结果：1718861774332-{"message": "Data processed successfully", "statusCode": 200}
 
+2024-06-20 13:59:04,007 - detail - INFO - 上传detail参数：1718863144007-{'data_id': '86408903', 'title': '下半场 66', 'home_team': {'name': 'VS - 波鸿', 'first': '0', 'full': '0', 'yellow': '0', 'red': '0', 'penalty': '0'}, 'away_team': {'name': 'VS - TSG霍芬海姆', 'first': '3', 'full': '3', 'yellow': '0', 'red': '0', 'penalty': '0'}}
+2024-06-20 13:59:06,027 - detail - INFO - 上传detail结果：1718863144007-{"message": "Data processed successfully", "statusCode": 200}
+
+2024-06-20 13:59:09,559 - detail - INFO - 上传detail参数：1718863149559-{'data_id': '86408928', 'title': '上半场 32', 'home_team': {'name': 'VS - 莱万特', 'first': '0', 'full': '0', 'yellow': '0', 'red': '0', 'penalty': '0'}, 'away_team': {'name': 'VS - 格拉纳达', 'first': '0', 'full': '0', 'yellow': '0', 'red': '0', 'penalty': '0'}}
+2024-06-20 13:59:11,691 - detail - INFO - 上传detail结果：1718863149559-{"message": "Data processed successfully", "statusCode": 200}
+
+2024-06-20 13:59:15,209 - detail - INFO - 上传detail参数：1718863155209-{'data_id': '86409346', 'title': '上半场 31', 'home_team': {'name': 'VS - 哥伦比亚', 'first': '0', 'full': '0', 'yellow': '0', 'red': '0', 'penalty': '0'}, 'away_team': {'name': 'VS - 乌拉圭', 'first': '0', 'full': '0', 'yellow': '0', 'red': '0', 'penalty': '0'}}
+2024-06-20 13:59:17,334 - detail - INFO - 上传detail结果：1718863155209-{"message": "Data processed successfully", "statusCode": 200}
+
+2024-06-20 13:59:20,996 - detail - INFO - 上传detail参数：1718863160996-{'data_id': '86409365', 'title': '下半场 62', 'home_team': {'name': 'VS - 澳大利亚', 'first': '1', 'full': '1', 'yellow': '0', 'red': '0', 'penalty': '0'}, 'away_team': {'name': 'VS - 韩国', 'first': '0', 'full': '1', 'yellow': '0', 'red': '0', 'penalty': '0'}}
+2024-06-20 13:59:23,129 - detail - INFO - 上传detail结果：1718863160996-{"message": "Data processed successfully", "statusCode": 200}
+
+2024-06-20 13:59:26,826 - detail - INFO - 上传detail参数：1718863166826-{'data_id': '86408434', 'title': '上半场 36', 'home_team': {'name': 'VS - 都灵', 'first': '0', 'full': '0', 'yellow': '0', 'red': '0', 'penalty': '0'}, 'away_team': {'name': 'VS - 卡利亚里', 'first': '1', 'full': '1', 'yellow': '0', 'red': '0', 'penalty': '0'}}
+2024-06-20 13:59:28,936 - detail - INFO - 上传detail结果：1718863166826-{"message": "Data processed successfully", "statusCode": 200}
+
+2024-06-20 14:02:39,765 - detail - INFO - 上传detail参数：1718863359765-{'data_id': '86408901', 'title': '上半场 06', 'home_team': {'name': 'VS - 佛罗伦萨', 'first': '0', 'full': '0', 'yellow': '0', 'red': '0', 'penalty': '0'}, 'away_team': {'name': 'VS - 亚特兰大', 'first': '0', 'full': '0', 'yellow': '0', 'red': '0', 'penalty': '0'}}
+2024-06-20 14:02:41,972 - detail - INFO - 上传detail结果：1718863359765-{"message": "Data processed successfully", "statusCode": 200}
+
+2024-06-20 14:02:45,555 - detail - INFO - 上传detail参数：1718863365555-{'data_id': '86408913', 'title': '上半场 06', 'home_team': {'name': 'VS - 广州恒大', 'first': '0', 'full': '0', 'yellow': '0', 'red': '0', 'penalty': '0'}, 'away_team': {'name': 'VS - 河南建业', 'first': '1', 'full': '1', 'yellow': '0', 'red': '0', 'penalty': '0'}}
+2024-06-20 14:02:47,740 - detail - INFO - 上传detail结果：1718863365555-{"message": "Data processed successfully", "statusCode": 200}
+
+2024-06-20 14:02:51,327 - detail - INFO - 上传detail参数：1718863371327-{'data_id': '86409346', 'title': '上半场 46', 'home_team': {'name': 'VS - 哥伦比亚', 'first': '0', 'full': '0', 'yellow': '0', 'red': '0', 'penalty': '0'}, 'away_team': {'name': 'VS - 乌拉圭', 'first': '0', 'full': '0', 'yellow': '0', 'red': '0', 'penalty': '0'}}
+2024-06-20 14:02:53,445 - detail - INFO - 上传detail结果：1718863371327-{"message": "Data processed successfully", "statusCode": 200}
+
+2024-06-20 14:02:56,954 - detail - INFO - 上传detail参数：1718863376954-{'data_id': '86409365', 'title': '下半场 76', 'home_team': {'name': 'VS - 澳大利亚', 'first': '1', 'full': '1', 'yellow': '0', 'red': '0', 'penalty': '0'}, 'away_team': {'name': 'VS - 韩国', 'first': '0', 'full': '1', 'yellow': '0', 'red': '0', 'penalty': '0'}}
+2024-06-20 14:02:58,984 - detail - INFO - 上传detail结果：1718863376954-{"message": "Data processed successfully", "statusCode": 200}
+
+2024-06-20 14:03:01,401 - detail - INFO - 上传detail参数：1718863381401-{'data_id': '86409379', 'title': '上半场 11', 'home_team': {'name': 'VS - 伊朗', 'first': '0', 'full': '0', 'yellow': '0', 'red': '0', 'penalty': '0'}, 'away_team': {'name': 'VS - 卡塔尔', 'first': '0', 'full': '0', 'yellow': '0', 'red': '0', 'penalty': '0'}}
+2024-06-20 14:03:03,515 - detail - INFO - 上传detail结果：1718863381401-{"message": "Data processed successfully", "statusCode": 200}
+
+2024-06-20 14:03:06,561 - detail - INFO - 上传detail参数：1718863386561-{'data_id': '86409353', 'title': '上半场 11', 'home_team': {'name': 'VS - 中国', 'first': '0', 'full': '0', 'yellow': '0', 'red': '0', 'penalty': '0'}, 'away_team': {'name': 'VS - 澳大利亚', 'first': '0', 'full': '0', 'yellow': '0', 'red': '0', 'penalty': '0'}}
+2024-06-20 14:03:08,667 - detail - INFO - 上传detail结果：1718863386561-{"message": "Data processed successfully", "statusCode": 200}
+
+2024-06-20 14:03:11,893 - detail - INFO - 上传detail参数：1718863391893-{'data_id': '86408476', 'title': '上半场 09', 'home_team': {'name': 'VS - 水晶宫', 'first': '1', 'full': '1', 'yellow': '0', 'red': '0', 'penalty': '0'}, 'away_team': {'name': 'VS - 沃特福德', 'first': '0', 'full': '0', 'yellow': '0', 'red': '0', 'penalty': '0'}}
+2024-06-20 14:03:14,050 - detail - INFO - 上传detail结果：1718863391893-{"message": "Data processed successfully", "statusCode": 200}
+
+2024-06-20 14:03:17,298 - detail - INFO - 上传detail参数：1718863397298-{'data_id': '86408461', 'title': '半场', 'home_team': {'name': 'VS - 佛罗伦萨', 'first': '0', 'full': '0', 'yellow': '0', 'red': '0', 'penalty': '0'}, 'away_team': {'name': 'VS - 拉齐奥', 'first': '1', 'full': '1', 'yellow': '0', 'red': '0', 'penalty': '0'}}
+2024-06-20 14:03:19,474 - detail - INFO - 上传detail结果：1718863397298-{"message": "Data processed successfully", "statusCode": 200}
+
+2024-06-20 14:03:23,199 - detail - INFO - 上传detail参数：1718863403199-{'data_id': '86408928', 'title': '上半场 47', 'home_team': {'name': 'VS - 莱万特', 'first': '0', 'full': '0', 'yellow': '0', 'red': '0', 'penalty': '0'}, 'away_team': {'name': 'VS - 格拉纳达', 'first': '0', 'full': '0', 'yellow': '0', 'red': '1', 'penalty': '0'}}
+2024-06-20 14:03:25,412 - detail - INFO - 上传detail结果：1718863403199-{"message": "Data processed successfully", "statusCode": 200}
+
+2024-06-20 14:03:28,966 - detail - INFO - 上传detail参数：1718863408966-{'data_id': '86408908', 'title': '上半场 10', 'home_team': {'name': 'VS - 深圳FC', 'first': '0', 'full': '0', 'yellow': '0', 'red': '0', 'penalty': '0'}, 'away_team': {'name': 'VS - 长春亚泰', 'first': '0', 'full': '0', 'yellow': '0', 'red': '0', 'penalty': '0'}}
+2024-06-20 14:03:31,095 - detail - INFO - 上传detail结果：1718863408966-{"message": "Data processed successfully", "statusCode": 200}
+
+2024-06-20 14:03:34,641 - detail - INFO - 上传detail参数：1718863414641-{'data_id': '86409369', 'title': '上半场 45', 'home_team': {'name': 'VS - 智利', 'first': '1', 'full': '1', 'yellow': '0', 'red': '0', 'penalty': '0'}, 'away_team': {'name': 'VS - 阿根廷', 'first': '1', 'full': '1', 'yellow': '0', 'red': '0', 'penalty': '0'}}
+2024-06-20 14:03:36,680 - detail - INFO - 上传detail结果：1718863414641-{"message": "Data processed successfully", "statusCode": 200}
+
+2024-06-20 14:03:40,216 - detail - INFO - 上传detail参数：1718863420216-{'data_id': '86409378', 'title': '下半场 83', 'home_team': {'name': 'VS - 卡塔尔', 'first': '0', 'full': '2', 'yellow': '0', 'red': '0', 'penalty': '0'}, 'away_team': {'name': 'VS - 中国', 'first': '1', 'full': '2', 'yellow': '0', 'red': '0', 'penalty': '0'}}
+2024-06-20 14:03:42,240 - detail - INFO - 上传detail结果：1718863420216-{"message": "Data processed successfully", "statusCode": 200}
+
+2024-06-20 14:03:45,801 - detail - INFO - 上传detail参数：1718863425801-{'data_id': '86409353', 'title': '上半场 14', 'home_team': {'name': 'VS - 中国', 'first': '0', 'full': '0', 'yellow': '0', 'red': '0', 'penalty': '0'}, 'away_team': {'name': 'VS - 澳大利亚', 'first': '1', 'full': '1', 'yellow': '0', 'red': '0', 'penalty': '0'}}
+2024-06-20 14:03:48,018 - detail - INFO - 上传detail结果：1718863425801-{"message": "Data processed successfully", "statusCode": 200}
+
+2024-06-20 14:03:51,683 - detail - INFO - 上传detail参数：1718863431683-{'data_id': '86408476', 'title': '上半场 12', 'home_team': {'name': 'VS - 水晶宫', 'first': '1', 'full': '1', 'yellow': '0', 'red': '0', 'penalty': '0'}, 'away_team': {'name': 'VS - 沃特福德', 'first': '0', 'full': '0', 'yellow': '0', 'red': '0', 'penalty': '0'}}
+2024-06-20 14:03:53,946 - detail - INFO - 上传detail结果：1718863431683-{"message": "Data processed successfully", "statusCode": 200}
+
+2024-06-20 14:03:56,435 - detail - INFO - 上传detail参数：1718863436435-{'data_id': '86408461', 'title': '下半场 47', 'home_team': {'name': 'VS - 佛罗伦萨', 'first': '0', 'full': '0', 'yellow': '0', 'red': '0', 'penalty': '0'}, 'away_team': {'name': 'VS - 拉齐奥', 'first': '1', 'full': '1', 'yellow': '0', 'red': '0', 'penalty': '0'}}
+2024-06-20 14:03:58,505 - detail - INFO - 上传detail结果：1718863436435-{"message": "Data processed successfully", "statusCode": 200}
+
+2024-06-20 14:04:01,213 - detail - INFO - 上传detail参数：1718863441213-{'data_id': '86408901', 'title': '上半场 11', 'home_team': {'name': 'VS - 佛罗伦萨', 'first': '0', 'full': '0', 'yellow': '0', 'red': '0', 'penalty': '0'}, 'away_team': {'name': 'VS - 亚特兰大', 'first': '0', 'full': '0', 'yellow': '0', 'red': '0', 'penalty': '0'}}
+2024-06-20 14:04:03,383 - detail - INFO - 上传detail结果：1718863441213-{"message": "Data processed successfully", "statusCode": 200}
+
+2024-06-20 14:04:08,118 - detail - INFO - 上传detail参数：1718863448118-{'data_id': '86408928', 'title': '半场', 'home_team': {'name': 'VS - 莱万特', 'first': '0', 'full': '0', 'yellow': '0', 'red': '0', 'penalty': '0'}, 'away_team': {'name': 'VS - 格拉纳达', 'first': '0', 'full': '0', 'yellow': '0', 'red': '1', 'penalty': '0'}}
+2024-06-20 14:04:10,236 - detail - INFO - 上传detail结果：1718863448118-{"message": "Data processed successfully", "statusCode": 200}
+
+2024-06-20 14:04:13,233 - detail - INFO - 上传detail参数：1718863453233-{'data_id': '86408908', 'title': '上半场 13', 'home_team': {'name': 'VS - 深圳FC', 'first': '0', 'full': '0', 'yellow': '0', 'red': '0', 'penalty': '0'}, 'away_team': {'name': 'VS - 长春亚泰', 'first': '0', 'full': '0', 'yellow': '0', 'red': '0', 'penalty': '0'}}
+2024-06-20 14:04:15,255 - detail - INFO - 上传detail结果：1718863453233-{"message": "Data processed successfully", "statusCode": 200}
+
+2024-06-20 14:04:18,892 - detail - INFO - 上传detail参数：1718863458892-{'data_id': '86409369', 'title': '半场', 'home_team': {'name': 'VS - 智利', 'first': '1', 'full': '1', 'yellow': '0', 'red': '0', 'penalty': '0'}, 'away_team': {'name': 'VS - 阿根廷', 'first': '1', 'full': '1', 'yellow': '0', 'red': '0', 'penalty': '0'}}
+2024-06-20 14:04:20,926 - detail - INFO - 上传detail结果：1718863458892-{"message": "Data processed successfully", "statusCode": 200}
+
+2024-06-20 14:04:24,438 - detail - INFO - 上传detail参数：1718863464438-{'data_id': '86409378', 'title': '下半场 85', 'home_team': {'name': 'VS - 卡塔尔', 'first': '0', 'full': '2', 'yellow': '0', 'red': '0', 'penalty': '0'}, 'away_team': {'name': 'VS - 中国', 'first': '1', 'full': '2', 'yellow': '0', 'red': '0', 'penalty': '0'}}
+2024-06-20 14:04:26,533 - detail - INFO - 上传detail结果：1718863464438-{"message": "Data processed successfully", "statusCode": 200}
+
+2024-06-20 14:04:30,200 - detail - INFO - 上传detail参数：1718863470200-{'data_id': '86409353', 'title': '上半场 16', 'home_team': {'name': 'VS - 中国', 'first': '0', 'full': '0', 'yellow': '0', 'red': '0', 'penalty': '0'}, 'away_team': {'name': 'VS - 澳大利亚', 'first': '1', 'full': '1', 'yellow': '0', 'red': '0', 'penalty': '0'}}
+2024-06-20 14:04:32,382 - detail - INFO - 上传detail结果：1718863470200-{"message": "Data processed successfully", "statusCode": 200}
+
+2024-06-20 14:04:36,120 - detail - INFO - 上传detail参数：1718863476120-{'data_id': '86408476', 'title': '上半场 16', 'home_team': {'name': 'VS - 水晶宫', 'first': '1', 'full': '1', 'yellow': '0', 'red': '0', 'penalty': '0'}, 'away_team': {'name': 'VS - 沃特福德', 'first': '0', 'full': '0', 'yellow': '0', 'red': '0', 'penalty': '0'}}
+2024-06-20 14:04:38,340 - detail - INFO - 上传detail结果：1718863476120-{"message": "Data processed successfully", "statusCode": 200}
+
+2024-06-20 14:04:41,581 - detail - INFO - 上传detail参数：1718863481581-{'data_id': '86408461', 'title': '下半场 51', 'home_team': {'name': 'VS - 佛罗伦萨', 'first': '0', 'full': '0', 'yellow': '0', 'red': '0', 'penalty': '0'}, 'away_team': {'name': 'VS - 拉齐奥', 'first': '1', 'full': '1', 'yellow': '0', 'red': '0', 'penalty': '0'}}
+2024-06-20 14:04:43,605 - detail - INFO - 上传detail结果：1718863481581-{"message": "Data processed successfully", "statusCode": 200}
+
+2024-06-20 14:04:46,170 - detail - INFO - 上传detail参数：1718863486170-{'data_id': '86408902', 'title': '上半场 14', 'home_team': {'name': 'VS - 国际', 'first': '1', 'full': '1', 'yellow': '0', 'red': '0', 'penalty': '0'}, 'away_team': {'name': 'VS - 那不勒斯', 'first': '1', 'full': '1', 'yellow': '0', 'red': '0', 'penalty': '0'}}
+2024-06-20 14:04:48,293 - detail - INFO - 上传detail结果：1718863486170-{"message": "Data processed successfully", "statusCode": 200}
+
+2024-06-20 14:04:51,721 - detail - INFO - 上传detail参数：1718863491721-{'data_id': '86408913', 'title': '上半场 15', 'home_team': {'name': 'VS - 广州恒大', 'first': '0', 'full': '0', 'yellow': '0', 'red': '0', 'penalty': '0'}, 'away_team': {'name': 'VS - 河南建业', 'first': '1', 'full': '1', 'yellow': '0', 'red': '0', 'penalty': '0'}}
+2024-06-20 14:04:53,843 - detail - INFO - 上传detail结果：1718863491721-{"message": "Data processed successfully", "statusCode": 200}
+
+2024-06-20 14:04:56,448 - detail - INFO - 上传detail参数：1718863496448-{'data_id': '86409346', 'title': '下半场 47', 'home_team': {'name': 'VS - 哥伦比亚', 'first': '0', 'full': '0', 'yellow': '0', 'red': '0', 'penalty': '0'}, 'away_team': {'name': 'VS - 乌拉圭', 'first': '0', 'full': '0', 'yellow': '0', 'red': '0', 'penalty': '0'}}
+2024-06-20 14:04:58,566 - detail - INFO - 上传detail结果：1718863496448-{"message": "Data processed successfully", "statusCode": 200}
+
+2024-06-20 14:05:01,782 - detail - INFO - 上传detail参数：1718863501782-{'data_id': '86409365', 'title': '下半场 84', 'home_team': {'name': 'VS - 澳大利亚', 'first': '1', 'full': '1', 'yellow': '0', 'red': '0', 'penalty': '0'}, 'away_team': {'name': 'VS - 韩国', 'first': '0', 'full': '1', 'yellow': '0', 'red': '0', 'penalty': '0'}}
+2024-06-20 14:05:03,980 - detail - INFO - 上传detail结果：1718863501782-{"message": "Data processed successfully", "statusCode": 200}
+
+2024-06-20 14:05:06,669 - detail - INFO - 上传detail参数：1718863506669-{'data_id': '86409353', 'title': '上半场 18', 'home_team': {'name': 'VS - 中国', 'first': '0', 'full': '0', 'yellow': '0', 'red': '0', 'penalty': '0'}, 'away_team': {'name': 'VS - 澳大利亚', 'first': '1', 'full': '1', 'yellow': '0', 'red': '0', 'penalty': '0'}}
+2024-06-20 14:05:08,894 - detail - INFO - 上传detail结果：1718863506669-{"message": "Data processed successfully", "statusCode": 200}
+
+2024-06-20 14:05:11,545 - detail - INFO - 上传detail参数：1718863511545-{'data_id': '86408459', 'title': '上半场 16', 'home_team': {'name': 'VS - 埃弗顿', 'first': '0', 'full': '0', 'yellow': '0', 'red': '0', 'penalty': '0'}, 'away_team': {'name': 'VS - 布莱顿', 'first': '0', 'full': '0', 'yellow': '0', 'red': '0', 'penalty': '0'}}
+2024-06-20 14:05:13,661 - detail - INFO - 上传detail结果：1718863511545-{"message": "Data processed successfully", "statusCode": 200}
+
+2024-06-20 14:05:16,252 - detail - INFO - 上传detail参数：1718863516252-{'data_id': '86408434', 'title': '下半场 56', 'home_team': {'name': 'VS - 都灵', 'first': '0', 'full': '0', 'yellow': '0', 'red': '0', 'penalty': '0'}, 'away_team': {'name': 'VS - 卡利亚里', 'first': '1', 'full': '1', 'yellow': '0', 'red': '0', 'penalty': '0'}}
+2024-06-20 14:05:18,278 - detail - INFO - 上传detail结果：1718863516252-{"message": "Data processed successfully", "statusCode": 200}
+
+2024-06-20 14:05:20,801 - detail - INFO - 上传detail参数：1718863520801-{'data_id': '86408902', 'title': '上半场 16', 'home_team': {'name': 'VS - 国际', 'first': '1', 'full': '1', 'yellow': '0', 'red': '0', 'penalty': '0'}, 'away_team': {'name': 'VS - 那不勒斯', 'first': '1', 'full': '1', 'yellow': '0', 'red': '0', 'penalty': '0'}}
+2024-06-20 14:05:22,917 - detail - INFO - 上传detail结果：1718863520801-{"message": "Data processed successfully", "statusCode": 200}
+
+2024-06-20 14:05:26,546 - detail - INFO - 上传detail参数：1718863526546-{'data_id': '86408928', 'title': '下半场 50', 'home_team': {'name': 'VS - 莱万特', 'first': '0', 'full': '0', 'yellow': '0', 'red': '0', 'penalty': '0'}, 'away_team': {'name': 'VS - 格拉纳达', 'first': '0', 'full': '0', 'yellow': '0', 'red': '1', 'penalty': '0'}}
+2024-06-20 14:05:28,579 - detail - INFO - 上传detail结果：1718863526546-{"message": "Data processed successfully", "statusCode": 200}
+
+2024-06-20 14:05:31,195 - detail - INFO - 上传detail参数：1718863531195-{'data_id': '86409346', 'title': '下半场 50', 'home_team': {'name': 'VS - 哥伦比亚', 'first': '0', 'full': '0', 'yellow': '0', 'red': '0', 'penalty': '0'}, 'away_team': {'name': 'VS - 乌拉圭', 'first': '0', 'full': '0', 'yellow': '0', 'red': '0', 'penalty': '0'}}
+2024-06-20 14:05:33,324 - detail - INFO - 上传detail结果：1718863531195-{"message": "Data processed successfully", "statusCode": 200}
+
+2024-06-20 14:05:36,415 - detail - INFO - 上传detail参数：1718863536415-{'data_id': '86409365', 'title': '下半场 85', 'home_team': {'name': 'VS - 澳大利亚', 'first': '1', 'full': '1', 'yellow': '0', 'red': '0', 'penalty': '0'}, 'away_team': {'name': 'VS - 韩国', 'first': '0', 'full': '1', 'yellow': '0', 'red': '0', 'penalty': '0'}}
+2024-06-20 14:05:38,441 - detail - INFO - 上传detail结果：1718863536415-{"message": "Data processed successfully", "statusCode": 200}
+
+2024-06-20 14:05:40,566 - detail - INFO - 上传detail参数：1718863540566-{'data_id': '86409378', 'title': '下半场 91', 'home_team': {'name': 'VS - 卡塔尔', 'first': '0', 'full': '2', 'yellow': '0', 'red': '0', 'penalty': '0'}, 'away_team': {'name': 'VS - 中国', 'first': '1', 'full': '2', 'yellow': '0', 'red': '0', 'penalty': '0'}}
+2024-06-20 14:05:42,789 - detail - INFO - 上传detail结果：1718863540566-{"message": "Data processed successfully", "statusCode": 200}
+
+2024-06-20 14:05:46,313 - detail - INFO - 上传detail参数：1718863546313-{'data_id': '86409353', 'title': '上半场 20', 'home_team': {'name': 'VS - 中国', 'first': '0', 'full': '0', 'yellow': '0', 'red': '0', 'penalty': '0'}, 'away_team': {'name': 'VS - 澳大利亚', 'first': '1', 'full': '1', 'yellow': '0', 'red': '0', 'penalty': '0'}}
+2024-06-20 14:05:48,360 - detail - INFO - 上传detail结果：1718863546313-{"message": "Data processed successfully", "statusCode": 200}
+
+2024-06-20 14:05:52,203 - detail - INFO - 上传detail参数：1718863552203-{'data_id': '86408476', 'title': '上半场 21', 'home_team': {'name': 'VS - 水晶宫', 'first': '1', 'full': '1', 'yellow': '0', 'red': '0', 'penalty': '0'}, 'away_team': {'name': 'VS - 沃特福德', 'first': '0', 'full': '0', 'yellow': '0', 'red': '0', 'penalty': '0'}}
+2024-06-20 14:05:54,473 - detail - INFO - 上传detail结果：1718863552203-{"message": "Data processed successfully", "statusCode": 200}
+
+2024-06-20 14:05:56,510 - detail - INFO - 上传detail参数：1718863556510-{'data_id': '86408461', 'title': '下半场 56', 'home_team': {'name': 'VS - 佛罗伦萨', 'first': '0', 'full': '0', 'yellow': '0', 'red': '0', 'penalty': '0'}, 'away_team': {'name': 'VS - 拉齐奥', 'first': '1', 'full': '1', 'yellow': '0', 'red': '0', 'penalty': '0'}}
+2024-06-20 14:05:58,540 - detail - INFO - 上传detail结果：1718863556510-{"message": "Data processed successfully", "statusCode": 200}
+
+2024-06-20 14:06:01,572 - detail - INFO - 上传detail参数：1718863561572-{'data_id': '86408902', 'title': '上半场 18', 'home_team': {'name': 'VS - 国际', 'first': '1', 'full': '1', 'yellow': '0', 'red': '0', 'penalty': '0'}, 'away_team': {'name': 'VS - 那不勒斯', 'first': '1', 'full': '1', 'yellow': '0', 'red': '0', 'penalty': '0'}}
+2024-06-20 14:06:03,694 - detail - INFO - 上传detail结果：1718863561572-{"message": "Data processed successfully", "statusCode": 200}
+
+2024-06-20 14:06:06,283 - detail - INFO - 上传detail参数：1718863566283-{'data_id': '86408913', 'title': '上半场 19', 'home_team': {'name': 'VS - 广州恒大', 'first': '0', 'full': '0', 'yellow': '0', 'red': '0', 'penalty': '0'}, 'away_team': {'name': 'VS - 河南建业', 'first': '1', 'full': '1', 'yellow': '0', 'red': '0', 'penalty': '0'}}
+2024-06-20 14:06:08,404 - detail - INFO - 上传detail结果：1718863566283-{"message": "Data processed successfully", "statusCode": 200}
+
+2024-06-20 14:06:10,959 - detail - INFO - 上传detail参数：1718863570959-{'data_id': '86409369', 'title': '下半场 52', 'home_team': {'name': 'VS - 智利', 'first': '1', 'full': '1', 'yellow': '0', 'red': '0', 'penalty': '0'}, 'away_team': {'name': 'VS - 阿根廷', 'first': '1', 'full': '1', 'yellow': '0', 'red': '0', 'penalty': '0'}}
+2024-06-20 14:06:12,991 - detail - INFO - 上传detail结果：1718863570959-{"message": "Data processed successfully", "statusCode": 200}
+
+2024-06-20 14:06:16,439 - detail - INFO - 上传detail参数：1718863576439-{'data_id': '86409379', 'title': '上半场 26', 'home_team': {'name': 'VS - 伊朗', 'first': '0', 'full': '0', 'yellow': '0', 'red': '0', 'penalty': '0'}, 'away_team': {'name': 'VS - 卡塔尔', 'first': '1', 'full': '1', 'yellow': '0', 'red': '0', 'penalty': '0'}}
+2024-06-20 14:06:18,561 - detail - INFO - 上传detail结果：1718863576439-{"message": "Data processed successfully", "statusCode": 200}
+
+2024-06-20 14:06:21,298 - detail - INFO - 上传detail参数：1718863581298-{'data_id': '86409378', 'title': '下半场 93', 'home_team': {'name': 'VS - 卡塔尔', 'first': '0', 'full': '2', 'yellow': '0', 'red': '0', 'penalty': '0'}, 'away_team': {'name': 'VS - 中国', 'first': '1', 'full': '2', 'yellow': '0', 'red': '0', 'penalty': '0'}}
+2024-06-20 14:06:23,373 - detail - INFO - 上传detail结果：1718863581298-{"message": "Data processed successfully", "statusCode": 200}
+
+2024-06-20 14:06:26,027 - detail - INFO - 上传detail参数：1718863586027-{'data_id': '86409379', 'title': '上半场 26', 'home_team': {'name': 'VS - 伊朗', 'first': '0', 'full': '0', 'yellow': '0', 'red': '0', 'penalty': '0'}, 'away_team': {'name': 'VS - 卡塔尔', 'first': '1', 'full': '1', 'yellow': '0', 'red': '0', 'penalty': '0'}}
+2024-06-20 14:06:28,092 - detail - INFO - 上传detail结果：1718863586027-{"message": "Data processed successfully", "statusCode": 200}
+
+2024-06-20 14:06:31,891 - detail - INFO - 上传detail参数：1718863591891-{'data_id': '86408459', 'title': '上半场 22', 'home_team': {'name': 'VS - 埃弗顿', 'first': '0', 'full': '0', 'yellow': '0', 'red': '0', 'penalty': '0'}, 'away_team': {'name': 'VS - 布莱顿', 'first': '0', 'full': '0', 'yellow': '0', 'red': '0', 'penalty': '0'}}
+2024-06-20 14:06:33,948 - detail - INFO - 上传detail结果：1718863591891-{"message": "Data processed successfully", "statusCode": 200}
+
+2024-06-20 14:06:36,097 - detail - INFO - 上传detail参数：1718863596097-{'data_id': '86408434', 'title': '下半场 61', 'home_team': {'name': 'VS - 都灵', 'first': '0', 'full': '0', 'yellow': '0', 'red': '0', 'penalty': '0'}, 'away_team': {'name': 'VS - 卡利亚里', 'first': '1', 'full': '1', 'yellow': '0', 'red': '0', 'penalty': '0'}}
+2024-06-20 14:06:38,329 - detail - INFO - 上传detail结果：1718863596097-{"message": "Data processed successfully", "statusCode": 200}
+
+2024-06-20 14:06:42,158 - detail - INFO - 上传detail参数：1718863602158-{'data_id': '86408901', 'title': '上半场 23', 'home_team': {'name': 'VS - 佛罗伦萨', 'first': '0', 'full': '0', 'yellow': '0', 'red': '0', 'penalty': '0'}, 'away_team': {'name': 'VS - 亚特兰大', 'first': '0', 'full': '0', 'yellow': '0', 'red': '0', 'penalty': '0'}}
+2024-06-20 14:06:44,177 - detail - INFO - 上传detail结果：1718863602158-{"message": "Data processed successfully", "statusCode": 200}
+
+2024-06-20 14:06:46,095 - detail - INFO - 上传detail参数：1718863606095-{'data_id': '86408913', 'title': '上半场 20', 'home_team': {'name': 'VS - 广州恒大', 'first': '0', 'full': '0', 'yellow': '0', 'red': '0', 'penalty': '0'}, 'away_team': {'name': 'VS - 河南建业', 'first': '1', 'full': '1', 'yellow': '0', 'red': '1', 'penalty': '0'}}
+2024-06-20 14:06:48,209 - detail - INFO - 上传detail结果：1718863606095-{"message": "Data processed successfully", "statusCode": 200}
+
+2024-06-20 14:06:51,859 - detail - INFO - 上传detail参数：1718863611859-{'data_id': '86408908', 'title': '上半场 23', 'home_team': {'name': 'VS - 深圳FC', 'first': '1', 'full': '1', 'yellow': '0', 'red': '0', 'penalty': '0'}, 'away_team': {'name': 'VS - 长春亚泰', 'first': '0', 'full': '0', 'yellow': '0', 'red': '0', 'penalty': '0'}}
+2024-06-20 14:06:53,970 - detail - INFO - 上传detail结果：1718863611859-{"message": "Data processed successfully", "statusCode": 200}
+
+2024-06-20 14:06:55,964 - detail - INFO - 上传detail参数：1718863615964-{'data_id': '86409379', 'title': '上半场 29', 'home_team': {'name': 'VS - 伊朗', 'first': '0', 'full': '0', 'yellow': '0', 'red': '0', 'penalty': '0'}, 'away_team': {'name': 'VS - 卡塔尔', 'first': '1', 'full': '1', 'yellow': '0', 'red': '0', 'penalty': '0'}}
+2024-06-20 14:06:57,987 - detail - INFO - 上传detail结果：1718863615964-{"message": "Data processed successfully", "statusCode": 200}
+
+2024-06-20 14:07:01,861 - detail - INFO - 上传detail参数：1718863621861-{'data_id': '86409353', 'title': '上半场 26', 'home_team': {'name': 'VS - 中国', 'first': '0', 'full': '0', 'yellow': '0', 'red': '0', 'penalty': '0'}, 'away_team': {'name': 'VS - 澳大利亚', 'first': '1', 'full': '1', 'yellow': '0', 'red': '0', 'penalty': '0'}}
+2024-06-20 14:07:04,032 - detail - INFO - 上传detail结果：1718863621861-{"message": "Data processed successfully", "statusCode": 200}
+
+2024-06-20 14:08:59,436 - detail - INFO - 上传detail参数：1718863739436-{'data_id': '86409353', 'title': '上半场 33', 'home_team': {'name': 'VS - 中国', 'first': '0', 'full': '0', 'yellow': '0', 'red': '0', 'penalty': '0'}, 'away_team': {'name': 'VS - 澳大利亚', 'first': '1', 'full': '1', 'yellow': '0', 'red': '0', 'penalty': '0'}}
+2024-06-20 14:09:01,553 - detail - INFO - 上传detail结果：1718863739436-{"message": "Data processed successfully", "statusCode": 200}
+
+2024-06-20 14:09:03,095 - detail - INFO - 上传detail参数：1718863743095-{'data_id': '86408476', 'title': '上半场 33', 'home_team': {'name': 'VS - 水晶宫', 'first': '1', 'full': '1', 'yellow': '0', 'red': '0', 'penalty': '0'}, 'away_team': {'name': 'VS - 沃特福德', 'first': '1', 'full': '1', 'yellow': '0', 'red': '0', 'penalty': '0'}}
+2024-06-20 14:09:05,132 - detail - INFO - 上传detail结果：1718863743095-{"message": "Data processed successfully", "statusCode": 200}
+
+2024-06-20 14:09:06,753 - detail - INFO - 上传detail参数：1718863746753-{'data_id': '86408461', 'title': '下半场 69', 'home_team': {'name': 'VS - 佛罗伦萨', 'first': '0', 'full': '0', 'yellow': '0', 'red': '0', 'penalty': '0'}, 'away_team': {'name': 'VS - 拉齐奥', 'first': '1', 'full': '1', 'yellow': '0', 'red': '0', 'penalty': '0'}}
+2024-06-20 14:09:08,800 - detail - INFO - 上传detail结果：1718863746753-{"message": "Data processed successfully", "statusCode": 200}
+
+2024-06-20 14:10:27,338 - detail - INFO - 上传detail参数：1718863827338-{'data_id': '86408902', 'title': '上半场 35', 'home_team': {'name': 'VS - 国际', 'first': '2', 'full': '2', 'yellow': '0', 'red': '0', 'penalty': '0'}, 'away_team': {'name': 'VS - 那不勒斯', 'first': '1', 'full': '1', 'yellow': '0', 'red': '0', 'penalty': '0'}}
+2024-06-20 14:10:29,463 - detail - INFO - 上传detail结果：1718863827338-{"message": "Data processed successfully", "statusCode": 200}
+
+2024-06-20 14:10:31,001 - detail - INFO - 上传detail参数：1718863831001-{'data_id': '86408913', 'title': '上半场 34', 'home_team': {'name': 'VS - 广州恒大', 'first': '0', 'full': '0', 'yellow': '0', 'red': '0', 'penalty': '0'}, 'away_team': {'name': 'VS - 河南建业', 'first': '1', 'full': '1', 'yellow': '0', 'red': '1', 'penalty': '0'}}
+2024-06-20 14:10:33,040 - detail - INFO - 上传detail结果：1718863831001-{"message": "Data processed successfully", "statusCode": 200}
+
+2024-06-20 14:10:34,541 - detail - INFO - 上传detail参数：1718863834541-{'data_id': '86408908', 'title': '上半场 38', 'home_team': {'name': 'VS - 深圳FC', 'first': '2', 'full': '2', 'yellow': '0', 'red': '0', 'penalty': '0'}, 'away_team': {'name': 'VS - 长春亚泰', 'first': '0', 'full': '0', 'yellow': '0', 'red': '0', 'penalty': '0'}}
+2024-06-20 14:10:36,681 - detail - INFO - 上传detail结果：1718863834541-{"message": "Data processed successfully", "statusCode": 200}
+
+2024-06-20 14:10:38,158 - detail - INFO - 上传detail参数：1718863838158-{'data_id': '86409369', 'title': '下半场 70', 'home_team': {'name': 'VS - 智利', 'first': '1', 'full': '1', 'yellow': '0', 'red': '0', 'penalty': '0'}, 'away_team': {'name': 'VS - 阿根廷', 'first': '1', 'full': '1', 'yellow': '0', 'red': '0', 'penalty': '0'}}
+2024-06-20 14:10:40,277 - detail - INFO - 上传detail结果：1718863838158-{"message": "Data processed successfully", "statusCode": 200}
+
+2024-06-20 14:10:41,783 - detail - INFO - 上传detail参数：1718863841783-{'data_id': '86409353', 'title': '上半场 39', 'home_team': {'name': 'VS - 中国', 'first': '0', 'full': '0', 'yellow': '0', 'red': '0', 'penalty': '0'}, 'away_team': {'name': 'VS - 澳大利亚', 'first': '1', 'full': '1', 'yellow': '0', 'red': '0', 'penalty': '0'}}
+2024-06-20 14:10:43,809 - detail - INFO - 上传detail结果：1718863841783-{"message": "Data processed successfully", "statusCode": 200}
+
+2024-06-20 14:10:45,322 - detail - INFO - 上传detail参数：1718863845322-{'data_id': '86408476', 'title': '上半场 39', 'home_team': {'name': 'VS - 水晶宫', 'first': '2', 'full': '2', 'yellow': '0', 'red': '0', 'penalty': '0'}, 'away_team': {'name': 'VS - 沃特福德', 'first': '1', 'full': '1', 'yellow': '0', 'red': '0', 'penalty': '0'}}
+2024-06-20 14:10:47,365 - detail - INFO - 上传detail结果：1718863845322-{"message": "Data processed successfully", "statusCode": 200}
+
+2024-06-20 14:10:48,971 - detail - INFO - 上传detail参数：1718863848971-{'data_id': '86408461', 'title': '下半场 76', 'home_team': {'name': 'VS - 佛罗伦萨', 'first': '0', 'full': '0', 'yellow': '0', 'red': '0', 'penalty': '0'}, 'away_team': {'name': 'VS - 拉齐奥', 'first': '1', 'full': '1', 'yellow': '0', 'red': '0', 'penalty': '0'}}
+2024-06-20 14:10:51,090 - detail - INFO - 上传detail结果：1718863848971-{"message": "Data processed successfully", "statusCode": 200}
+
+2024-06-20 14:11:02,071 - detail - INFO - 上传detail参数：1718863862071-{'data_id': '86408902', 'title': '上半场 37', 'home_team': {'name': 'VS - 国际', 'first': '2', 'full': '2', 'yellow': '0', 'red': '0', 'penalty': '0'}, 'away_team': {'name': 'VS - 那不勒斯', 'first': '1', 'full': '1', 'yellow': '0', 'red': '0', 'penalty': '0'}}
+2024-06-20 14:11:04,102 - detail - INFO - 上传detail结果：1718863862071-{"message": "Data processed successfully", "statusCode": 200}
+
+2024-06-20 14:11:06,607 - detail - INFO - 上传detail参数：1718863866607-{'data_id': '86408928', 'title': '下半场 72', 'home_team': {'name': 'VS - 莱万特', 'first': '0', 'full': '0', 'yellow': '0', 'red': '0', 'penalty': '0'}, 'away_team': {'name': 'VS - 格拉纳达', 'first': '0', 'full': '0', 'yellow': '0', 'red': '1', 'penalty': '0'}}
+2024-06-20 14:11:08,635 - detail - INFO - 上传detail结果：1718863866607-{"message": "Data processed successfully", "statusCode": 200}
+
+2024-06-20 14:11:11,068 - detail - INFO - 上传detail参数：1718863871068-{'data_id': '86408908', 'title': '上半场 39', 'home_team': {'name': 'VS - 深圳FC', 'first': '2', 'full': '2', 'yellow': '0', 'red': '0', 'penalty': '0'}, 'away_team': {'name': 'VS - 长春亚泰', 'first': '0', 'full': '0', 'yellow': '0', 'red': '0', 'penalty': '0'}}
+2024-06-20 14:11:13,189 - detail - INFO - 上传detail结果：1718863871068-{"message": "Data processed successfully", "statusCode": 200}
+
+2024-06-20 14:11:16,171 - detail - INFO - 上传detail参数：1718863876171-{'data_id': '86409369', 'title': '下半场 73', 'home_team': {'name': 'VS - 智利', 'first': '1', 'full': '1', 'yellow': '0', 'red': '0', 'penalty': '0'}, 'away_team': {'name': 'VS - 阿根廷', 'first': '1', 'full': '1', 'yellow': '0', 'red': '0', 'penalty': '0'}}
+2024-06-20 14:11:18,208 - detail - INFO - 上传detail结果：1718863876171-{"message": "Data processed successfully", "statusCode": 200}
+
+2024-06-20 14:11:21,729 - detail - INFO - 上传detail参数：1718863881729-{'data_id': '86409353', 'title': '上半场 42', 'home_team': {'name': 'VS - 中国', 'first': '0', 'full': '0', 'yellow': '0', 'red': '0', 'penalty': '0'}, 'away_team': {'name': 'VS - 澳大利亚', 'first': '1', 'full': '1', 'yellow': '0', 'red': '0', 'penalty': '0'}}
+2024-06-20 14:11:23,886 - detail - INFO - 上传detail结果：1718863881729-{"message": "Data processed successfully", "statusCode": 200}
+
+2024-06-20 14:11:27,022 - detail - INFO - 上传detail参数：1718863887022-{'data_id': '86408476', 'title': '上半场 42', 'home_team': {'name': 'VS - 水晶宫', 'first': '2', 'full': '2', 'yellow': '0', 'red': '0', 'penalty': '0'}, 'away_team': {'name': 'VS - 沃特福德', 'first': '1', 'full': '1', 'yellow': '0', 'red': '0', 'penalty': '0'}}
+2024-06-20 14:11:29,139 - detail - INFO - 上传detail结果：1718863887022-{"message": "Data processed successfully", "statusCode": 200}
+
+2024-06-20 14:11:32,498 - detail - INFO - 上传detail参数：1718863892498-{'data_id': '86408461', 'title': '下半场 80', 'home_team': {'name': 'VS - 佛罗伦萨', 'first': '0', 'full': '0', 'yellow': '0', 'red': '0', 'penalty': '0'}, 'away_team': {'name': 'VS - 拉齐奥', 'first': '1', 'full': '1', 'yellow': '0', 'red': '0', 'penalty': '0'}}
+2024-06-20 14:11:34,614 - detail - INFO - 上传detail结果：1718863892498-{"message": "Data processed successfully", "statusCode": 200}
+
+2024-06-20 14:11:37,836 - detail - INFO - 上传detail参数：1718863897836-{'data_id': '86408902', 'title': '上半场 40', 'home_team': {'name': 'VS - 国际', 'first': '2', 'full': '2', 'yellow': '0', 'red': '0', 'penalty': '0'}, 'away_team': {'name': 'VS - 那不勒斯', 'first': '1', 'full': '1', 'yellow': '0', 'red': '0', 'penalty': '0'}}
+2024-06-20 14:11:39,935 - detail - INFO - 上传detail结果：1718863897836-{"message": "Data processed successfully", "statusCode": 200}
+
+2024-06-20 14:11:43,626 - detail - INFO - 上传detail参数：1718863903626-{'data_id': '86408934', 'title': '上半场 05', 'home_team': {'name': 'VS - 拜仁慕尼黑', 'first': '0', 'full': '0', 'yellow': '0', 'red': '0', 'penalty': '0'}, 'away_team': {'name': 'VS - 柏林赫塔', 'first': '0', 'full': '0', 'yellow': '0', 'red': '0', 'penalty': '0'}}
+2024-06-20 14:11:45,708 - detail - INFO - 上传detail结果：1718863903626-{"message": "Data processed successfully", "statusCode": 200}
+
+2024-06-20 14:11:49,335 - detail - INFO - 上传detail参数：1718863909335-{'data_id': '86408913', 'title': '上半场 40', 'home_team': {'name': 'VS - 广州恒大', 'first': '0', 'full': '0', 'yellow': '0', 'red': '0', 'penalty': '0'}, 'away_team': {'name': 'VS - 河南建业', 'first': '2', 'full': '2', 'yellow': '0', 'red': '1', 'penalty': '0'}}
+2024-06-20 14:11:51,459 - detail - INFO - 上传detail结果：1718863909335-{"message": "Data processed successfully", "statusCode": 200}
+
+2024-06-20 14:11:55,072 - detail - INFO - 上传detail参数：1718863915072-{'data_id': '86409379', 'title': '下半场 45', 'home_team': {'name': 'VS - 伊朗', 'first': '0', 'full': '0', 'yellow': '0', 'red': '0', 'penalty': '0'}, 'away_team': {'name': 'VS - 卡塔尔', 'first': '1', 'full': '1', 'yellow': '0', 'red': '0', 'penalty': '0'}}
+2024-06-20 14:11:57,099 - detail - INFO - 上传detail结果：1718863915072-{"message": "Data processed successfully", "statusCode": 200}
+
+2024-06-20 14:12:00,582 - detail - INFO - 上传detail参数：1718863920582-{'data_id': '86408459', 'title': '上半场 46', 'home_team': {'name': 'VS - 埃弗顿', 'first': '0', 'full': '0', 'yellow': '0', 'red': '0', 'penalty': '0'}, 'away_team': {'name': 'VS - 布莱顿', 'first': '0', 'full': '0', 'yellow': '0', 'red': '0', 'penalty': '0'}}
+2024-06-20 14:12:02,692 - detail - INFO - 上传detail结果：1718863920582-{"message": "Data processed successfully", "statusCode": 200}
+
+2024-06-20 14:12:06,559 - detail - INFO - 上传detail参数：1718863926559-{'data_id': '86408434', 'title': '下半场 85', 'home_team': {'name': 'VS - 都灵', 'first': '0', 'full': '1', 'yellow': '0', 'red': '0', 'penalty': '0'}, 'away_team': {'name': 'VS - 卡利亚里', 'first': '1', 'full': '1', 'yellow': '0', 'red': '0', 'penalty': '0'}}
+2024-06-20 14:12:08,666 - detail - INFO - 上传detail结果：1718863926559-{"message": "Data processed successfully", "statusCode": 200}
+
+2024-06-20 14:12:11,381 - detail - INFO - 上传detail参数：1718863931381-{'data_id': '86408901', 'title': '上半场 45', 'home_team': {'name': 'VS - 佛罗伦萨', 'first': '0', 'full': '0', 'yellow': '0', 'red': '0', 'penalty': '0'}, 'away_team': {'name': 'VS - 亚特兰大', 'first': '0', 'full': '0', 'yellow': '0', 'red': '0', 'penalty': '0'}}
+2024-06-20 14:12:13,597 - detail - INFO - 上传detail结果：1718863931381-{"message": "Data processed successfully", "statusCode": 200}
+
+2024-06-20 14:12:16,294 - detail - INFO - 上传detail参数：1718863936294-{'data_id': '86408934', 'title': '上半场 08', 'home_team': {'name': 'VS - 拜仁慕尼黑', 'first': '0', 'full': '0', 'yellow': '0', 'red': '0', 'penalty': '0'}, 'away_team': {'name': 'VS - 柏林赫塔', 'first': '0', 'full': '0', 'yellow': '0', 'red': '0', 'penalty': '0'}}
+2024-06-20 14:12:18,400 - detail - INFO - 上传detail结果：1718863936294-{"message": "Data processed successfully", "statusCode": 200}
+
+2024-06-20 14:12:22,115 - detail - INFO - 上传detail参数：1718863942115-{'data_id': '86408928', 'title': '下半场 76', 'home_team': {'name': 'VS - 莱万特', 'first': '0', 'full': '0', 'yellow': '0', 'red': '0', 'penalty': '0'}, 'away_team': {'name': 'VS - 格拉纳达', 'first': '0', 'full': '1', 'yellow': '0', 'red': '1', 'penalty': '0'}}
+2024-06-20 14:12:24,236 - detail - INFO - 上传detail结果：1718863942115-{"message": "Data processed successfully", "statusCode": 200}
+
+2024-06-20 14:12:27,303 - detail - INFO - 上传detail参数：1718863947303-{'data_id': '86409379', 'title': '下半场 48', 'home_team': {'name': 'VS - 伊朗', 'first': '0', 'full': '0', 'yellow': '0', 'red': '0', 'penalty': '0'}, 'away_team': {'name': 'VS - 卡塔尔', 'first': '1', 'full': '1', 'yellow': '0', 'red': '0', 'penalty': '0'}}
+2024-06-20 14:12:29,331 - detail - INFO - 上传detail结果：1718863947303-{"message": "Data processed successfully", "statusCode": 200}
+
+2024-06-20 14:12:31,953 - detail - INFO - 上传detail参数：1718863951953-{'data_id': '86408459', 'title': '上半场 47', 'home_team': {'name': 'VS - 埃弗顿', 'first': '0', 'full': '0', 'yellow': '0', 'red': '0', 'penalty': '0'}, 'away_team': {'name': 'VS - 布莱顿', 'first': '0', 'full': '0', 'yellow': '0', 'red': '0', 'penalty': '0'}}
+2024-06-20 14:12:34,042 - detail - INFO - 上传detail结果：1718863951953-{"message": "Data processed successfully", "statusCode": 200}
+
+2024-06-20 14:12:36,454 - detail - INFO - 上传detail参数：1718863956454-{'data_id': '86408434', 'title': '下半场 86', 'home_team': {'name': 'VS - 都灵', 'first': '0', 'full': '1', 'yellow': '0', 'red': '0', 'penalty': '0'}, 'away_team': {'name': 'VS - 卡利亚里', 'first': '1', 'full': '1', 'yellow': '0', 'red': '0', 'penalty': '0'}}
+2024-06-20 14:12:38,549 - detail - INFO - 上传detail结果：1718863956454-{"message": "Data processed successfully", "statusCode": 200}
+
+2024-06-20 14:12:42,257 - detail - INFO - 上传detail参数：1718863962257-{'data_id': '86408901', 'title': '半场', 'home_team': {'name': 'VS - 佛罗伦萨', 'first': '0', 'full': '0', 'yellow': '0', 'red': '0', 'penalty': '0'}, 'away_team': {'name': 'VS - 亚特兰大', 'first': '0', 'full': '0', 'yellow': '0', 'red': '0', 'penalty': '0'}}
+2024-06-20 14:12:44,388 - detail - INFO - 上传detail结果：1718863962257-{"message": "Data processed successfully", "statusCode": 200}
+
+2024-06-20 14:12:47,024 - detail - INFO - 上传detail参数：1718863967024-{'data_id': '86408921', 'title': '上半场 12', 'home_team': {'name': 'VS -  弗赖堡', 'first': '0', 'full': '0', 'yellow': '0', 'red': '0', 'penalty': '0'}, 'away_team': {'name': 'VS - 科隆', 'first': '0', 'full': '0', 'yellow': '0', 'red': '0', 'penalty': '0'}}
+2024-06-20 14:12:49,140 - detail - INFO - 上传detail结果：1718863967024-{"message": "Data processed successfully", "statusCode": 200}
+
+2024-06-20 14:12:51,897 - detail - INFO - 上传detail参数：1718863971897-{'data_id': '86408928', 'title': '下半场 78', 'home_team': {'name': 'VS - 莱万特', 'first': '0', 'full': '0', 'yellow': '0', 'red': '0', 'penalty': '0'}, 'away_team': {'name': 'VS - 格拉纳达', 'first': '0', 'full': '1', 'yellow': '0', 'red': '1', 'penalty': '0'}}
+2024-06-20 14:12:54,133 - detail - INFO - 上传detail结果：1718863971897-{"message": "Data processed successfully", "statusCode": 200}
+
+2024-06-20 14:12:56,779 - detail - INFO - 上传detail参数：1718863976779-{'data_id': '86408908', 'title': '上半场 46', 'home_team': {'name': 'VS - 深圳FC', 'first': '3', 'full': '3', 'yellow': '0', 'red': '0', 'penalty': '0'}, 'away_team': {'name': 'VS - 长春亚泰', 'first': '0', 'full': '0', 'yellow': '0', 'red': '0', 'penalty': '0'}}
+2024-06-20 14:12:58,999 - detail - INFO - 上传detail结果：1718863976779-{"message": "Data processed successfully", "statusCode": 200}
+
+2024-06-20 14:13:01,697 - detail - INFO - 上传detail参数：1718863981697-{'data_id': '86409353', 'title': '上半场 46', 'home_team': {'name': 'VS - 中国', 'first': '1', 'full': '1', 'yellow': '0', 'red': '0', 'penalty': '0'}, 'away_team': {'name': 'VS - 澳大利亚', 'first': '1', 'full': '1', 'yellow': '0', 'red': '0', 'penalty': '0'}}
+2024-06-20 14:13:03,821 - detail - INFO - 上传detail结果：1718863981697-{"message": "Data processed successfully", "statusCode": 200}
+
+2024-06-20 14:13:06,301 - detail - INFO - 上传detail参数：1718863986301-{'data_id': '86408476', 'title': '上半场 48', 'home_team': {'name': 'VS - 水晶宫', 'first': '3', 'full': '3', 'yellow': '0', 'red': '0', 'penalty': '0'}, 'away_team': {'name': 'VS - 沃特福德', 'first': '1', 'full': '1', 'yellow': '0', 'red': '0', 'penalty': '0'}}
+2024-06-20 14:13:08,416 - detail - INFO - 上传detail结果：1718863986301-{"message": "Data processed successfully", "statusCode": 200}
+
+2024-06-20 14:13:11,874 - detail - INFO - 上传detail参数：1718863991874-{'data_id': '86408902', 'title': '上半场 46', 'home_team': {'name': 'VS - 国际', 'first': '2', 'full': '2', 'yellow': '0', 'red': '0', 'penalty': '0'}, 'away_team': {'name': 'VS - 那不勒斯', 'first': '1', 'full': '1', 'yellow': '0', 'red': '0', 'penalty': '0'}}
+2024-06-20 14:13:13,898 - detail - INFO - 上传detail结果：1718863991874-{"message": "Data processed successfully", "statusCode": 200}
+
+2024-06-20 14:13:16,277 - detail - INFO - 上传detail参数：1718863996277-{'data_id': '86408934', 'title': '上半场 12', 'home_team': {'name': 'VS - 拜仁慕尼黑', 'first': '1', 'full': '1', 'yellow': '0', 'red': '0', 'penalty': '0'}, 'away_team': {'name': 'VS - 柏林赫塔', 'first': '0', 'full': '0', 'yellow': '0', 'red': '0', 'penalty': '0'}}
+2024-06-20 14:13:18,300 - detail - INFO - 上传detail结果：1718863996277-{"message": "Data processed successfully", "statusCode": 200}
+
+2024-06-20 14:13:21,870 - detail - INFO - 上传detail参数：1718864001870-{'data_id': '86408928', 'title': '下半场 80', 'home_team': {'name': 'VS - 莱万特', 'first': '0', 'full': '1', 'yellow': '0', 'red': '0', 'penalty': '0'}, 'away_team': {'name': 'VS - 格拉纳达', 'first': '0', 'full': '1', 'yellow': '0', 'red': '1', 'penalty': '0'}}
+2024-06-20 14:13:24,068 - detail - INFO - 上传detail结果：1718864001870-{"message": "Data processed successfully", "statusCode": 200}
+
+2024-06-20 14:13:27,257 - detail - INFO - 上传detail参数：1718864007257-{'data_id': '86409379', 'title': '下半场 52', 'home_team': {'name': 'VS - 伊朗', 'first': '0', 'full': '0', 'yellow': '0', 'red': '0', 'penalty': '0'}, 'away_team': {'name': 'VS - 卡塔尔', 'first': '1', 'full': '1', 'yellow': '0', 'red': '0', 'penalty': '0'}}
+2024-06-20 14:13:29,311 - detail - INFO - 上传detail结果：1718864007257-{"message": "Data processed successfully", "statusCode": 200}
+
+2024-06-20 14:13:32,035 - detail - INFO - 上传detail参数：1718864012035-{'data_id': '86408459', 'title': '下半场 47', 'home_team': {'name': 'VS - 埃弗顿', 'first': '0', 'full': '0', 'yellow': '0', 'red': '0', 'penalty': '0'}, 'away_team': {'name': 'VS - 布莱顿', 'first': '0', 'full': '0', 'yellow': '0', 'red': '0', 'penalty': '0'}}
+2024-06-20 14:13:34,120 - detail - INFO - 上传detail结果：1718864012035-{"message": "Data processed successfully", "statusCode": 200}
+
+2024-06-20 14:13:36,692 - detail - INFO - 上传detail参数：1718864016692-{'data_id': '86408476', 'title': '半场', 'home_team': {'name': 'VS - 水晶宫', 'first': '3', 'full': '3', 'yellow': '0', 'red': '0', 'penalty': '0'}, 'away_team': {'name': 'VS - 沃特福德', 'first': '1', 'full': '1', 'yellow': '0', 'red': '0', 'penalty': '0'}}
+2024-06-20 14:13:38,717 - detail - INFO - 上传detail结果：1718864016692-{"message": "Data processed successfully", "statusCode": 200}
+
+2024-06-20 14:13:41,745 - detail - INFO - 上传detail参数：1718864021745-{'data_id': '86408902', 'title': '上半场 46', 'home_team': {'name': 'VS - 国际', 'first': '2', 'full': '2', 'yellow': '0', 'red': '0', 'penalty': '0'}, 'away_team': {'name': 'VS - 那不勒斯', 'first': '1', 'full': '1', 'yellow': '0', 'red': '0', 'penalty': '0'}}
+2024-06-20 14:13:43,784 - detail - INFO - 上传detail结果：1718864021745-{"message": "Data processed successfully", "statusCode": 200}
+
+2024-06-20 14:13:46,656 - detail - INFO - 上传detail参数：1718864026655-{'data_id': '86408934', 'title': '上半场 15', 'home_team': {'name': 'VS - 拜仁慕尼黑', 'first': '1', 'full': '1', 'yellow': '0', 'red': '0', 'penalty': '0'}, 'away_team': {'name': 'VS - 柏林赫塔', 'first': '0', 'full': '0', 'yellow': '0', 'red': '0', 'penalty': '0'}}
+2024-06-20 14:13:48,692 - detail - INFO - 上传detail结果：1718864026655-{"message": "Data processed successfully", "statusCode": 200}
+
+2024-06-20 14:13:51,699 - detail - INFO - 上传detail参数：1718864031699-{'data_id': '86408908', 'title': '下半场 45', 'home_team': {'name': 'VS - 深圳FC', 'first': '3', 'full': '3', 'yellow': '0', 'red': '0', 'penalty': '0'}, 'away_team': {'name': 'VS - 长春亚泰', 'first': '0', 'full': '0', 'yellow': '0', 'red': '0', 'penalty': '0'}}
+2024-06-20 14:13:53,824 - detail - INFO - 上传detail结果：1718864031699-{"message": "Data processed successfully", "statusCode": 200}
+
+2024-06-20 14:13:57,080 - detail - INFO - 上传detail参数：1718864037080-{'data_id': '86409353', 'title': '下半场 45', 'home_team': {'name': 'VS - 中国', 'first': '1', 'full': '1', 'yellow': '0', 'red': '0', 'penalty': '0'}, 'away_team': {'name': 'VS - 澳大利亚', 'first': '1', 'full': '1', 'yellow': '0', 'red': '0', 'penalty': '0'}}
+2024-06-20 14:13:59,159 - detail - INFO - 上传detail结果：1718864037080-{"message": "Data processed successfully", "statusCode": 200}
+
+2024-06-20 14:14:01,972 - detail - INFO - 上传detail参数：1718864041972-{'data_id': '86408476', 'title': '下半场 45', 'home_team': {'name': 'VS - 水晶宫', 'first': '3', 'full': '3', 'yellow': '0', 'red': '0', 'penalty': '0'}, 'away_team': {'name': 'VS - 沃特福德', 'first': '1', 'full': '1', 'yellow': '0', 'red': '0', 'penalty': '0'}}
+2024-06-20 14:14:04,066 - detail - INFO - 上传detail结果：1718864041972-{"message": "Data processed successfully", "statusCode": 200}
+
+2024-06-20 14:14:07,655 - detail - INFO - 上传detail参数：1718864047655-{'data_id': '86408902', 'title': '下半场 45', 'home_team': {'name': 'VS - 国际', 'first': '2', 'full': '2', 'yellow': '0', 'red': '0', 'penalty': '0'}, 'away_team': {'name': 'VS - 那不勒斯', 'first': '1', 'full': '1', 'yellow': '0', 'red': '0', 'penalty': '0'}}
+2024-06-20 14:14:09,798 - detail - INFO - 上传detail结果：1718864047655-{"message": "Data processed successfully", "statusCode": 200}
+
+2024-06-20 14:14:12,901 - detail - INFO - 上传detail参数：1718864052901-{'data_id': '86408921', 'title': '上半场 19', 'home_team': {'name': 'VS -  弗赖堡', 'first': '0', 'full': '0', 'yellow': '0', 'red': '0', 'penalty': '0'}, 'away_team': {'name': 'VS - 科隆', 'first': '0', 'full': '0', 'yellow': '0', 'red': '0', 'penalty': '0'}}
+2024-06-20 14:14:14,965 - detail - INFO - 上传detail结果：1718864052901-{"message": "Data processed successfully", "statusCode": 200}
+
+2024-06-20 14:14:16,914 - detail - INFO - 上传detail参数：1718864056914-{'data_id': '86408908', 'title': '下半场 47', 'home_team': {'name': 'VS - 深圳FC', 'first': '3', 'full': '4', 'yellow': '0', 'red': '0', 'penalty': '0'}, 'away_team': {'name': 'VS - 长春亚泰', 'first': '0', 'full': '0', 'yellow': '0', 'red': '0', 'penalty': '0'}}
+2024-06-20 14:14:18,992 - detail - INFO - 上传detail结果：1718864056914-{"message": "Data processed successfully", "statusCode": 200}
+
+2024-06-20 14:14:21,103 - detail - INFO - 上传detail参数：1718864061103-{'data_id': '86409379', 'title': '下半场 56', 'home_team': {'name': 'VS - 伊朗', 'first': '0', 'full': '0', 'yellow': '0', 'red': '0', 'penalty': '0'}, 'away_team': {'name': 'VS - 卡塔尔', 'first': '1', 'full': '1', 'yellow': '0', 'red': '0', 'penalty': '0'}}
+2024-06-20 14:14:23,130 - detail - INFO - 上传detail结果：1718864061103-{"message": "Data processed successfully", "statusCode": 200}
+
+2024-06-20 14:14:26,730 - detail - INFO - 上传detail参数：1718864066730-{'data_id': '86408459', 'title': '下半场 51', 'home_team': {'name': 'VS - 埃弗顿', 'first': '0', 'full': '0', 'yellow': '0', 'red': '0', 'penalty': '0'}, 'away_team': {'name': 'VS - 布莱顿', 'first': '0', 'full': '0', 'yellow': '0', 'red': '0', 'penalty': '0'}}
+2024-06-20 14:14:28,845 - detail - INFO - 上传detail结果：1718864066730-{"message": "Data processed successfully", "statusCode": 200}
+
+2024-06-20 14:14:32,204 - detail - INFO - 上传detail参数：1718864072203-{'data_id': '86408902', 'title': '下半场 46', 'home_team': {'name': 'VS - 国际', 'first': '2', 'full': '2', 'yellow': '0', 'red': '0', 'penalty': '0'}, 'away_team': {'name': 'VS - 那不勒斯', 'first': '1', 'full': '1', 'yellow': '0', 'red': '0', 'penalty': '0'}}
+2024-06-20 14:14:34,230 - detail - INFO - 上传detail结果：1718864072203-{"message": "Data processed successfully", "statusCode": 200}
+
+2024-06-20 14:14:36,282 - detail - INFO - 上传detail参数：1718864076282-{'data_id': '86408921', 'title': '上半场 19', 'home_team': {'name': 'VS -  弗赖堡', 'first': '0', 'full': '0', 'yellow': '0', 'red': '0', 'penalty': '0'}, 'away_team': {'name': 'VS - 科隆', 'first': '0', 'full': '0', 'yellow': '0', 'red': '0', 'penalty': '0'}}
+2024-06-20 14:14:38,419 - detail - INFO - 上传detail结果：1718864076282-{"message": "Data processed successfully", "statusCode": 200}
+
+2024-06-20 14:14:41,576 - detail - INFO - 上传detail参数：1718864081576-{'data_id': '86408913', 'title': '下半场 46', 'home_team': {'name': 'VS - 广州恒大', 'first': '0', 'full': '0', 'yellow': '0', 'red': '0', 'penalty': '0'}, 'away_team': {'name': 'VS - 河南建业', 'first': '3', 'full': '3', 'yellow': '0', 'red': '1', 'penalty': '0'}}
+2024-06-20 14:14:43,615 - detail - INFO - 上传detail结果：1718864081576-{"message": "Data processed successfully", "statusCode": 200}
+
+2024-06-20 14:14:47,017 - detail - INFO - 上传detail参数：1718864087017-{'data_id': '86409379', 'title': '下半场 58', 'home_team': {'name': 'VS - 伊朗', 'first': '0', 'full': '0', 'yellow': '0', 'red': '0', 'penalty': '0'}, 'away_team': {'name': 'VS - 卡塔尔', 'first': '1', 'full': '1', 'yellow': '0', 'red': '0', 'penalty': '0'}}
+2024-06-20 14:14:49,203 - detail - INFO - 上传detail结果：1718864087017-{"message": "Data processed successfully", "statusCode": 200}
+
+2024-06-20 14:14:51,313 - detail - INFO - 上传detail参数：1718864091313-{'data_id': '86408459', 'title': '下半场 52', 'home_team': {'name': 'VS - 埃弗顿', 'first': '0', 'full': '0', 'yellow': '0', 'red': '0', 'penalty': '0'}, 'away_team': {'name': 'VS - 布莱顿', 'first': '0', 'full': '0', 'yellow': '0', 'red': '0', 'penalty': '0'}}
+2024-06-20 14:14:53,394 - detail - INFO - 上传detail结果：1718864091313-{"message": "Data processed successfully", "statusCode": 200}
+
+2024-06-20 14:14:55,911 - detail - INFO - 上传detail参数：1718864095911-{'data_id': '86408901', 'title': '下半场 53', 'home_team': {'name': 'VS - 佛罗伦萨', 'first': '0', 'full': '0', 'yellow': '0', 'red': '0', 'penalty': '0'}, 'away_team': {'name': 'VS - 亚特兰大', 'first': '0', 'full': '0', 'yellow': '0', 'red': '0', 'penalty': '0'}}
+2024-06-20 14:14:58,037 - detail - INFO - 上传detail结果：1718864095911-{"message": "Data processed successfully", "statusCode": 200}
+
+2024-06-20 14:15:01,557 - detail - INFO - 上传detail参数：1718864101557-{'data_id': '86408921', 'title': '上半场 22', 'home_team': {'name': 'VS -  弗赖堡', 'first': '0', 'full': '0', 'yellow': '0', 'red': '0', 'penalty': '0'}, 'away_team': {'name': 'VS - 科隆', 'first': '0', 'full': '0', 'yellow': '0', 'red': '0', 'penalty': '0'}}
+2024-06-20 14:15:03,589 - detail - INFO - 上传detail结果：1718864101557-{"message": "Data processed successfully", "statusCode": 200}
+
+2024-06-20 14:15:07,091 - detail - INFO - 上传detail参数：1718864107091-{'data_id': '86408913', 'title': '下半场 47', 'home_team': {'name': 'VS - 广州恒大', 'first': '0', 'full': '0', 'yellow': '0', 'red': '0', 'penalty': '0'}, 'away_team': {'name': 'VS - 河南建业', 'first': '3', 'full': '3', 'yellow': '0', 'red': '1', 'penalty': '0'}}
+2024-06-20 14:15:09,231 - detail - INFO - 上传detail结果：1718864107091-{"message": "Data processed successfully", "statusCode": 200}
+
+2024-06-20 14:15:11,270 - detail - INFO - 上传detail参数：1718864111270-{'data_id': '86409353', 'title': '下半场 50', 'home_team': {'name': 'VS - 中国', 'first': '1', 'full': '1', 'yellow': '0', 'red': '0', 'penalty': '0'}, 'away_team': {'name': 'VS - 澳大利亚', 'first': '1', 'full': '1', 'yellow': '0', 'red': '0', 'penalty': '0'}}
+2024-06-20 14:15:13,386 - detail - INFO - 上传detail结果：1718864111270-{"message": "Data processed successfully", "statusCode": 200}
+
+2024-06-20 14:15:17,034 - detail - INFO - 上传detail参数：1718864117034-{'data_id': '86408476', 'title': '下半场 50', 'home_team': {'name': 'VS - 水晶宫', 'first': '3', 'full': '3', 'yellow': '0', 'red': '0', 'penalty': '0'}, 'away_team': {'name': 'VS - 沃特福德', 'first': '1', 'full': '1', 'yellow': '0', 'red': '0', 'penalty': '0'}}
+2024-06-20 14:15:19,066 - detail - INFO - 上传detail结果：1718864117034-{"message": "Data processed successfully", "statusCode": 200}
+
+2024-06-20 14:15:21,268 - detail - INFO - 上传detail参数：1718864121267-{'data_id': '86408901', 'title': '下半场 55', 'home_team': {'name': 'VS - 佛罗伦萨', 'first': '0', 'full': '0', 'yellow': '0', 'red': '0', 'penalty': '0'}, 'away_team': {'name': 'VS - 亚特兰大', 'first': '0', 'full': '0', 'yellow': '0', 'red': '0', 'penalty': '0'}}
+2024-06-20 14:15:23,362 - detail - INFO - 上传detail结果：1718864121267-{"message": "Data processed successfully", "statusCode": 200}
+
+2024-06-20 14:15:26,629 - detail - INFO - 上传detail参数：1718864126629-{'data_id': '86408921', 'title': '上半场 25', 'home_team': {'name': 'VS -  弗赖堡', 'first': '0', 'full': '0', 'yellow': '0', 'red': '0', 'penalty': '0'}, 'away_team': {'name': 'VS - 科隆', 'first': '0', 'full': '0', 'yellow': '0', 'red': '0', 'penalty': '0'}}
+2024-06-20 14:15:28,676 - detail - INFO - 上传detail结果：1718864126629-{"message": "Data processed successfully", "statusCode": 200}
+
+2024-06-20 14:15:31,542 - detail - INFO - 上传detail参数：1718864131542-{'data_id': '86409379', 'title': '下半场 61', 'home_team': {'name': 'VS - 伊朗', 'first': '0', 'full': '0', 'yellow': '0', 'red': '0', 'penalty': '0'}, 'away_team': {'name': 'VS - 卡塔尔', 'first': '1', 'full': '1', 'yellow': '0', 'red': '0', 'penalty': '0'}}
+2024-06-20 14:15:33,590 - detail - INFO - 上传detail结果：1718864131542-{"message": "Data processed successfully", "statusCode": 200}
+
+2024-06-20 14:15:36,489 - detail - INFO - 上传detail参数：1718864136489-{'data_id': '86408459', 'title': '下半场 55', 'home_team': {'name': 'VS - 埃弗顿', 'first': '0', 'full': '0', 'yellow': '0', 'red': '0', 'penalty': '0'}, 'away_team': {'name': 'VS - 布莱顿', 'first': '0', 'full': '0', 'yellow': '0', 'red': '0', 'penalty': '0'}}
+2024-06-20 14:15:38,621 - detail - INFO - 上传detail结果：1718864136489-{"message": "Data processed successfully", "statusCode": 200}
+
+2024-06-20 14:15:41,992 - detail - INFO - 上传detail参数：1718864141992-{'data_id': '86408476', 'title': '下半场 52', 'home_team': {'name': 'VS - 水晶宫', 'first': '3', 'full': '3', 'yellow': '0', 'red': '0', 'penalty': '0'}, 'away_team': {'name': 'VS - 沃特福德', 'first': '1', 'full': '1', 'yellow': '0', 'red': '0', 'penalty': '0'}}
+2024-06-20 14:15:44,108 - detail - INFO - 上传detail结果：1718864141992-{"message": "Data processed successfully", "statusCode": 200}
+
+2024-06-20 14:15:46,904 - detail - INFO - 上传detail参数：1718864146904-{'data_id': '86408902', 'title': '下半场 52', 'home_team': {'name': 'VS - 国际', 'first': '2', 'full': '2', 'yellow': '0', 'red': '0', 'penalty': '0'}, 'away_team': {'name': 'VS - 那不勒斯', 'first': '1', 'full': '1', 'yellow': '0', 'red': '0', 'penalty': '0'}}
+2024-06-20 14:15:48,945 - detail - INFO - 上传detail结果：1718864146904-{"message": "Data processed successfully", "statusCode": 200}
+
+2024-06-20 14:15:50,943 - detail - INFO - 上传detail参数：1718864150943-{'data_id': '86408921', 'title': '上半场 26', 'home_team': {'name': 'VS -  弗赖堡', 'first': '0', 'full': '0', 'yellow': '0', 'red': '0', 'penalty': '0'}, 'away_team': {'name': 'VS - 科隆', 'first': '0', 'full': '0', 'yellow': '0', 'red': '0', 'penalty': '0'}}
+2024-06-20 14:15:53,102 - detail - INFO - 上传detail结果：1718864150943-{"message": "Data processed successfully", "statusCode": 200}
+
+2024-06-20 14:15:56,618 - detail - INFO - 上传detail参数：1718864156618-{'data_id': '86408913', 'title': '下半场 50', 'home_team': {'name': 'VS - 广州恒大', 'first': '0', 'full': '0', 'yellow': '0', 'red': '0', 'penalty': '0'}, 'away_team': {'name': 'VS - 河南建业', 'first': '3', 'full': '3', 'yellow': '0', 'red': '1', 'penalty': '0'}}
+2024-06-20 14:15:58,875 - detail - INFO - 上传detail结果：1718864156618-{"message": "Data processed successfully", "statusCode": 200}
+
+2024-06-20 14:16:01,551 - detail - INFO - 上传detail参数：1718864161551-{'data_id': '86409353', 'title': '下半场 53', 'home_team': {'name': 'VS - 中国', 'first': '1', 'full': '2', 'yellow': '0', 'red': '0', 'penalty': '0'}, 'away_team': {'name': 'VS - 澳大利亚', 'first': '1', 'full': '1', 'yellow': '0', 'red': '0', 'penalty': '0'}}
+2024-06-20 14:16:03,617 - detail - INFO - 上传detail结果：1718864161551-{"message": "Data processed successfully", "statusCode": 200}
+
+2024-06-20 14:16:07,178 - detail - INFO - 上传detail参数：1718864167178-{'data_id': '86408476', 'title': '下半场 54', 'home_team': {'name': 'VS - 水晶宫', 'first': '3', 'full': '3', 'yellow': '0', 'red': '0', 'penalty': '0'}, 'away_team': {'name': 'VS - 沃特福德', 'first': '1', 'full': '1', 'yellow': '0', 'red': '0', 'penalty': '0'}}
+2024-06-20 14:16:09,360 - detail - INFO - 上传detail结果：1718864167178-{"message": "Data processed successfully", "statusCode": 200}
+
+2024-06-20 14:16:14,790 - detail - INFO - 上传detail参数：1718864174790-{'data_id': '86408902', 'title': '下半场 54', 'home_team': {'name': 'VS - 国际', 'first': '2', 'full': '2', 'yellow': '0', 'red': '0', 'penalty': '0'}, 'away_team': {'name': 'VS - 那不勒斯', 'first': '1', 'full': '1', 'yellow': '0', 'red': '0', 'penalty': '0'}}
+2024-06-20 14:16:16,892 - detail - INFO - 上传detail结果：1718864174790-{"message": "Data processed successfully", "statusCode": 200}
+
+2024-06-20 14:16:20,313 - detail - INFO - 上传detail参数：1718864180313-{'data_id': '86408934', 'title': '上半场 28', 'home_team': {'name': 'VS - 拜仁慕尼黑', 'first': '2', 'full': '2', 'yellow': '0', 'red': '0', 'penalty': '0'}, 'away_team': {'name': 'VS - 柏林赫塔', 'first': '0', 'full': '0', 'yellow': '0', 'red': '0', 'penalty': '0'}}
+2024-06-20 14:16:22,619 - detail - INFO - 上传detail结果：1718864180313-{"message": "Data processed successfully", "statusCode": 200}
+
+2024-06-20 14:16:26,235 - detail - INFO - 上传detail参数：1718864186235-{'data_id': '86408913', 'title': '下半场 51', 'home_team': {'name': 'VS - 广州恒大', 'first': '0', 'full': '0', 'yellow': '0', 'red': '0', 'penalty': '0'}, 'away_team': {'name': 'VS - 河南建业', 'first': '3', 'full': '3', 'yellow': '0', 'red': '1', 'penalty': '0'}}
+2024-06-20 14:16:28,312 - detail - INFO - 上传detail结果：1718864186235-{"message": "Data processed successfully", "statusCode": 200}
+
+2024-06-20 14:16:32,079 - detail - INFO - 上传detail参数：1718864192079-{'data_id': '86409353', 'title': '下半场 55', 'home_team': {'name': 'VS - 中国', 'first': '1', 'full': '2', 'yellow': '0', 'red': '0', 'penalty': '0'}, 'away_team': {'name': 'VS - 澳大利亚', 'first': '1', 'full': '1', 'yellow': '0', 'red': '0', 'penalty': '0'}}
+2024-06-20 14:16:34,257 - detail - INFO - 上传detail结果：1718864192079-{"message": "Data processed successfully", "statusCode": 200}
+
+2024-06-20 14:16:41,478 - detail - INFO - 上传detail参数：1718864201478-{'data_id': '86408901', 'title': '下半场 59', 'home_team': {'name': 'VS - 佛罗伦萨', 'first': '0', 'full': '0', 'yellow': '0', 'red': '0', 'penalty': '0'}, 'away_team': {'name': 'VS - 亚特兰大', 'first': '0', 'full': '0', 'yellow': '0', 'red': '0', 'penalty': '0'}}
+2024-06-20 14:16:43,527 - detail - INFO - 上传detail结果：1718864201478-{"message": "Data processed successfully", "statusCode": 200}
+
+2024-06-20 14:16:46,745 - detail - INFO - 上传detail参数：1718864206745-{'data_id': '86408934', 'title': '上半场 30', 'home_team': {'name': 'VS - 拜仁慕尼黑', 'first': '2', 'full': '2', 'yellow': '0', 'red': '0', 'penalty': '0'}, 'away_team': {'name': 'VS - 柏林赫塔', 'first': '0', 'full': '0', 'yellow': '0', 'red': '0', 'penalty': '0'}}
+2024-06-20 14:16:48,922 - detail - INFO - 上传detail结果：1718864206745-{"message": "Data processed successfully", "statusCode": 200}
+
+2024-06-20 14:16:51,493 - detail - INFO - 上传detail参数：1718864211493-{'data_id': '86409379', 'title': '下半场 66', 'home_team': {'name': 'VS - 伊朗', 'first': '0', 'full': '1', 'yellow': '0', 'red': '0', 'penalty': '0'}, 'away_team': {'name': 'VS - 卡塔尔', 'first': '1', 'full': '1', 'yellow': '0', 'red': '0', 'penalty': '0'}}
+2024-06-20 14:16:53,570 - detail - INFO - 上传detail结果：1718864211493-{"message": "Data processed successfully", "statusCode": 200}
+
+2024-06-20 14:16:57,019 - detail - INFO - 上传detail参数：1718864217019-{'data_id': '86409353', 'title': '下半场 57', 'home_team': {'name': 'VS - 中国', 'first': '1', 'full': '2', 'yellow': '0', 'red': '0', 'penalty': '0'}, 'away_team': {'name': 'VS - 澳大利亚', 'first': '1', 'full': '1', 'yellow': '0', 'red': '0', 'penalty': '0'}}
+2024-06-20 14:16:59,051 - detail - INFO - 上传detail结果：1718864217019-{"message": "Data processed successfully", "statusCode": 200}
+
+2024-06-20 14:17:08,533 - detail - INFO - 上传detail参数：1718864228533-{'data_id': '86408901', 'title': '下半场 61', 'home_team': {'name': 'VS - 佛罗伦萨', 'first': '0', 'full': '0', 'yellow': '0', 'red': '0', 'penalty': '0'}, 'away_team': {'name': 'VS - 亚特兰大', 'first': '0', 'full': '1', 'yellow': '0', 'red': '0', 'penalty': '0'}}
+2024-06-20 14:17:10,643 - detail - INFO - 上传detail结果：1718864228533-{"message": "Data processed successfully", "statusCode": 200}
+
+2024-06-20 14:17:14,166 - detail - INFO - 上传detail参数：1718864234166-{'data_id': '86408934', 'title': '上半场 33', 'home_team': {'name': 'VS - 拜仁慕尼黑', 'first': '2', 'full': '2', 'yellow': '0', 'red': '0', 'penalty': '0'}, 'away_team': {'name': 'VS - 柏林赫塔', 'first': '0', 'full': '0', 'yellow': '0', 'red': '0', 'penalty': '0'}}
+2024-06-20 14:17:16,255 - detail - INFO - 上传detail结果：1718864234166-{"message": "Data processed successfully", "statusCode": 200}
+
+2024-06-20 14:17:19,972 - detail - INFO - 上传detail参数：1718864239972-{'data_id': '86409379', 'title': '下半场 68', 'home_team': {'name': 'VS - 伊朗', 'first': '0', 'full': '1', 'yellow': '0', 'red': '0', 'penalty': '0'}, 'away_team': {'name': 'VS - 卡塔尔', 'first': '1', 'full': '1', 'yellow': '0', 'red': '0', 'penalty': '0'}}
+2024-06-20 14:17:22,029 - detail - INFO - 上传detail结果：1718864239972-{"message": "Data processed successfully", "statusCode": 200}
+
+2024-06-20 14:17:25,776 - detail - INFO - 上传detail参数：1718864245776-{'data_id': '86408459', 'title': '下半场 63', 'home_team': {'name': 'VS - 埃弗顿', 'first': '0', 'full': '0', 'yellow': '0', 'red': '0', 'penalty': '0'}, 'away_team': {'name': 'VS - 布莱顿', 'first': '0', 'full': '0', 'yellow': '0', 'red': '0', 'penalty': '0'}}
+2024-06-20 14:17:27,864 - detail - INFO - 上传detail结果：1718864245776-{"message": "Data processed successfully", "statusCode": 200}
+
+2024-06-20 14:17:35,633 - detail - INFO - 上传detail参数：1718864255633-{'data_id': '86408901', 'title': '下半场 63', 'home_team': {'name': 'VS - 佛罗伦萨', 'first': '0', 'full': '0', 'yellow': '0', 'red': '0', 'penalty': '0'}, 'away_team': {'name': 'VS - 亚特兰大', 'first': '0', 'full': '1', 'yellow': '0', 'red': '0', 'penalty': '0'}}
+2024-06-20 14:17:37,664 - detail - INFO - 上传detail结果：1718864255633-{"message": "Data processed successfully", "statusCode": 200}
+
+2024-06-20 14:17:40,757 - detail - INFO - 上传detail参数：1718864260757-{'data_id': '86408921', 'title': '上半场 34', 'home_team': {'name': 'VS -  弗赖堡', 'first': '0', 'full': '0', 'yellow': '0', 'red': '0', 'penalty': '0'}, 'away_team': {'name': 'VS - 科隆', 'first': '1', 'full': '1', 'yellow': '0', 'red': '0', 'penalty': '0'}}
+2024-06-20 14:17:42,795 - detail - INFO - 上传detail结果：1718864260757-{"message": "Data processed successfully", "statusCode": 200}
+
+2024-06-20 14:17:46,271 - detail - INFO - 上传detail参数：1718864266271-{'data_id': '86408913', 'title': '下半场 57', 'home_team': {'name': 'VS - 广州恒大', 'first': '0', 'full': '0', 'yellow': '0', 'red': '0', 'penalty': '0'}, 'away_team': {'name': 'VS - 河南建业', 'first': '3', 'full': '3', 'yellow': '0', 'red': '1', 'penalty': '0'}}
+2024-06-20 14:17:48,354 - detail - INFO - 上传detail结果：1718864266271-{"message": "Data processed successfully", "statusCode": 200}
+
+2024-06-20 14:17:51,568 - detail - INFO - 上传detail参数：1718864271568-{'data_id': '86409353', 'title': '下半场 61', 'home_team': {'name': 'VS - 中国', 'first': '1', 'full': '2', 'yellow': '0', 'red': '0', 'penalty': '0'}, 'away_team': {'name': 'VS - 澳大利亚', 'first': '1', 'full': '1', 'yellow': '0', 'red': '0', 'penalty': '0'}}
+2024-06-20 14:17:53,687 - detail - INFO - 上传detail结果：1718864271568-{"message": "Data processed successfully", "statusCode": 200}
+
+2024-06-20 14:18:11,256 - detail - INFO - 上传detail参数：1718864291256-{'data_id': '86408901', 'title': '下半场 65', 'home_team': {'name': 'VS - 佛罗伦萨', 'first': '0', 'full': '0', 'yellow': '0', 'red': '0', 'penalty': '0'}, 'away_team': {'name': 'VS - 亚特兰大', 'first': '0', 'full': '1', 'yellow': '0', 'red': '0', 'penalty': '0'}}
+2024-06-20 14:18:13,367 - detail - INFO - 上传detail结果：1718864291256-{"message": "Data processed successfully", "statusCode": 200}
+
+2024-06-20 14:18:16,837 - detail - INFO - 上传detail参数：1718864296837-{'data_id': '86408934', 'title': '上半场 38', 'home_team': {'name': 'VS - 拜仁慕尼黑', 'first': '2', 'full': '2', 'yellow': '0', 'red': '0', 'penalty': '0'}, 'away_team': {'name': 'VS - 柏林赫塔', 'first': '0', 'full': '0', 'yellow': '0', 'red': '0', 'penalty': '0'}}
+2024-06-20 14:18:18,854 - detail - INFO - 上传detail结果：1718864296837-{"message": "Data processed successfully", "statusCode": 200}
+
+2024-06-20 14:18:21,333 - detail - INFO - 上传detail参数：1718864301333-{'data_id': '86409379', 'title': '下半场 71', 'home_team': {'name': 'VS - 伊朗', 'first': '0', 'full': '1', 'yellow': '0', 'red': '0', 'penalty': '0'}, 'away_team': {'name': 'VS - 卡塔尔', 'first': '1', 'full': '1', 'yellow': '0', 'red': '0', 'penalty': '0'}}
+2024-06-20 14:18:23,365 - detail - INFO - 上传detail结果：1718864301333-{"message": "Data processed successfully", "statusCode": 200}
+
+2024-06-20 14:18:26,934 - detail - INFO - 上传detail参数：1718864306934-{'data_id': '86409347', 'title': '上半场 31', 'home_team': {'name': 'VS - 澳大利亚', 'first': '0', 'full': '0', 'yellow': '0', 'red': '0', 'penalty': '0'}, 'away_team': {'name': 'VS - 日本', 'first': '0', 'full': '0', 'yellow': '0', 'red': '0', 'penalty': '0'}}
+2024-06-20 14:18:29,091 - detail - INFO - 上传detail结果：1718864306934-{"message": "Data processed successfully", "statusCode": 200}
+
+2024-06-20 14:18:31,797 - detail - INFO - 上传detail参数：1718864311797-{'data_id': '86409379', 'title': '下半场 72', 'home_team': {'name': 'VS - 伊朗', 'first': '0', 'full': '1', 'yellow': '0', 'red': '0', 'penalty': '0'}, 'away_team': {'name': 'VS - 卡塔尔', 'first': '1', 'full': '1', 'yellow': '0', 'red': '0', 'penalty': '0'}}
+2024-06-20 14:18:34,003 - detail - INFO - 上传detail结果：1718864311797-{"message": "Data processed successfully", "statusCode": 200}
+
+2024-06-20 14:18:36,685 - detail - INFO - 上传detail参数：1718864316685-{'data_id': '86408459', 'title': '下半场 69', 'home_team': {'name': 'VS - 埃弗顿', 'first': '0', 'full': '0', 'yellow': '0', 'red': '0', 'penalty': '0'}, 'away_team': {'name': 'VS - 布莱顿', 'first': '0', 'full': '0', 'yellow': '0', 'red': '0', 'penalty': '0'}}
+2024-06-20 14:18:38,898 - detail - INFO - 上传detail结果：1718864316685-{"message": "Data processed successfully", "statusCode": 200}
+
+2024-06-20 14:18:48,141 - detail - INFO - 上传detail参数：1718864328141-{'data_id': '86408901', 'title': '下半场 67', 'home_team': {'name': 'VS - 佛罗伦萨', 'first': '0', 'full': '0', 'yellow': '0', 'red': '0', 'penalty': '0'}, 'away_team': {'name': 'VS - 亚特兰大', 'first': '0', 'full': '1', 'yellow': '0', 'red': '0', 'penalty': '0'}}
+2024-06-20 14:18:50,256 - detail - INFO - 上传detail结果：1718864328141-{"message": "Data processed successfully", "statusCode": 200}
+
+2024-06-20 14:18:53,817 - detail - INFO - 上传detail参数：1718864333817-{'data_id': '86408934', 'title': '上半场 41', 'home_team': {'name': 'VS - 拜仁慕尼黑', 'first': '2', 'full': '2', 'yellow': '0', 'red': '0', 'penalty': '0'}, 'away_team': {'name': 'VS - 柏林赫塔', 'first': '0', 'full': '0', 'yellow': '0', 'red': '0', 'penalty': '0'}}
+2024-06-20 14:18:55,842 - detail - INFO - 上传detail结果：1718864333817-{"message": "Data processed successfully", "statusCode": 200}
+
+2024-06-20 14:18:59,495 - detail - INFO - 上传detail参数：1718864339495-{'data_id': '86409379', 'title': '下半场 73', 'home_team': {'name': 'VS - 伊朗', 'first': '0', 'full': '1', 'yellow': '0', 'red': '0', 'penalty': '0'}, 'away_team': {'name': 'VS - 卡塔尔', 'first': '1', 'full': '1', 'yellow': '0', 'red': '0', 'penalty': '0'}}
+2024-06-20 14:19:01,551 - detail - INFO - 上传detail结果：1718864339495-{"message": "Data processed successfully", "statusCode": 200}
+
+2024-06-20 14:19:05,858 - detail - INFO - 上传detail参数：1718864345858-{'data_id': '86409347', 'title': '上半场 34', 'home_team': {'name': 'VS - 澳大利亚', 'first': '0', 'full': '0', 'yellow': '0', 'red': '0', 'penalty': '0'}, 'away_team': {'name': 'VS - 日本', 'first': '0', 'full': '0', 'yellow': '0', 'red': '0', 'penalty': '0'}}
+2024-06-20 14:19:08,069 - detail - INFO - 上传detail结果：1718864345858-{"message": "Data processed successfully", "statusCode": 200}
+
+2024-06-20 14:19:12,331 - detail - INFO - 上传detail参数：1718864352331-{'data_id': '86409379', 'title': '下半场 73', 'home_team': {'name': 'VS - 伊朗', 'first': '0', 'full': '1', 'yellow': '0', 'red': '0', 'penalty': '0'}, 'away_team': {'name': 'VS - 卡塔尔', 'first': '1', 'full': '1', 'yellow': '0', 'red': '0', 'penalty': '0'}}
+2024-06-20 14:19:14,503 - detail - INFO - 上传detail结果：1718864352331-{"message": "Data processed successfully", "statusCode": 200}
+
+2024-06-20 14:19:16,705 - detail - INFO - 上传detail参数：1718864356705-{'data_id': '86408459', 'title': '下半场 72', 'home_team': {'name': 'VS - 埃弗顿', 'first': '0', 'full': '0', 'yellow': '0', 'red': '0', 'penalty': '0'}, 'away_team': {'name': 'VS - 布莱顿', 'first': '0', 'full': '0', 'yellow': '0', 'red': '0', 'penalty': '0'}}
+2024-06-20 14:19:18,908 - detail - INFO - 上传detail结果：1718864356705-{"message": "Data processed successfully", "statusCode": 200}
+
+2024-06-20 14:19:24,659 - detail - INFO - 上传detail参数：1718864364659-{'data_id': '86408901', 'title': '下半场 70', 'home_team': {'name': 'VS - 佛罗伦萨', 'first': '0', 'full': '0', 'yellow': '0', 'red': '0', 'penalty': '0'}, 'away_team': {'name': 'VS - 亚特兰大', 'first': '0', 'full': '1', 'yellow': '0', 'red': '0', 'penalty': '0'}}
+2024-06-20 14:19:26,753 - detail - INFO - 上传detail结果：1718864364659-{"message": "Data processed successfully", "statusCode": 200}
+
+2024-06-20 14:19:29,796 - detail - INFO - 上传detail参数：1718864369796-{'data_id': '86408921', 'title': '上半场 43', 'home_team': {'name': 'VS -  弗赖堡', 'first': '0', 'full': '0', 'yellow': '0', 'red': '0', 'penalty': '0'}, 'away_team': {'name': 'VS - 科隆', 'first': '1', 'full': '1', 'yellow': '0', 'red': '0', 'penalty': '0'}}
+2024-06-20 14:19:31,917 - detail - INFO - 上传detail结果：1718864369796-{"message": "Data processed successfully", "statusCode": 200}
+
+2024-06-20 14:19:35,368 - detail - INFO - 上传detail参数：1718864375368-{'data_id': '86408913', 'title': '下半场 64', 'home_team': {'name': 'VS - 广州恒大', 'first': '0', 'full': '0', 'yellow': '0', 'red': '0', 'penalty': '0'}, 'away_team': {'name': 'VS - 河南建业', 'first': '3', 'full': '3', 'yellow': '0', 'red': '1', 'penalty': '0'}}
+2024-06-20 14:19:37,396 - detail - INFO - 上传detail结果：1718864375368-{"message": "Data processed successfully", "statusCode": 200}
+
+2024-06-20 14:19:40,998 - detail - INFO - 上传detail参数：1718864380998-{'data_id': '86409353', 'title': '下半场 69', 'home_team': {'name': 'VS - 中国', 'first': '1', 'full': '2', 'yellow': '0', 'red': '0', 'penalty': '0'}, 'away_team': {'name': 'VS - 澳大利亚', 'first': '1', 'full': '1', 'yellow': '0', 'red': '0', 'penalty': '0'}}
+2024-06-20 14:19:43,165 - detail - INFO - 上传detail结果：1718864380998-{"message": "Data processed successfully", "statusCode": 200}
+
+2024-06-20 14:19:47,782 - detail - INFO - 上传detail参数：1718864387782-{'data_id': '86409379', 'title': '下半场 76', 'home_team': {'name': 'VS - 伊朗', 'first': '0', 'full': '1', 'yellow': '0', 'red': '0', 'penalty': '0'}, 'away_team': {'name': 'VS - 卡塔尔', 'first': '1', 'full': '1', 'yellow': '0', 'red': '0', 'penalty': '0'}}
+2024-06-20 14:19:49,819 - detail - INFO - 上传detail结果：1718864387782-{"message": "Data processed successfully", "statusCode": 200}
+
+2024-06-20 14:19:54,039 - detail - INFO - 上传detail参数：1718864394039-{'data_id': '86408459', 'title': '下半场 74', 'home_team': {'name': 'VS - 埃弗顿', 'first': '0', 'full': '0', 'yellow': '0', 'red': '0', 'penalty': '0'}, 'away_team': {'name': 'VS - 布莱顿', 'first': '0', 'full': '0', 'yellow': '0', 'red': '0', 'penalty': '0'}}
+2024-06-20 14:19:56,275 - detail - INFO - 上传detail结果：1718864394039-{"message": "Data processed successfully", "statusCode": 200}
+
+2024-06-20 14:20:00,827 - detail - INFO - 上传detail参数：1718864400827-{'data_id': '86408901', 'title': '下半场 72', 'home_team': {'name': 'VS - 佛罗伦萨', 'first': '0', 'full': '0', 'yellow': '0', 'red': '0', 'penalty': '0'}, 'away_team': {'name': 'VS - 亚特兰大', 'first': '0', 'full': '1', 'yellow': '0', 'red': '0', 'penalty': '0'}}
+2024-06-20 14:20:02,905 - detail - INFO - 上传detail结果：1718864400827-{"message": "Data processed successfully", "statusCode": 200}
+
+2024-06-20 14:20:06,382 - detail - INFO - 上传detail参数：1718864406382-{'data_id': '86408934', 'title': '上半场 46', 'home_team': {'name': 'VS - 拜仁慕尼黑', 'first': '3', 'full': '3', 'yellow': '0', 'red': '0', 'penalty': '0'}, 'away_team': {'name': 'VS - 柏林赫塔', 'first': '0', 'full': '0', 'yellow': '0', 'red': '0', 'penalty': '0'}}
+2024-06-20 14:20:08,406 - detail - INFO - 上传detail结果：1718864406382-{"message": "Data processed successfully", "statusCode": 200}
+
+2024-06-20 14:20:12,035 - detail - INFO - 上传detail参数：1718864412035-{'data_id': '86408913', 'title': '下半场 66', 'home_team': {'name': 'VS - 广州恒大', 'first': '0', 'full': '0', 'yellow': '0', 'red': '0', 'penalty': '0'}, 'away_team': {'name': 'VS - 河南建业', 'first': '3', 'full': '4', 'yellow': '0', 'red': '1', 'penalty': '0'}}
+2024-06-20 14:20:14,155 - detail - INFO - 上传detail结果：1718864412035-{"message": "Data processed successfully", "statusCode": 200}
+
+2024-06-20 14:20:16,094 - detail - INFO - 上传detail参数：1718864416094-{'data_id': '86409347', 'title': '上半场 39', 'home_team': {'name': 'VS - 澳大利亚', 'first': '0', 'full': '0', 'yellow': '0', 'red': '0', 'penalty': '0'}, 'away_team': {'name': 'VS - 日本', 'first': '0', 'full': '0', 'yellow': '0', 'red': '0', 'penalty': '0'}}
+2024-06-20 14:20:18,207 - detail - INFO - 上传detail结果：1718864416094-{"message": "Data processed successfully", "statusCode": 200}
+
+2024-06-20 14:20:21,976 - detail - INFO - 上传detail参数：1718864421976-{'data_id': '86409379', 'title': '下半场 78', 'home_team': {'name': 'VS - 伊朗', 'first': '0', 'full': '1', 'yellow': '0', 'red': '0', 'penalty': '0'}, 'away_team': {'name': 'VS - 卡塔尔', 'first': '1', 'full': '1', 'yellow': '0', 'red': '0', 'penalty': '0'}}
+2024-06-20 14:20:24,152 - detail - INFO - 上传detail结果：1718864421976-{"message": "Data processed successfully", "statusCode": 200}
+
+2024-06-20 14:20:26,330 - detail - INFO - 上传detail参数：1718864426330-{'data_id': '86408459', 'title': '下半场 76', 'home_team': {'name': 'VS - 埃弗顿', 'first': '0', 'full': '0', 'yellow': '0', 'red': '0', 'penalty': '0'}, 'away_team': {'name': 'VS - 布莱顿', 'first': '0', 'full': '0', 'yellow': '0', 'red': '0', 'penalty': '0'}}
+2024-06-20 14:20:28,532 - detail - INFO - 上传detail结果：1718864426330-{"message": "Data processed successfully", "statusCode": 200}
+
+2024-06-20 14:20:31,556 - detail - INFO - 上传detail参数：1718864431556-{'data_id': '86408476', 'title': '下半场 71', 'home_team': {'name': 'VS - 水晶宫', 'first': '3', 'full': '3', 'yellow': '0', 'red': '0', 'penalty': '0'}, 'away_team': {'name': 'VS - 沃特福德', 'first': '1', 'full': '1', 'yellow': '0', 'red': '0', 'penalty': '0'}}
+2024-06-20 14:20:33,783 - detail - INFO - 上传detail结果：1718864431556-{"message": "Data processed successfully", "statusCode": 200}
+
+2024-06-20 14:20:36,471 - detail - INFO - 上传detail参数：1718864436471-{'data_id': '86408902', 'title': '下半场 69', 'home_team': {'name': 'VS - 国际', 'first': '2', 'full': '2', 'yellow': '0', 'red': '0', 'penalty': '0'}, 'away_team': {'name': 'VS - 那不勒斯', 'first': '1', 'full': '1', 'yellow': '0', 'red': '0', 'penalty': '0'}}
+2024-06-20 14:20:38,646 - detail - INFO - 上传detail结果：1718864436471-{"message": "Data processed successfully", "statusCode": 200}
+
+2024-06-20 14:20:41,775 - detail - INFO - 上传detail参数：1718864441775-{'data_id': '86408934', 'title': '上半场 46', 'home_team': {'name': 'VS - 拜仁慕尼黑', 'first': '3', 'full': '3', 'yellow': '0', 'red': '0', 'penalty': '0'}, 'away_team': {'name': 'VS - 柏林赫塔', 'first': '0', 'full': '0', 'yellow': '0', 'red': '0', 'penalty': '0'}}
+2024-06-20 14:20:43,885 - detail - INFO - 上传detail结果：1718864441775-{"message": "Data processed successfully", "statusCode": 200}
+
+2024-06-20 14:20:45,940 - detail - INFO - 上传detail参数：1718864445940-{'data_id': '86409353', 'title': '下半场 72', 'home_team': {'name': 'VS - 中国', 'first': '1', 'full': '2', 'yellow': '0', 'red': '0', 'penalty': '0'}, 'away_team': {'name': 'VS - 澳大利亚', 'first': '1', 'full': '1', 'yellow': '0', 'red': '0', 'penalty': '0'}}
+2024-06-20 14:20:47,958 - detail - INFO - 上传detail结果：1718864445940-{"message": "Data processed successfully", "statusCode": 200}
+
+2024-06-20 14:20:51,560 - detail - INFO - 上传detail参数：1718864451560-{'data_id': '86409364', 'title': '上半场 39', 'home_team': {'name': 'VS - 韩国', 'first': '1', 'full': '1', 'yellow': '0', 'red': '0', 'penalty': '0'}, 'away_team': {'name': 'VS - 卡塔尔', 'first': '1', 'full': '1', 'yellow': '0', 'red': '0', 'penalty': '0'}}
+2024-06-20 14:20:53,585 - detail - INFO - 上传detail结果：1718864451560-{"message": "Data processed successfully", "statusCode": 200}
+
+2024-06-20 14:20:57,153 - detail - INFO - 上传detail参数：1718864457153-{'data_id': '86409353', 'title': '下半场 72', 'home_team': {'name': 'VS - 中国', 'first': '1', 'full': '2', 'yellow': '0', 'red': '0', 'penalty': '0'}, 'away_team': {'name': 'VS - 澳大利亚', 'first': '1', 'full': '1', 'yellow': '0', 'red': '0', 'penalty': '0'}}
+2024-06-20 14:20:59,176 - detail - INFO - 上传detail结果：1718864457153-{"message": "Data processed successfully", "statusCode": 200}
+
+2024-06-20 14:21:01,293 - detail - INFO - 上传detail参数：1718864461293-{'data_id': '86408476', 'title': '下半场 74', 'home_team': {'name': 'VS - 水晶宫', 'first': '3', 'full': '3', 'yellow': '0', 'red': '0', 'penalty': '0'}, 'away_team': {'name': 'VS - 沃特福德', 'first': '1', 'full': '1', 'yellow': '0', 'red': '0', 'penalty': '0'}}
+2024-06-20 14:21:03,495 - detail - INFO - 上传detail结果：1718864461293-{"message": "Data processed successfully", "statusCode": 200}
+
+2024-06-20 14:21:12,799 - detail - INFO - 上传detail参数：1718864472799-{'data_id': '86408902', 'title': '下半场 72', 'home_team': {'name': 'VS - 国际', 'first': '2', 'full': '2', 'yellow': '0', 'red': '0', 'penalty': '0'}, 'away_team': {'name': 'VS - 那不勒斯', 'first': '1', 'full': '1', 'yellow': '0', 'red': '0', 'penalty': '0'}}
+2024-06-20 14:21:14,901 - detail - INFO - 上传detail结果：1718864472799-{"message": "Data processed successfully", "statusCode": 200}
+
+2024-06-20 14:21:16,982 - detail - INFO - 上传detail参数：1718864476982-{'data_id': '86408942', 'title': '上半场 04', 'home_team': {'name': 'VS - 森多利亚', 'first': '0', 'full': '0', 'yellow': '0', 'red': '0', 'penalty': '0'}, 'away_team': {'name': 'VS - 都灵', 'first': '0', 'full': '0', 'yellow': '0', 'red': '0', 'penalty': '0'}}
+2024-06-20 14:21:19,012 - detail - INFO - 上传detail结果：1718864476982-{"message": "Data processed successfully", "statusCode": 200}
+
+2024-06-20 14:21:20,936 - detail - INFO - 上传detail参数：1718864480936-{'data_id': '86408921', 'title': '下半场 46', 'home_team': {'name': 'VS -  弗赖堡', 'first': '0', 'full': '0', 'yellow': '0', 'red': '0', 'penalty': '0'}, 'away_team': {'name': 'VS - 科隆', 'first': '1', 'full': '1', 'yellow': '0', 'red': '0', 'penalty': '0'}}
+2024-06-20 14:21:23,061 - detail - INFO - 上传detail结果：1718864480936-{"message": "Data processed successfully", "statusCode": 200}
+
+2024-06-20 14:21:26,592 - detail - INFO - 上传detail参数：1718864486592-{'data_id': '86409353', 'title': '下半场 74', 'home_team': {'name': 'VS - 中国', 'first': '1', 'full': '2', 'yellow': '0', 'red': '0', 'penalty': '0'}, 'away_team': {'name': 'VS - 澳大利亚', 'first': '1', 'full': '1', 'yellow': '0', 'red': '0', 'penalty': '0'}}
+2024-06-20 14:21:28,608 - detail - INFO - 上传detail结果：1718864486592-{"message": "Data processed successfully", "statusCode": 200}
+
+2024-06-20 14:21:31,963 - detail - INFO - 上传detail参数：1718864491962-{'data_id': '86409379', 'title': '下半场 82', 'home_team': {'name': 'VS - 伊朗', 'first': '0', 'full': '1', 'yellow': '0', 'red': '0', 'penalty': '0'}, 'away_team': {'name': 'VS - 卡塔尔', 'first': '1', 'full': '1', 'yellow': '0', 'red': '0', 'penalty': '0'}}
+2024-06-20 14:21:34,066 - detail - INFO - 上传detail结果：1718864491962-{"message": "Data processed successfully", "statusCode": 200}
+
+2024-06-20 14:21:36,667 - detail - INFO - 上传detail参数：1718864496667-{'data_id': '86408459', 'title': '下半场 81', 'home_team': {'name': 'VS - 埃弗顿', 'first': '0', 'full': '0', 'yellow': '0', 'red': '0', 'penalty': '0'}, 'away_team': {'name': 'VS - 布莱顿', 'first': '0', 'full': '1', 'yellow': '0', 'red': '0', 'penalty': '0'}}
+2024-06-20 14:21:38,890 - detail - INFO - 上传detail结果：1718864496667-{"message": "Data processed successfully", "statusCode": 200}
+
+2024-06-20 14:21:48,578 - detail - INFO - 上传detail参数：1718864508578-{'data_id': '86408901', 'title': '下半场 80', 'home_team': {'name': 'VS - 佛罗伦萨', 'first': '0', 'full': '0', 'yellow': '0', 'red': '0', 'penalty': '0'}, 'away_team': {'name': 'VS - 亚特兰大', 'first': '0', 'full': '1', 'yellow': '0', 'red': '0', 'penalty': '0'}}
+2024-06-20 14:21:50,757 - detail - INFO - 上传detail结果：1718864508578-{"message": "Data processed successfully", "statusCode": 200}
+
+2024-06-20 14:21:54,491 - detail - INFO - 上传detail参数：1718864514491-{'data_id': '86408936', 'title': '上半场 05', 'home_team': {'name': 'VS - 卡利亚里', 'first': '0', 'full': '0', 'yellow': '0', 'red': '0', 'penalty': '0'}, 'away_team': {'name': 'VS - 博洛尼亚', 'first': '0', 'full': '0', 'yellow': '0', 'red': '0', 'penalty': '0'}}
+2024-06-20 14:21:56,644 - detail - INFO - 上传detail结果：1718864514491-{"message": "Data processed successfully", "statusCode": 200}
+
+2024-06-20 14:22:00,072 - detail - INFO - 上传detail参数：1718864520072-{'data_id': '86408934', 'title': '下半场 48', 'home_team': {'name': 'VS - 拜仁慕尼黑', 'first': '3', 'full': '3', 'yellow': '0', 'red': '0', 'penalty': '0'}, 'away_team': {'name': 'VS - 柏林赫塔', 'first': '0', 'full': '0', 'yellow': '0', 'red': '0', 'penalty': '0'}}
+2024-06-20 14:22:02,097 - detail - INFO - 上传detail结果：1718864520072-{"message": "Data processed successfully", "statusCode": 200}
+
+2024-06-20 14:22:05,739 - detail - INFO - 上传detail参数：1718864525738-{'data_id': '86409353', 'title': '下半场 77', 'home_team': {'name': 'VS - 中国', 'first': '1', 'full': '2', 'yellow': '0', 'red': '0', 'penalty': '0'}, 'away_team': {'name': 'VS - 澳大利亚', 'first': '1', 'full': '1', 'yellow': '0', 'red': '0', 'penalty': '0'}}
+2024-06-20 14:22:07,850 - detail - INFO - 上传detail结果：1718864525738-{"message": "Data processed successfully", "statusCode": 200}
+
+2024-06-20 14:22:11,402 - detail - INFO - 上传detail参数：1718864531402-{'data_id': '86409379', 'title': '下半场 85', 'home_team': {'name': 'VS - 伊朗', 'first': '0', 'full': '1', 'yellow': '0', 'red': '0', 'penalty': '0'}, 'away_team': {'name': 'VS - 卡塔尔', 'first': '1', 'full': '1', 'yellow': '0', 'red': '0', 'penalty': '0'}}
+2024-06-20 14:22:13,431 - detail - INFO - 上传detail结果：1718864531402-{"message": "Data processed successfully", "statusCode": 200}
+
+2024-06-20 14:22:17,042 - detail - INFO - 上传detail参数：1718864537042-{'data_id': '86408459', 'title': '下半场 84', 'home_team': {'name': 'VS - 埃弗顿', 'first': '0', 'full': '0', 'yellow': '0', 'red': '0', 'penalty': '0'}, 'away_team': {'name': 'VS - 布莱顿', 'first': '0', 'full': '1', 'yellow': '0', 'red': '0', 'penalty': '0'}}
+2024-06-20 14:22:19,294 - detail - INFO - 上传detail结果：1718864537042-{"message": "Data processed successfully", "statusCode": 200}
+
+2024-06-20 14:22:21,337 - detail - INFO - 上传detail参数：1718864541337-{'data_id': '86408902', 'title': '下半场 75', 'home_team': {'name': 'VS - 国际', 'first': '2', 'full': '2', 'yellow': '0', 'red': '0', 'penalty': '0'}, 'away_team': {'name': 'VS - 那不勒斯', 'first': '1', 'full': '1', 'yellow': '0', 'red': '0', 'penalty': '0'}}
+2024-06-20 14:22:23,487 - detail - INFO - 上传detail结果：1718864541337-{"message": "Data processed successfully", "statusCode": 200}
+
+2024-06-20 14:22:27,592 - detail - INFO - 上传detail参数：1718864547592-{'data_id': '86408942', 'title': '上半场 07', 'home_team': {'name': 'VS - 森多利亚', 'first': '0', 'full': '0', 'yellow': '0', 'red': '0', 'penalty': '0'}, 'away_team': {'name': 'VS - 都灵', 'first': '0', 'full': '0', 'yellow': '0', 'red': '0', 'penalty': '0'}}
+2024-06-20 14:22:29,782 - detail - INFO - 上传detail结果：1718864547592-{"message": "Data processed successfully", "statusCode": 200}
+
+2024-06-20 14:22:33,652 - detail - INFO - 上传detail参数：1718864553652-{'data_id': '86408934', 'title': '下半场 51', 'home_team': {'name': 'VS - 拜仁慕尼黑', 'first': '3', 'full': '3', 'yellow': '0', 'red': '0', 'penalty': '0'}, 'away_team': {'name': 'VS - 柏林赫塔', 'first': '0', 'full': '0', 'yellow': '0', 'red': '0', 'penalty': '0'}}
+2024-06-20 14:22:35,673 - detail - INFO - 上传detail结果：1718864553652-{"message": "Data processed successfully", "statusCode": 200}
+
+2024-06-20 14:22:39,134 - detail - INFO - 上传detail参数：1718864559134-{'data_id': '86409347', 'title': '上半场 45', 'home_team': {'name': 'VS - 澳大利亚', 'first': '0', 'full': '0', 'yellow': '0', 'red': '0', 'penalty': '0'}, 'away_team': {'name': 'VS - 日本', 'first': '0', 'full': '0', 'yellow': '0', 'red': '0', 'penalty': '0'}}
+2024-06-20 14:22:41,242 - detail - INFO - 上传detail结果：1718864559134-{"message": "Data processed successfully", "statusCode": 200}
+
+2024-06-20 14:22:44,819 - detail - INFO - 上传detail参数：1718864564819-{'data_id': '86409379', 'title': '下半场 88', 'home_team': {'name': 'VS - 伊朗', 'first': '0', 'full': '1', 'yellow': '0', 'red': '0', 'penalty': '0'}, 'away_team': {'name': 'VS - 卡塔尔', 'first': '1', 'full': '1', 'yellow': '0', 'red': '0', 'penalty': '0'}}
+2024-06-20 14:22:46,832 - detail - INFO - 上传detail结果：1718864564819-{"message": "Data processed successfully", "statusCode": 200}
+
+2024-06-20 14:22:50,427 - detail - INFO - 上传detail参数：1718864570427-{'data_id': '86408910', 'title': '上半场 05', 'home_team': {'name': 'VS - 阿森纳', 'first': '0', 'full': '0', 'yellow': '0', 'red': '0', 'penalty': '0'}, 'away_team': {'name': 'VS - 托特纳姆热刺', 'first': '0', 'full': '0', 'yellow': '0', 'red': '0', 'penalty': '0'}}
+2024-06-20 14:22:52,598 - detail - INFO - 上传detail结果：1718864570427-{"message": "Data processed successfully", "statusCode": 200}
+
+2024-06-20 14:22:56,126 - detail - INFO - 上传detail参数：1718864576126-{'data_id': '86408902', 'title': '下半场 76', 'home_team': {'name': 'VS - 国际', 'first': '2', 'full': '2', 'yellow': '0', 'red': '0', 'penalty': '0'}, 'away_team': {'name': 'VS - 那不勒斯', 'first': '1', 'full': '1', 'yellow': '0', 'red': '0', 'penalty': '0'}}
+2024-06-20 14:22:58,324 - detail - INFO - 上传detail结果：1718864576126-{"message": "Data processed successfully", "statusCode": 200}
+
+2024-06-20 14:23:02,365 - detail - INFO - 上传detail参数：1718864582364-{'data_id': '86408921', 'title': '下半场 55', 'home_team': {'name': 'VS -  弗赖堡', 'first': '0', 'full': '0', 'yellow': '0', 'red': '0', 'penalty': '0'}, 'away_team': {'name': 'VS - 科隆', 'first': '1', 'full': '1', 'yellow': '0', 'red': '0', 'penalty': '0'}}
+2024-06-20 14:23:04,615 - detail - INFO - 上传detail结果：1718864582364-{"message": "Data processed successfully", "statusCode": 200}
+
+2024-06-20 14:23:07,696 - detail - INFO - 上传detail参数：1718864587696-{'data_id': '86409379', 'title': '下半场 89', 'home_team': {'name': 'VS - 伊朗', 'first': '0', 'full': '1', 'yellow': '0', 'red': '0', 'penalty': '0'}, 'away_team': {'name': 'VS - 卡塔尔', 'first': '1', 'full': '1', 'yellow': '0', 'red': '0', 'penalty': '0'}}
+2024-06-20 14:23:09,868 - detail - INFO - 上传detail结果：1718864587696-{"message": "Data processed successfully", "statusCode": 200}
+
+2024-06-20 14:23:13,436 - detail - INFO - 上传detail参数：1718864593436-{'data_id': '86408910', 'title': '上半场 07', 'home_team': {'name': 'VS - 阿森纳', 'first': '0', 'full': '0', 'yellow': '0', 'red': '0', 'penalty': '0'}, 'away_team': {'name': 'VS - 托特纳姆热刺', 'first': '0', 'full': '0', 'yellow': '0', 'red': '0', 'penalty': '0'}}
+2024-06-20 14:23:15,552 - detail - INFO - 上传detail结果：1718864593436-{"message": "Data processed successfully", "statusCode": 200}
+
+2024-06-20 14:23:18,499 - detail - INFO - 上传detail参数：1718864598499-{'data_id': '86408902', 'title': '下半场 77', 'home_team': {'name': 'VS - 国际', 'first': '2', 'full': '2', 'yellow': '0', 'red': '0', 'penalty': '0'}, 'away_team': {'name': 'VS - 那不勒斯', 'first': '1', 'full': '1', 'yellow': '0', 'red': '0', 'penalty': '0'}}
+2024-06-20 14:23:20,536 - detail - INFO - 上传detail结果：1718864598499-{"message": "Data processed successfully", "statusCode": 200}
+
+2024-06-20 14:23:23,468 - detail - INFO - 上传detail参数：1718864603468-{'data_id': '86408942', 'title': '上半场 11', 'home_team': {'name': 'VS - 森多利亚', 'first': '0', 'full': '0', 'yellow': '0', 'red': '0', 'penalty': '0'}, 'away_team': {'name': 'VS - 都灵', 'first': '0', 'full': '0', 'yellow': '0', 'red': '0', 'penalty': '0'}}
+2024-06-20 14:23:25,579 - detail - INFO - 上传detail结果：1718864603468-{"message": "Data processed successfully", "statusCode": 200}
+
+2024-06-20 14:23:28,668 - detail - INFO - 上传detail参数：1718864608668-{'data_id': '86408934', 'title': '下半场 55', 'home_team': {'name': 'VS - 拜仁慕尼黑', 'first': '3', 'full': '3', 'yellow': '0', 'red': '0', 'penalty': '0'}, 'away_team': {'name': 'VS - 柏林赫塔', 'first': '0', 'full': '0', 'yellow': '0', 'red': '0', 'penalty': '0'}}
+2024-06-20 14:23:30,710 - detail - INFO - 上传detail结果：1718864608668-{"message": "Data processed successfully", "statusCode": 200}
+
+2024-06-20 14:23:34,512 - detail - INFO - 上传detail参数：1718864614512-{'data_id': '86409353', 'title': '下半场 83', 'home_team': {'name': 'VS - 中国', 'first': '1', 'full': '3', 'yellow': '0', 'red': '0', 'penalty': '0'}, 'away_team': {'name': 'VS - 澳大利亚', 'first': '1', 'full': '1', 'yellow': '0', 'red': '0', 'penalty': '0'}}
+2024-06-20 14:23:36,653 - detail - INFO - 上传detail结果：1718864614512-{"message": "Data processed successfully", "statusCode": 200}
+
+2024-06-20 14:23:40,431 - detail - INFO - 上传detail参数：1718864620431-{'data_id': '86408938', 'title': '上半场 07', 'home_team': {'name': 'VS - 西汉姆联', 'first': '0', 'full': '0', 'yellow': '0', 'red': '0', 'penalty': '0'}, 'away_team': {'name': 'VS - 曼联', 'first': '0', 'full': '0', 'yellow': '0', 'red': '0', 'penalty': '0'}}
+2024-06-20 14:23:42,576 - detail - INFO - 上传detail结果：1718864620431-{"message": "Data processed successfully", "statusCode": 200}
+
+2024-06-20 14:23:46,313 - detail - INFO - 上传detail参数：1718864626313-{'data_id': '86408936', 'title': '上半场 12', 'home_team': {'name': 'VS - 卡利亚里', 'first': '0', 'full': '0', 'yellow': '0', 'red': '0', 'penalty': '0'}, 'away_team': {'name': 'VS - 博洛尼亚', 'first': '1', 'full': '1', 'yellow': '0', 'red': '0', 'penalty': '0'}}
+2024-06-20 14:23:48,348 - detail - INFO - 上传detail结果：1718864626313-{"message": "Data processed successfully", "statusCode": 200}
+
+2024-06-20 14:23:51,981 - detail - INFO - 上传detail参数：1718864631981-{'data_id': '86408921', 'title': '下半场 58', 'home_team': {'name': 'VS -  弗赖堡', 'first': '0', 'full': '0', 'yellow': '0', 'red': '0', 'penalty': '0'}, 'away_team': {'name': 'VS - 科隆', 'first': '1', 'full': '1', 'yellow': '0', 'red': '0', 'penalty': '0'}}
+2024-06-20 14:23:54,017 - detail - INFO - 上传detail结果：1718864631981-{"message": "Data processed successfully", "statusCode": 200}
+
+2024-06-20 14:23:58,600 - detail - INFO - 上传detail参数：1718864638600-{'data_id': '86409379', 'title': '下半场 92', 'home_team': {'name': 'VS - 伊朗', 'first': '', 'full': '1', 'yellow': '0', 'red': '0', 'penalty': '0'}, 'away_team': {'name': 'VS - 卡塔尔', 'first': '', 'full': '1', 'yellow': '0', 'red': '0', 'penalty': '0'}}
+2024-06-20 14:23:59,287 - detail - INFO - 上传detail结果：1718864638600-{"message": "Internal Server Error"}
+
+2024-06-20 14:24:04,623 - detail - INFO - 上传detail参数：1718864644623-{'data_id': '86408910', 'title': '上半场 09', 'home_team': {'name': 'VS - 阿森纳', 'first': '0', 'full': '0', 'yellow': '0', 'red': '0', 'penalty': '0'}, 'away_team': {'name': 'VS - 托特纳姆热刺', 'first': '1', 'full': '1', 'yellow': '0', 'red': '0', 'penalty': '0'}}
+2024-06-20 14:24:06,850 - detail - INFO - 上传detail结果：1718864644623-{"message": "Data processed successfully", "statusCode": 200}
+
+2024-06-20 14:24:10,540 - detail - INFO - 上传detail参数：1718864650540-{'data_id': '86408902', 'title': '下半场 81', 'home_team': {'name': 'VS - 国际', 'first': '2', 'full': '2', 'yellow': '0', 'red': '0', 'penalty': '0'}, 'away_team': {'name': 'VS - 那不勒斯', 'first': '1', 'full': '1', 'yellow': '0', 'red': '0', 'penalty': '0'}}
+2024-06-20 14:24:12,619 - detail - INFO - 上传detail结果：1718864650540-{"message": "Data processed successfully", "statusCode": 200}
+
+2024-06-20 14:24:16,398 - detail - INFO - 上传detail参数：1718864656398-{'data_id': '86408942', 'title': '上半场 14', 'home_team': {'name': 'VS - 森多利亚', 'first': '1', 'full': '1', 'yellow': '0', 'red': '0', 'penalty': '0'}, 'away_team': {'name': 'VS - 都灵', 'first': '0', 'full': '0', 'yellow': '0', 'red': '0', 'penalty': '0'}}
+2024-06-20 14:24:18,490 - detail - INFO - 上传detail结果：1718864656398-{"message": "Data processed successfully", "statusCode": 200}
+
+2024-06-20 14:24:22,589 - detail - INFO - 上传detail参数：1718864662589-{'data_id': '86408934', 'title': '下半场 59', 'home_team': {'name': 'VS - 拜仁慕尼黑', 'first': '3', 'full': '3', 'yellow': '0', 'red': '0', 'penalty': '0'}, 'away_team': {'name': 'VS - 柏林赫塔', 'first': '0', 'full': '0', 'yellow': '0', 'red': '0', 'penalty': '0'}}
+2024-06-20 14:24:24,694 - detail - INFO - 上传detail结果：1718864662589-{"message": "Data processed successfully", "statusCode": 200}
+
+2024-06-20 14:30:36,170 - detail - INFO - 上传detail参数：1718865036170-{'data_id': '86408910', 'title': '上半场 35', 'home_team': {'name': 'VS - 阿森纳', 'first': '1', 'full': '1', 'yellow': '0', 'red': '0', 'penalty': '0'}, 'away_team': {'name': 'VS - 托特纳姆热刺', 'first': '1', 'full': '1', 'yellow': '0', 'red': '0', 'penalty': '0'}}
+2024-06-20 14:30:38,291 - detail - INFO - 上传detail结果：1718865036170-{"message": "Data processed successfully", "statusCode": 200}
+
+2024-06-20 14:30:42,162 - detail - INFO - 上传detail参数：1718865042162-{'data_id': '86408942', 'title': '上半场 38', 'home_team': {'name': 'VS - 森多利亚', 'first': '1', 'full': '1', 'yellow': '0', 'red': '0', 'penalty': '0'}, 'away_team': {'name': 'VS - 都灵', 'first': '0', 'full': '0', 'yellow': '0', 'red': '0', 'penalty': '0'}}
+2024-06-20 14:30:44,410 - detail - INFO - 上传detail结果：1718865042162-{"message": "Data processed successfully", "statusCode": 200}
+
+2024-06-20 14:30:47,145 - detail - INFO - 上传detail参数：1718865047145-{'data_id': '86409364', 'title': '下半场 70', 'home_team': {'name': 'VS - 韩国', 'first': '2', 'full': '2', 'yellow': '0', 'red': '0', 'penalty': '0'}, 'away_team': {'name': 'VS - 卡塔尔', 'first': '1', 'full': '1', 'yellow': '0', 'red': '0', 'penalty': '0'}}
+2024-06-20 14:30:49,220 - detail - INFO - 上传detail结果：1718865047145-{"message": "Data processed successfully", "statusCode": 200}
+
+2024-06-20 14:30:51,998 - detail - INFO - 上传detail参数：1718865051998-{'data_id': '86409372', 'title': '上半场 33', 'home_team': {'name': 'VS - 葡萄牙', 'first': '0', 'full': '0', 'yellow': '0', 'red': '0', 'penalty': '0'}, 'away_team': {'name': 'VS - 德国', 'first': '1', 'full': '1', 'yellow': '0', 'red': '0', 'penalty': '0'}}
+2024-06-20 14:30:54,201 - detail - INFO - 上传detail结果：1718865051998-{"message": "Data processed successfully", "statusCode": 200}
+
+2024-06-20 14:30:56,717 - detail - INFO - 上传detail参数：1718865056717-{'data_id': '86408462', 'title': '上半场 21', 'home_team': {'name': 'VS - 杜塞尔多夫', 'first': '0', 'full': '0', 'yellow': '0', 'red': '0', 'penalty': '0'}, 'away_team': {'name': 'VS - 门兴格拉德巴赫', 'first': '0', 'full': '0', 'yellow': '0', 'red': '0', 'penalty': '0'}}
+2024-06-20 14:30:58,753 - detail - INFO - 上传detail结果：1718865056717-{"message": "Data processed successfully", "statusCode": 200}
+
+2024-06-20 14:31:03,660 - detail - INFO - 上传detail参数：1718865063660-{'data_id': '86408910', 'title': '上半场 35', 'home_team': {'name': 'VS - 阿森纳', 'first': '2', 'full': '2', 'yellow': '0', 'red': '0', 'penalty': '0'}, 'away_team': {'name': 'VS - 托特纳姆热刺', 'first': '1', 'full': '1', 'yellow': '0', 'red': '0', 'penalty': '0'}}
+2024-06-20 14:31:05,779 - detail - INFO - 上传detail结果：1718865063660-{"message": "Data processed successfully", "statusCode": 200}
+
+2024-06-20 14:31:08,681 - detail - INFO - 上传detail参数：1718865068681-{'data_id': '86408936', 'title': '上半场 38', 'home_team': {'name': 'VS - 卡利亚里', 'first': '0', 'full': '0', 'yellow': '0', 'red': '0', 'penalty': '0'}, 'away_team': {'name': 'VS - 博洛尼亚', 'first': '1', 'full': '1', 'yellow': '0', 'red': '0', 'penalty': '0'}}
+2024-06-20 14:31:10,703 - detail - INFO - 上传detail结果：1718865068681-{"message": "Data processed successfully", "statusCode": 200}
+
+2024-06-20 14:31:12,745 - detail - INFO - 上传detail参数：1718865072745-{'data_id': '86409336', 'title': '上半场 02', 'home_team': {'name': 'VS - 阿根廷', 'first': '0', 'full': '0', 'yellow': '0', 'red': '0', 'penalty': '0'}, 'away_team': {'name': 'VS - 墨西哥', 'first': '0', 'full': '0', 'yellow': '0', 'red': '0', 'penalty': '0'}}
+2024-06-20 14:31:14,808 - detail - INFO - 上传detail结果：1718865072745-{"message": "Data processed successfully", "statusCode": 200}
+
+2024-06-20 14:31:19,086 - detail - INFO - 上传detail参数：1718865079086-{'data_id': '86409347', 'title': '下半场 72', 'home_team': {'name': 'VS - 澳大利亚', 'first': '0', 'full': '0', 'yellow': '0', 'red': '0', 'penalty': '0'}, 'away_team': {'name': 'VS - 日本', 'first': '0', 'full': '0', 'yellow': '0', 'red': '0', 'penalty': '0'}}
+2024-06-20 14:31:21,179 - detail - INFO - 上传detail结果：1718865079086-{"message": "Data processed successfully", "statusCode": 200}
+
+2024-06-20 14:31:24,850 - detail - INFO - 上传detail参数：1718865084850-{'data_id': '86409375', 'title': '上半场 33', 'home_team': {'name': 'VS - 比利时', 'first': '1', 'full': '1', 'yellow': '0', 'red': '0', 'penalty': '0'}, 'away_team': {'name': 'VS - 西班牙', 'first': '1', 'full': '1', 'yellow': '0', 'red': '0', 'penalty': '0'}}
+2024-06-20 14:31:27,049 - detail - INFO - 上传detail结果：1718865084850-{"message": "Data processed successfully", "statusCode": 200}
+
+2024-06-20 14:31:32,101 - detail - INFO - 上传detail参数：1718865092101-{'data_id': '86408910', 'title': '上半场 38', 'home_team': {'name': 'VS - 阿森纳', 'first': '2', 'full': '2', 'yellow': '0', 'red': '0', 'penalty': '0'}, 'away_team': {'name': 'VS - 托特纳姆热刺', 'first': '1', 'full': '1', 'yellow': '0', 'red': '0', 'penalty': '0'}}
+2024-06-20 14:31:34,212 - detail - INFO - 上传detail结果：1718865092101-{"message": "Data processed successfully", "statusCode": 200}
+
+2024-06-20 14:31:36,372 - detail - INFO - 上传detail参数：1718865096372-{'data_id': '86408942', 'title': '上半场 41', 'home_team': {'name': 'VS - 森多利亚', 'first': '1', 'full': '1', 'yellow': '0', 'red': '0', 'penalty': '0'}, 'away_team': {'name': 'VS - 都灵', 'first': '0', 'full': '0', 'yellow': '0', 'red': '0', 'penalty': '0'}}
+2024-06-20 14:31:38,493 - detail - INFO - 上传detail结果：1718865096372-{"message": "Data processed successfully", "statusCode": 200}
+
+2024-06-20 14:31:41,554 - detail - INFO - 上传detail参数：1718865101554-{'data_id': '86408924', 'title': '上半场 05', 'home_team': {'name': 'VS - 塞维利亚', 'first': '0', 'full': '0', 'yellow': '0', 'red': '0', 'penalty': '0'}, 'away_team': {'name': 'VS - 巴塞罗那', 'first': '0', 'full': '0', 'yellow': '0', 'red': '0', 'penalty': '0'}}
+2024-06-20 14:31:43,607 - detail - INFO - 上传detail结果：1718865101554-{"message": "Data processed successfully", "statusCode": 200}
+
+2024-06-20 14:31:46,300 - detail - INFO - 上传detail参数：1718865106300-{'data_id': '86409336', 'title': '上半场 05', 'home_team': {'name': 'VS - 阿根廷', 'first': '0', 'full': '0', 'yellow': '0', 'red': '0', 'penalty': '0'}, 'away_team': {'name': 'VS - 墨西哥', 'first': '0', 'full': '0', 'yellow': '0', 'red': '0', 'penalty': '0'}}
+2024-06-20 14:31:48,413 - detail - INFO - 上传detail结果：1718865106300-{"message": "Data processed successfully", "statusCode": 200}
+
+2024-06-20 14:31:52,069 - detail - INFO - 上传detail参数：1718865112069-{'data_id': '86409347', 'title': '下半场 75', 'home_team': {'name': 'VS - 澳大利亚', 'first': '0', 'full': '0', 'yellow': '0', 'red': '0', 'penalty': '0'}, 'away_team': {'name': 'VS - 日本', 'first': '0', 'full': '0', 'yellow': '0', 'red': '0', 'penalty': '0'}}
+2024-06-20 14:31:54,172 - detail - INFO - 上传detail结果：1718865112069-{"message": "Data processed successfully", "statusCode": 200}
+
+2024-06-20 14:32:00,951 - detail - INFO - 上传detail参数：1718865120951-{'data_id': '86408938', 'title': '上半场 39', 'home_team': {'name': 'VS - 西汉姆联', 'first': '1', 'full': '1', 'yellow': '0', 'red': '0', 'penalty': '0'}, 'away_team': {'name': 'VS - 曼联', 'first': '1', 'full': '1', 'yellow': '0', 'red': '0', 'penalty': '0'}}
+2024-06-20 14:32:02,983 - detail - INFO - 上传detail结果：1718865120951-{"message": "Data processed successfully", "statusCode": 200}
+
+2024-06-20 14:32:06,671 - detail - INFO - 上传detail参数：1718865126671-{'data_id': '86408942', 'title': '上半场 43', 'home_team': {'name': 'VS - 森多利亚', 'first': '1', 'full': '1', 'yellow': '0', 'red': '0', 'penalty': '0'}, 'away_team': {'name': 'VS - 都灵', 'first': '0', 'full': '0', 'yellow': '0', 'red': '0', 'penalty': '0'}}
+2024-06-20 14:32:08,696 - detail - INFO - 上传detail结果：1718865126671-{"message": "Data processed successfully", "statusCode": 200}
+
+2024-06-20 14:32:12,114 - detail - INFO - 上传detail参数：1718865132114-{'data_id': '86408924', 'title': '上半场 06', 'home_team': {'name': 'VS - 塞维利亚', 'first': '1', 'full': '1', 'yellow': '0', 'red': '0', 'penalty': '0'}, 'away_team': {'name': 'VS - 巴塞罗那', 'first': '0', 'full': '0', 'yellow': '0', 'red': '0', 'penalty': '0'}}
+2024-06-20 14:32:14,142 - detail - INFO - 上传detail结果：1718865132114-{"message": "Data processed successfully", "statusCode": 200}
+
+2024-06-20 14:32:16,676 - detail - INFO - 上传detail参数：1718865136676-{'data_id': '86409362', 'title': '上半场 07', 'home_team': {'name': 'VS - 巴西', 'first': '0', 'full': '0', 'yellow': '0', 'red': '0', 'penalty': '0'}, 'away_team': {'name': 'VS - 智利', 'first': '0', 'full': '0', 'yellow': '0', 'red': '0', 'penalty': '0'}}
+2024-06-20 14:32:18,784 - detail - INFO - 上传detail结果：1718865136676-{"message": "Data processed successfully", "statusCode": 200}
+
+2024-06-20 14:32:21,350 - detail - INFO - 上传detail参数：1718865141350-{'data_id': '86409347', 'title': '下半场 76', 'home_team': {'name': 'VS - 澳大利亚', 'first': '0', 'full': '0', 'yellow': '0', 'red': '0', 'penalty': '0'}, 'away_team': {'name': 'VS - 日本', 'first': '0', 'full': '0', 'yellow': '0', 'red': '0', 'penalty': '0'}}
+2024-06-20 14:32:23,373 - detail - INFO - 上传detail结果：1718865141350-{"message": "Data processed successfully", "statusCode": 200}
+
+2024-06-20 14:32:30,493 - detail - INFO - 上传detail参数：1718865150493-{'data_id': '86408910', 'title': '上半场 42', 'home_team': {'name': 'VS - 阿森纳', 'first': '2', 'full': '2', 'yellow': '0', 'red': '0', 'penalty': '0'}, 'away_team': {'name': 'VS - 托特纳姆热刺', 'first': '1', 'full': '1', 'yellow': '0', 'red': '0', 'penalty': '0'}}
+2024-06-20 14:32:32,557 - detail - INFO - 上传detail结果：1718865150493-{"message": "Data processed successfully", "statusCode": 200}
+
+2024-06-20 14:32:36,230 - detail - INFO - 上传detail参数：1718865156230-{'data_id': '86408942', 'title': '上半场 44', 'home_team': {'name': 'VS - 森多利亚', 'first': '1', 'full': '1', 'yellow': '0', 'red': '0', 'penalty': '0'}, 'away_team': {'name': 'VS - 都灵', 'first': '0', 'full': '0', 'yellow': '0', 'red': '0', 'penalty': '0'}}
+2024-06-20 14:32:38,474 - detail - INFO - 上传detail结果：1718865156230-{"message": "Data processed successfully", "statusCode": 200}
+
+2024-06-20 14:32:42,391 - detail - INFO - 上传detail参数：1718865162391-{'data_id': '86408924', 'title': '上半场 09', 'home_team': {'name': 'VS - 塞维利亚', 'first': '1', 'full': '1', 'yellow': '0', 'red': '0', 'penalty': '0'}, 'away_team': {'name': 'VS - 巴塞罗那', 'first': '0', 'full': '0', 'yellow': '0', 'red': '0', 'penalty': '0'}}
+2024-06-20 14:32:44,508 - detail - INFO - 上传detail结果：1718865162391-{"message": "Data processed successfully", "statusCode": 200}
+
+2024-06-20 14:32:46,988 - detail - INFO - 上传detail参数：1718865166988-{'data_id': '86409362', 'title': '上半场 09', 'home_team': {'name': 'VS - 巴西', 'first': '0', 'full': '0', 'yellow': '0', 'red': '0', 'penalty': '0'}, 'away_team': {'name': 'VS - 智利', 'first': '0', 'full': '0', 'yellow': '0', 'red': '0', 'penalty': '0'}}
+2024-06-20 14:32:49,002 - detail - INFO - 上传detail结果：1718865166988-{"message": "Data processed successfully", "statusCode": 200}
+
+2024-06-20 14:32:52,105 - detail - INFO - 上传detail参数：1718865172105-{'data_id': '86409364', 'title': '下半场 79', 'home_team': {'name': 'VS - 韩国', 'first': '2', 'full': '2', 'yellow': '0', 'red': '0', 'penalty': '0'}, 'away_team': {'name': 'VS - 卡塔尔', 'first': '1', 'full': '1', 'yellow': '0', 'red': '0', 'penalty': '0'}}
+2024-06-20 14:32:54,142 - detail - INFO - 上传detail结果：1718865172105-{"message": "Data processed successfully", "statusCode": 200}
+
+2024-06-20 14:33:03,679 - detail - INFO - 上传detail参数：1718865183679-{'data_id': '86408938', 'title': '上半场 44', 'home_team': {'name': 'VS - 西汉姆联', 'first': '1', 'full': '1', 'yellow': '0', 'red': '0', 'penalty': '0'}, 'away_team': {'name': 'VS - 曼联', 'first': '1', 'full': '1', 'yellow': '0', 'red': '0', 'penalty': '0'}}
+2024-06-20 14:33:05,894 - detail - INFO - 上传detail结果：1718865183679-{"message": "Data processed successfully", "statusCode": 200}
+
+2024-06-20 14:33:09,849 - detail - INFO - 上传detail参数：1718865189849-{'data_id': '86408936', 'title': '上半场 44', 'home_team': {'name': 'VS - 卡利亚里', 'first': '0', 'full': '0', 'yellow': '0', 'red': '0', 'penalty': '0'}, 'away_team': {'name': 'VS - 博洛尼亚', 'first': '2', 'full': '2', 'yellow': '0', 'red': '0', 'penalty': '0'}}
+2024-06-20 14:33:11,940 - detail - INFO - 上传detail结果：1718865189849-{"message": "Data processed successfully", "statusCode": 200}
+
+2024-06-20 14:33:15,703 - detail - INFO - 上传detail参数：1718865195703-{'data_id': '86408937', 'title': '上半场 11', 'home_team': {'name': 'VS - 比利亚雷亚尔', 'first': '1', 'full': '1', 'yellow': '0', 'red': '0', 'penalty': '0'}, 'away_team': {'name': 'VS - 体育俱乐部', 'first': '0', 'full': '0', 'yellow': '0', 'red': '0', 'penalty': '0'}}
+2024-06-20 14:33:17,957 - detail - INFO - 上传detail结果：1718865195703-{"message": "Data processed successfully", "statusCode": 200}
+
+2024-06-20 14:33:21,482 - detail - INFO - 上传detail参数：1718865201482-{'data_id': '86409336', 'title': '上半场 10', 'home_team': {'name': 'VS - 阿根廷', 'first': '0', 'full': '0', 'yellow': '0', 'red': '0', 'penalty': '0'}, 'away_team': {'name': 'VS - 墨西哥', 'first': '0', 'full': '0', 'yellow': '0', 'red': '0', 'penalty': '0'}}
+2024-06-20 14:33:23,568 - detail - INFO - 上传detail结果：1718865201482-{"message": "Data processed successfully", "statusCode": 200}
+
+2024-06-20 14:33:26,723 - detail - INFO - 上传detail参数：1718865206723-{'data_id': '86409362', 'title': '上半场 12', 'home_team': {'name': 'VS - 巴西', 'first': '0', 'full': '0', 'yellow': '0', 'red': '0', 'penalty': '0'}, 'away_team': {'name': 'VS - 智利', 'first': '0', 'full': '0', 'yellow': '0', 'red': '0', 'penalty': '0'}}
+2024-06-20 14:33:28,815 - detail - INFO - 上传detail结果：1718865206723-{"message": "Data processed successfully", "statusCode": 200}
+
+2024-06-20 14:33:32,346 - detail - INFO - 上传detail参数：1718865212346-{'data_id': '86409347', 'title': '下半场 80', 'home_team': {'name': 'VS - 澳大利亚', 'first': '0', 'full': '0', 'yellow': '0', 'red': '0', 'penalty': '0'}, 'away_team': {'name': 'VS - 日本', 'first': '0', 'full': '0', 'yellow': '0', 'red': '0', 'penalty': '0'}}
+2024-06-20 14:33:34,382 - detail - INFO - 上传detail结果：1718865212346-{"message": "Data processed successfully", "statusCode": 200}
+
+2024-06-20 14:33:36,994 - detail - INFO - 上传detail参数：1718865216994-{'data_id': '86409364', 'title': '下半场 82', 'home_team': {'name': 'VS - 韩国', 'first': '2', 'full': '2', 'yellow': '0', 'red': '0', 'penalty': '0'}, 'away_team': {'name': 'VS - 卡塔尔', 'first': '1', 'full': '1', 'yellow': '0', 'red': '0', 'penalty': '0'}}
+2024-06-20 14:33:39,107 - detail - INFO - 上传detail结果：1718865216994-{"message": "Data processed successfully", "statusCode": 200}
+
+2024-06-20 14:33:41,688 - detail - INFO - 上传detail参数：1718865221688-{'data_id': '86409375', 'title': '上半场 42', 'home_team': {'name': 'VS - 比利时', 'first': '1', 'full': '1', 'yellow': '0', 'red': '0', 'penalty': '0'}, 'away_team': {'name': 'VS - 西班牙', 'first': '1', 'full': '1', 'yellow': '0', 'red': '0', 'penalty': '0'}}
+2024-06-20 14:33:43,795 - detail - INFO - 上传detail结果：1718865221688-{"message": "Data processed successfully", "statusCode": 200}
+
+2024-06-20 14:33:47,000 - detail - INFO - 上传detail参数：1718865227000-{'data_id': '86409372', 'title': '上半场 46', 'home_team': {'name': 'VS - 葡萄牙', 'first': '0', 'full': '0', 'yellow': '0', 'red': '0', 'penalty': '0'}, 'away_team': {'name': 'VS - 德国', 'first': '1', 'full': '1', 'yellow': '0', 'red': '0', 'penalty': '0'}}
+2024-06-20 14:33:49,206 - detail - INFO - 上传detail结果：1718865227000-{"message": "Data processed successfully", "statusCode": 200}
+
+2024-06-20 14:33:52,131 - detail - INFO - 上传detail参数：1718865232131-{'data_id': '86408938', 'title': '上半场 47', 'home_team': {'name': 'VS - 西汉姆联', 'first': '1', 'full': '1', 'yellow': '0', 'red': '0', 'penalty': '0'}, 'away_team': {'name': 'VS - 曼联', 'first': '1', 'full': '1', 'yellow': '0', 'red': '0', 'penalty': '0'}}
+2024-06-20 14:33:54,200 - detail - INFO - 上传detail结果：1718865232131-{"message": "Data processed successfully", "statusCode": 200}
+
+2024-06-20 14:33:56,908 - detail - INFO - 上传detail参数：1718865236908-{'data_id': '86408937', 'title': '上半场 14', 'home_team': {'name': 'VS - 比利亚雷亚尔', 'first': '2', 'full': '2', 'yellow': '0', 'red': '0', 'penalty': '0'}, 'away_team': {'name': 'VS - 体育俱乐部', 'first': '0', 'full': '0', 'yellow': '0', 'red': '0', 'penalty': '0'}}
+2024-06-20 14:33:59,173 - detail - INFO - 上传detail结果：1718865236908-{"message": "Data processed successfully", "statusCode": 200}
+
+2024-06-20 14:34:01,883 - detail - INFO - 上传detail参数：1718865241883-{'data_id': '86409336', 'title': '上半场 12', 'home_team': {'name': 'VS - 阿根廷', 'first': '0', 'full': '0', 'yellow': '0', 'red': '0', 'penalty': '0'}, 'away_team': {'name': 'VS - 墨西哥', 'first': '0', 'full': '0', 'yellow': '0', 'red': '0', 'penalty': '0'}}
+2024-06-20 14:34:04,005 - detail - INFO - 上传detail结果：1718865241883-{"message": "Data processed successfully", "statusCode": 200}
+
+2024-06-20 14:34:06,798 - detail - INFO - 上传detail参数：1718865246798-{'data_id': '86409347', 'title': '下半场 83', 'home_team': {'name': 'VS - 澳大利亚', 'first': '0', 'full': '0', 'yellow': '0', 'red': '0', 'penalty': '0'}, 'away_team': {'name': 'VS - 日本', 'first': '0', 'full': '1', 'yellow': '0', 'red': '0', 'penalty': '0'}}
+2024-06-20 14:34:08,926 - detail - INFO - 上传detail结果：1718865246798-{"message": "Data processed successfully", "statusCode": 200}
+
+2024-06-20 14:34:11,973 - detail - INFO - 上传detail参数：1718865251973-{'data_id': '86408910', 'title': '半场', 'home_team': {'name': 'VS - 阿森纳', 'first': '2', 'full': '2', 'yellow': '0', 'red': '0', 'penalty': '0'}, 'away_team': {'name': 'VS - 托特纳姆热刺', 'first': '1', 'full': '1', 'yellow': '0', 'red': '0', 'penalty': '0'}}
+2024-06-20 14:34:14,003 - detail - INFO - 上传detail结果：1718865251973-{"message": "Data processed successfully", "statusCode": 200}
+
+2024-06-20 14:34:16,509 - detail - INFO - 上传detail参数：1718865256509-{'data_id': '86408936', 'title': '上半场 47', 'home_team': {'name': 'VS - 卡利亚里', 'first': '0', 'full': '0', 'yellow': '0', 'red': '0', 'penalty': '0'}, 'away_team': {'name': 'VS - 博洛尼亚', 'first': '2', 'full': '2', 'yellow': '0', 'red': '0', 'penalty': '0'}}
+2024-06-20 14:34:18,682 - detail - INFO - 上传detail结果：1718865256509-{"message": "Data processed successfully", "statusCode": 200}
+
+2024-06-20 14:34:21,908 - detail - INFO - 上传detail参数：1718865261908-{'data_id': '86408937', 'title': '上半场 15', 'home_team': {'name': 'VS - 比利亚雷亚尔', 'first': '2', 'full': '2', 'yellow': '0', 'red': '0', 'penalty': '0'}, 'away_team': {'name': 'VS - 体育俱乐部', 'first': '0', 'full': '0', 'yellow': '0', 'red': '0', 'penalty': '0'}}
+2024-06-20 14:34:24,090 - detail - INFO - 上传detail结果：1718865261908-{"message": "Data processed successfully", "statusCode": 200}
+
+2024-06-20 14:34:26,982 - detail - INFO - 上传detail参数：1718865266982-{'data_id': '86409362', 'title': '上半场 16', 'home_team': {'name': 'VS - 巴西', 'first': '0', 'full': '0', 'yellow': '0', 'red': '0', 'penalty': '0'}, 'away_team': {'name': 'VS - 智利', 'first': '0', 'full': '0', 'yellow': '0', 'red': '0', 'penalty': '0'}}
+2024-06-20 14:34:29,090 - detail - INFO - 上传detail结果：1718865266982-{"message": "Data processed successfully", "statusCode": 200}
+
+2024-06-20 14:34:31,880 - detail - INFO - 上传detail参数：1718865271880-{'data_id': '86409372', 'title': '半场', 'home_team': {'name': 'VS - 葡萄牙', 'first': '0', 'full': '0', 'yellow': '0', 'red': '0', 'penalty': '0'}, 'away_team': {'name': 'VS - 德国', 'first': '1', 'full': '1', 'yellow': '0', 'red': '0', 'penalty': '0'}}
+2024-06-20 14:34:34,103 - detail - INFO - 上传detail结果：1718865271880-{"message": "Data processed successfully", "statusCode": 200}
+
+2024-06-20 14:34:37,435 - detail - INFO - 上传detail参数：1718865277435-{'data_id': '86408938', 'title': '下半场 45', 'home_team': {'name': 'VS - 西汉姆联', 'first': '1', 'full': '1', 'yellow': '0', 'red': '0', 'penalty': '0'}, 'away_team': {'name': 'VS - 曼联', 'first': '1', 'full': '1', 'yellow': '0', 'red': '0', 'penalty': '0'}}
+2024-06-20 14:34:39,590 - detail - INFO - 上传detail结果：1718865277435-{"message": "Data processed successfully", "statusCode": 200}
+
+2024-06-20 14:34:42,146 - detail - INFO - 上传detail参数：1718865282146-{'data_id': '86408942', 'title': '下半场 46', 'home_team': {'name': 'VS - 森多利亚', 'first': '1', 'full': '1', 'yellow': '0', 'red': '0', 'penalty': '0'}, 'away_team': {'name': 'VS - 都灵', 'first': '0', 'full': '0', 'yellow': '0', 'red': '0', 'penalty': '0'}}
+2024-06-20 14:34:44,175 - detail - INFO - 上传detail结果：1718865282146-{"message": "Data processed successfully", "statusCode": 200}
+
+2024-06-20 14:34:46,686 - detail - INFO - 上传detail参数：1718865286686-{'data_id': '86409336', 'title': '上半场 15', 'home_team': {'name': 'VS - 阿根廷', 'first': '0', 'full': '0', 'yellow': '0', 'red': '0', 'penalty': '0'}, 'away_team': {'name': 'VS - 墨西哥', 'first': '0', 'full': '0', 'yellow': '0', 'red': '0', 'penalty': '0'}}
+2024-06-20 14:34:48,706 - detail - INFO - 上传detail结果：1718865286686-{"message": "Data processed successfully", "statusCode": 200}
+
+2024-06-20 14:34:51,817 - detail - INFO - 上传detail参数：1718865291817-{'data_id': '86409375', 'title': '上半场 46', 'home_team': {'name': 'VS - 比利时', 'first': '1', 'full': '1', 'yellow': '0', 'red': '0', 'penalty': '0'}, 'away_team': {'name': 'VS - 西班牙', 'first': '1', 'full': '1', 'yellow': '0', 'red': '0', 'penalty': '0'}}
+2024-06-20 14:34:53,943 - detail - INFO - 上传detail结果：1718865291817-{"message": "Data processed successfully", "statusCode": 200}
+
+2024-06-20 14:34:57,039 - detail - INFO - 上传detail参数：1718865297039-{'data_id': '86408910', 'title': '下半场 47', 'home_team': {'name': 'VS - 阿森纳', 'first': '2', 'full': '2', 'yellow': '0', 'red': '0', 'penalty': '0'}, 'away_team': {'name': 'VS - 托特纳姆热刺', 'first': '1', 'full': '1', 'yellow': '0', 'red': '0', 'penalty': '0'}}
+2024-06-20 14:34:59,160 - detail - INFO - 上传detail结果：1718865297039-{"message": "Data processed successfully", "statusCode": 200}
+
+2024-06-20 14:35:02,266 - detail - INFO - 上传detail参数：1718865302266-{'data_id': '86408936', 'title': '半场', 'home_team': {'name': 'VS - 卡利亚里', 'first': '0', 'full': '0', 'yellow': '0', 'red': '0', 'penalty': '0'}, 'away_team': {'name': 'VS - 博洛尼亚', 'first': '2', 'full': '2', 'yellow': '0', 'red': '0', 'penalty': '0'}}
+2024-06-20 14:35:04,322 - detail - INFO - 上传detail结果：1718865302266-{"message": "Data processed successfully", "statusCode": 200}
+
