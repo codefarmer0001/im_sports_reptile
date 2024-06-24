@@ -20,6 +20,7 @@ class produce:
             # sleep(1)
 
     
-    def push_list(self, task, msg):
-        self.redis_client.lpush(task, f'{msg}')
+    def push_list(self, msg):
+        print(f'上传list信号：{msg} - {mode}')
+        self.redis_client.lpush(mode, f'{msg}')
 

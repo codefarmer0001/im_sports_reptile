@@ -56,7 +56,7 @@ class Detail:
             flag = 0
 
             try:
-                popup_overlay_div = WebDriverWait(driver, 1).until(
+                popup_overlay_div = WebDriverWait(driver, 3, poll_frequency=0.1).until(
                     EC.visibility_of_element_located((By.XPATH, './/div[@class="popup_overlay"]'))
                 )
 
@@ -75,16 +75,17 @@ class Detail:
             if flag == 0:
 
                 game_element = None
-                
-                try:
-                    game_element = driver.find_element(By.XPATH, './/div[@class="scr_wrp"]')
-                except Exception as e:
-                    print(e)
 
-                if not game_element:
-                    game_element = WebDriverWait(driver, 1.5).until(
-                        EC.visibility_of_element_located((By.XPATH, './/div[@class="scr_wrp"]'))
-                    )
+                # try:
+                #     game_element = driver.find_element(By.XPATH, './/div[@class="scr_wrp"]')
+                # except Exception as e:
+                #     print(e)
+
+                # if not game_element:
+
+                game_element = WebDriverWait(driver, 5, poll_frequency=0.1).until(
+                    EC.visibility_of_element_located((By.XPATH, './/div[@class="scr_wrp"]'))
+                )
 
                 
 
