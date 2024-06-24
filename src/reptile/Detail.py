@@ -2,12 +2,10 @@
 # from selenium import webdriver
 # from selenium.webdriver.chrome.service import Service
 from config import CONFIG
-from time import sleep
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.ui import WebDriverWait
-from time import sleep
 import json
 import re
 import requests
@@ -22,10 +20,10 @@ mode = os.environ.get('MODE', 'DEV')
 
 # from pool import DriverPool
 
-class Detail:
+class detail:
 
     @staticmethod
-    def reptile_detail_data(driver, url):
+    def reptile_detail_data(driver, url, r):
 
         try:
             # 记录开始时间
@@ -201,6 +199,19 @@ class Detail:
                 print('\n')
 
                 print(f"代码执行时间为：{execution_time} 秒")
+
+                last_login_time_str = r.get_string(mode)
+                last_login_time = float(last_login_time_str)
+                login_time = time.time() - last_login_time
+                
+                if login_time > 36000:
+                # if login_time > 120:
+                    from .login import login
+                    print(f'登录时长：{login_time}')
+                    driver.quit()
+                    login.main()
+
+                
 
                 # pass
         except Exception as e:

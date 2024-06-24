@@ -1,3 +1,3 @@
-from .LoginYY import LoginYY
-from .Detail import Detail
-from .MainData import MainData
+from .login import login
+from .detail import detail
+from .list import list

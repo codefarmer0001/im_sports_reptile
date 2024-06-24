@@ -1,6 +1,6 @@
 import redis
-from time import sleep
 import os
+from config import CONFIG
 
 mode = os.environ.get('MODE')
 
@@ -8,7 +8,7 @@ class produce:
 
     def __init__(self) -> None:
         # 连接到 Redis
-        self.redis_client = redis.StrictRedis(host='47.242.104.96', port=6379, db=0, password='Zaq123456..')
+        self.redis_client = redis.StrictRedis(host=CONFIG.REDIS_HOST, port=CONFIG.REDIS_PORT, db=CONFIG.REDIS_DB, password=CONFIG.REDIS_PASSWORD)
         pass
 
 
