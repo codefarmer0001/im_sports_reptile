@@ -81,7 +81,7 @@ class detail:
 
                 # if not game_element:
 
-                game_element = WebDriverWait(driver, 5, poll_frequency=0.1).until(
+                game_element = WebDriverWait(driver, 10, poll_frequency=0.1).until(
                     EC.visibility_of_element_located((By.XPATH, './/div[@class="scr_wrp"]'))
                 )
 

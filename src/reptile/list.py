@@ -37,6 +37,8 @@ class list:
 
             # 记录开始时间
             start_time = time.time()
+
+            driver.refresh()
             
             # sport_items.click()
             # 创建 ActionChains 对象
