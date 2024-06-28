@@ -13,6 +13,9 @@ import time
 import traceback
 import os
 
+
+
+
 from logs import getLogger  # 导入日志配置模块
 logger = getLogger('detail')
 mode = os.environ.get('MODE', 'DEV')
