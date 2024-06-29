@@ -33,8 +33,8 @@ class login:
     def main():
         # try:
         # 指定Chrome驱动器路径（注意修改为你实际的驱动器路径）
-        # driver_path = CONFIG.MAC_ARM64_CHROME
-        driver_path = CONFIG.LINUX_64_CHROME
+        driver_path = CONFIG.MAC_ARM64_CHROME
+        # driver_path = CONFIG.LINUX_64_CHROME
         # print(driver_path)
         # 创建Chrome驱动器服务
         service = Service(driver_path)
@@ -50,9 +50,11 @@ class login:
         chrome_options.add_argument('--disable-infobars')
         chrome_options.add_argument('--window-size=1920,1080')
         chrome_options.add_argument('--blink-settings=imagesEnabled=false')
+        chrome_options.add_argument('--disk-cache-dir=./cache')  # 设置磁盘缓存目录
+        chrome_options.add_argument('--disk-cache-size=104857600')  # 设置磁盘缓存大小，单位为字节 (100 MB)
         # chrome_options.page_load_strategy = 'none'
         
-        driver = webdriver.Chrome(service=service)
+        driver = webdriver.Chrome(service=service, options=chrome_options)
         # driver.implicitly_wait(5)  # 设置全局隐式等待时间为5秒
         try:
 
