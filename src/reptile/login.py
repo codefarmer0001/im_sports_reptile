@@ -49,6 +49,7 @@ class login:
         chrome_options.add_argument('--start-maximized')
         chrome_options.add_argument('--disable-infobars')
         chrome_options.add_argument('--window-size=1920,1080')
+        chrome_options.add_argument('--blink-settings=imagesEnabled=false')
         
         driver = webdriver.Chrome(service=service, options=chrome_options)
         # driver.implicitly_wait(5)  # 设置全局隐式等待时间为5秒
