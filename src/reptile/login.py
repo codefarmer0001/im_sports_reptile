@@ -44,6 +44,10 @@ class login:
         chrome_options.add_argument('--headless')
         chrome_options.add_argument('--no-sandbox')
         chrome_options.add_argument('--disable-dev-shm-usage')
+        chrome_options.add_argument('--disable-gpu')
+        chrome_options.add_argument('--disable-extensions')
+        chrome_options.add_argument('--start-maximized')
+        chrome_options.add_argument('--disable-infobars')
         driver = webdriver.Chrome(service=service, options=chrome_options)
         # driver.implicitly_wait(5)  # 设置全局隐式等待时间为5秒
         try:
