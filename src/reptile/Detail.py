@@ -54,6 +54,8 @@ class detail:
 
             driver.switch_to.frame(iframe)
 
+            print(f'iframe请求时间:{time.time() - start_time}')
+
             flag = 0
 
             try:
