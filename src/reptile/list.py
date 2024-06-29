@@ -5,7 +5,6 @@ from bs4 import BeautifulSoup
 from config import CONFIG
 from time import sleep
 from selenium.webdriver.common.by import By
-from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.common.action_chains import ActionChains
@@ -45,7 +44,7 @@ class list:
             action_chains = ActionChains(driver)
             
             # 等待 iframe 出现
-            iframe = WebDriverWait(driver, 3).until(
+            iframe = WebDriverWait(driver, 3, poll_frequency=0.1).until(
                 EC.presence_of_element_located((By.TAG_NAME, 'iframe'))
             )
             
@@ -63,7 +62,7 @@ class list:
             
             try:
                 
-                game_element = WebDriverWait(driver, 3).until(
+                game_element = WebDriverWait(driver, 3, poll_frequency=0.1).until(
                     EC.visibility_of_element_located((By.XPATH, './/div[@class="leftmenu_sports_content default"]'))
                 )
 
@@ -91,7 +90,7 @@ class list:
 
 
             # market_2_1
-            game_content = WebDriverWait(driver, 3).until(
+            game_content = WebDriverWait(driver, 3, poll_frequency=0.1).until(
                 EC.visibility_of_element_located((By.ID, 'market_3_1'))
             )
 
@@ -477,7 +476,7 @@ class list:
             
             # print(112345)
             
-            game_element = WebDriverWait(driver, 3).until(
+            game_element = WebDriverWait(driver, 3, poll_frequency=0.1).until(
                 EC.visibility_of_element_located((By.CLASS_NAME, 'leftmenu_sports_content'))
             )
 
@@ -499,7 +498,7 @@ class list:
                         break
 
             # market_2_1
-            game_content = WebDriverWait(driver, 3).until(
+            game_content = WebDriverWait(driver, 3, poll_frequency=0.1).until(
                 EC.visibility_of_element_located((By.ID, 'col_3_1'))
             )
             print('\n\n\n')

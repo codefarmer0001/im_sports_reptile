@@ -3,7 +3,6 @@
 # from selenium.webdriver.chrome.service import Service
 from config import CONFIG
 from selenium.webdriver.common.by import By
-from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium import webdriver
@@ -83,7 +82,7 @@ class login:
 
         # try:
         if 1 == 1:
-            login_btn_panl = WebDriverWait(driver, 3).until(
+            login_btn_panl = WebDriverWait(driver, 3, poll_frequency=0.1).until(
                 EC.visibility_of_element_located((By.CLASS_NAME, 'login_menu'))
             )
 
@@ -92,10 +91,10 @@ class login:
             driver.execute_script("arguments[0].click();", login_button)
 
 
-            print(login_btn_panl)
+            # print(login_btn_panl)
 
 
-            login_panl = WebDriverWait(driver, 3).until(
+            login_panl = WebDriverWait(driver, 3, poll_frequency=0.1).until(
                 EC.visibility_of_element_located((By.ID, 'loginModal'))
             )
 
@@ -103,11 +102,8 @@ class login:
             input_password = login_panl.find_element(By.ID, 'pwd')
             input_inputcode = login_panl.find_element(By.ID, 'inputcode')
 
-            # 创建 WebDriverWait 对象
-            wait = WebDriverWait(driver, 3)
-
             # 等待元素加载
-            img_code = wait.until(lambda driver: driver.find_element(By.ID, 'pic').get_attribute('src') != '')
+            img_code = WebDriverWait(driver, 3, poll_frequency=0.1).until(lambda driver: driver.find_element(By.ID, 'pic').get_attribute('src') != '')
             img_code = login_panl.find_element(By.ID, 'pic')
             src_value = img_code.get_attribute('src')
             
@@ -152,7 +148,7 @@ class login:
 
                 try:
 
-                    notice_panl = WebDriverWait(driver, 3).until(
+                    notice_panl = WebDriverWait(driver, 3, poll_frequency=0.1).until(
                         EC.visibility_of_element_located((By.ID, 'focus_announce'))
                     )
                     # cancel
@@ -163,7 +159,7 @@ class login:
                 except Exception as e:
                     print('公告界面可能不存在')
 
-                game_panal = WebDriverWait(driver, 3).until(
+                game_panal = WebDriverWait(driver, 3, poll_frequency=0.1).until(
                     EC.visibility_of_element_located((By.XPATH, './/ul[@class="recreation_list active"]'))
                 )
 
@@ -180,7 +176,7 @@ class login:
                                 driver.execute_script("arguments[0].click();", item)
                                 break
                 
-                sport_dialog = WebDriverWait(driver, 3).until(
+                sport_dialog = WebDriverWait(driver, 3, poll_frequency=0.1).until(
                     EC.visibility_of_element_located((By.ID, 'Modal_sports'))
                 )
                 
@@ -196,7 +192,7 @@ class login:
                 try:
                     bg_mask = None
                     try:
-                        bg_mask = WebDriverWait(driver, 3).until(
+                        bg_mask = WebDriverWait(driver, 3, poll_frequency=0.1).until(
                             EC.visibility_of_element_located((By.CLASS_NAME, 'bg_mask'))
                         )
                     except Exception as e:
