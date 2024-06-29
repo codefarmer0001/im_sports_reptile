@@ -401,6 +401,8 @@ class list:
                 "data": json_array
             }
 
+            print()
+
             param = json.dumps(result, ensure_ascii=False)
             print(json.loads(param))
 
@@ -412,6 +414,10 @@ class list:
 
             driver.switch_to.default_content()
             produce.push_list(CONFIG.IM_REPTILE_FLAG)
+
+            print(f"list解析结果总耗时：{time.time() - start_time} 秒")
+
+            submit_start_time = time.time()
 
             # 发送POST请求
             response = requests.post(CONFIG.POST_LIST_URL, json=json.loads(param))
@@ -425,7 +431,7 @@ class list:
             # asyncio.run(LoginYY.add_detail_tasks(pool, detail_urls))
             list.add_detail_tasks(produce, detail_urls)
 
-            print(f"代码执行时间为：{execution_time} 秒")
+            print(f"list 解析+上传结果总耗时：{time.time() - start_time} 秒, 上传总耗时：{time.time() - submit_start_time} 秒")
             # sleep(2)
             print('\n\n\n\n\n')
             # 退出 iframe

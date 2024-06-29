@@ -177,7 +177,9 @@ class detail:
                 execution_time = end_time - start_time
                 print('\n')
 
-                print(f"代码执行时间为：{execution_time} 秒")
+                print(f"detail 解析结果总耗时：{time.time() - start_time} 秒")
+
+                submit_start_time = time.time()
 
                 timestamp_millis = int(time.time() * 1000)
                 # print("Current timestamp (milliseconds):", timestamp_millis)
@@ -201,7 +203,7 @@ class detail:
                 execution_time = end_time - start_time
                 print('\n')
 
-                print(f"代码执行时间为：{execution_time} 秒")
+                print(f"detail 解析+上传结果总耗时：{time.time() - start_time} 秒, 上传总耗时：{time.time() - submit_start_time} 秒")
 
                 last_login_time_str = r.get_string(mode)
                 last_login_time = float(last_login_time_str)
