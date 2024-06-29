@@ -4,6 +4,7 @@
 from config import CONFIG
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support import expected_conditions as EC
+from selenium.webdriver.common.desired_capabilities import DesiredCapabilities
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium import webdriver
 from selenium.webdriver.chrome.service import Service
@@ -50,6 +51,9 @@ class login:
         chrome_options.add_argument('--disable-infobars')
         chrome_options.add_argument('--window-size=1920,1080')
         chrome_options.add_argument('--blink-settings=imagesEnabled=false')
+
+        desired_capabilities = DesiredCapabilities.CHROME  # 修改页面加载策略
+        desired_capabilities["pageLoadStrategy"] = "none"  # 注释这两行会导致最后输出结果的延迟，即等待页面加载完成再输出
         
         driver = webdriver.Chrome(service=service, options=chrome_options)
         # driver.implicitly_wait(5)  # 设置全局隐式等待时间为5秒
