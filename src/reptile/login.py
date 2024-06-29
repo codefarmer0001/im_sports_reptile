@@ -48,7 +48,6 @@ class login:
         # chrome_options.add_argument('--disable-extensions')
         chrome_options.add_argument('--start-maximized')
         chrome_options.add_argument('--disable-infobars')
-        chrome_options.set_capability('networkConnectionEnabled', True)
         chrome_options.add_argument('--window-size=1920,1080')
         
         driver = webdriver.Chrome(service=service, options=chrome_options)
