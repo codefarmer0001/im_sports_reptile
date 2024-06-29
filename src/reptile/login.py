@@ -48,6 +48,9 @@ class login:
         # chrome_options.add_argument('--disable-extensions')
         chrome_options.add_argument('--start-maximized')
         chrome_options.add_argument('--disable-infobars')
+        chrome_options.set_capability('networkConnectionEnabled', True)
+        chrome_options.add_argument('--window-size=1920,1080')
+        
         driver = webdriver.Chrome(service=service, options=chrome_options)
         # driver.implicitly_wait(5)  # 设置全局隐式等待时间为5秒
         try:
@@ -81,7 +84,9 @@ class login:
     def login_account(driver, account, password):
     # def login_yy(self, driver, account, password):
         print(f'driver获取内容：{driver}')
+        start_time = time.time()
         driver.get(CONFIG.YY_MAIN_URL)
+        print(f'driver加载页面耗时：{time.time() - start_time}')
         print(CONFIG.YY_MAIN_URL)
 
         # try:
