@@ -50,7 +50,7 @@ class login:
         try:
 
             mainaAcount = CONFIG.MAIN_ACCOUNT
-            
+            print(mainaAcount)
             login.reptile_main_list(driver, mainaAcount['account'], mainaAcount['password'])
                 
 

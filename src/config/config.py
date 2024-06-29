@@ -8,7 +8,7 @@ class Config():
     """
     # Application config
     MAC_ARM64_CHROME = "src/chrome/mac/arm/chromedriver"
-    LINUX_64_CHROME = "src/chrome/linxu/64/chromedriver"
+    LINUX_64_CHROME = "src/chrome/linux/64/chromedriver"
     YY_MAIN_URL = "https://w1.rm18gb.xyz/"
     POST_LIST_URL = "http://43.128.23.238/imList"
     POST_DETAIL_URL = "http://43.128.23.238/imDetail"
