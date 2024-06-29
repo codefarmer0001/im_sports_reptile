@@ -80,7 +80,7 @@ class login:
     @staticmethod
     def login_account(driver, account, password):
     # def login_yy(self, driver, account, password):
-
+        print(f'driver获取内容：{driver}')
         driver.get(CONFIG.YY_MAIN_URL)
         print(CONFIG.YY_MAIN_URL)
 
