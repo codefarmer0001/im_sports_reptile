@@ -50,8 +50,10 @@ class login:
         chrome_options.add_argument('--disable-infobars')
         chrome_options.add_argument('--window-size=1920,1080')
         chrome_options.add_argument('--blink-settings=imagesEnabled=false')
-        chrome_options.add_argument('--disk-cache-dir=./cache')  # 设置磁盘缓存目录
-        chrome_options.add_argument('--disk-cache-size=104857600')  # 设置磁盘缓存大小，单位为字节 (100 MB)
+        # chrome_options.add_argument('--disk-cache-dir=./cache')  # 设置磁盘缓存目录
+        # chrome_options.add_argument('--disk-cache-size=104857600')  # 设置磁盘缓存大小，单位为字节 (100 MB)
+        chrome_options.add_argument('--enable-logging')
+        chrome_options.add_argument('--v=1')  # 日志级别，可以根据需要调整
         # chrome_options.page_load_strategy = 'none'
         
         driver = webdriver.Chrome(service=service, options=chrome_options)
