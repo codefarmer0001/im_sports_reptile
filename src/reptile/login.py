@@ -50,8 +50,8 @@ class login:
         chrome_options.add_argument('--disable-infobars')
         chrome_options.add_argument('--window-size=1920,1080')
         chrome_options.add_argument('--blink-settings=imagesEnabled=false')
-        # chrome_options.add_argument('--disk-cache-dir=./cache')  # 设置磁盘缓存目录
-        # chrome_options.add_argument('--disk-cache-size=104857600')  # 设置磁盘缓存大小，单位为字节 (100 MB)
+        chrome_options.add_argument('--disk-cache-dir=./cache')  # 设置磁盘缓存目录
+        chrome_options.add_argument('--disk-cache-size=104857600')  # 设置磁盘缓存大小，单位为字节 (100 MB)
         # chrome_options.add_argument('--enable-logging')
         # chrome_options.add_argument('--v=1')  # 日志级别，可以根据需要调整
         # chrome_options.page_load_strategy = 'none'
@@ -94,7 +94,7 @@ class login:
         print(f'driver加载页面耗时：{time.time() - start_time}')
         print(CONFIG.YY_MAIN_URL)
 
-        wait = WebDriverWait(driver, 10, poll_frequency=0.1)
+        wait = WebDriverWait(driver, 20, poll_frequency=0.1)
 
         # try:
         if 1 == 1:

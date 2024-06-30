@@ -72,18 +72,27 @@ class list:
                 # print(game_element)
 
                 # leftmenu_sports_content_L1
-                menu_items = game_element.find_elements(By.CLASS_NAME, 'leftmenu_sports_content_L1')
-                for menu_item in menu_items:
-                    # print('\n\n')
-                    # print(menu_item.get_attribute('outerHTML'))
+                # menu_items = game_element.find_elements(By.CLASS_NAME, 'leftmenu_sports_content_L1')
+                menu_items = driver.execute_script("return arguments[0].querySelectorAll('.leftmenu_sports_content_L1');", game_element)
 
-                    item_divs = menu_item.find_elements(By.XPATH, './/div')
-                    for item_div in item_divs:
-                        txt = item_div.get_attribute('innerHTML')
-                        if txt == '波胆 / 反波胆':
-                            action_chains.move_to_element(menu_item).perform()
-                            driver.execute_script("arguments[0].click();", menu_item)
-                            break
+                for menu_item in menu_items:
+                    txt = driver.execute_script("return arguments[0].innerHTML;", menu_item)
+                    if '波胆 / 反波胆' in txt:
+                        action_chains.move_to_element(menu_item).perform()
+                        driver.execute_script("arguments[0].click();", menu_item)
+                        break
+
+                # for menu_item in menu_items:
+                #     # print('\n\n')
+                #     # print(menu_item.get_attribute('outerHTML'))
+
+                #     item_divs = menu_item.find_elements(By.XPATH, './/div')
+                #     for item_div in item_divs:
+                #         txt = item_div.get_attribute('innerHTML')
+                #         if txt == '波胆 / 反波胆':
+                #             action_chains.move_to_element(menu_item).perform()
+                #             driver.execute_script("arguments[0].click();", menu_item)
+                #             break
                         # break
             except Exception as e:
                 print(e)
@@ -95,7 +104,10 @@ class list:
             )
 
             # _info_soccer_correctscore
-            game_event_row_cs = game_content.find_elements(By.XPATH, './/div[@class="row_live _info_soccer_correctscore"]')
+            # game_event_row_cs = game_content.find_elements(By.XPATH, './/div[@class="row_live _info_soccer_correctscore"]')
+
+            game_event_row_cs = driver.execute_script("return arguments[0].querySelectorAll('.row_live._info_soccer_correctscore');", game_content)
+
             json_array = []
 
             detail_urls = []
@@ -103,7 +115,8 @@ class list:
             for event_row_item in game_event_row_cs:
                 # print(event_row_item.get_attribute('outerHTML'))
                 # json_data = {}
-                event_row_cs = event_row_item.find_elements(By.XPATH, './/div[@class="event_row_cs"]')
+                # event_row_cs = event_row_item.find_elements(By.XPATH, './/div[@class="event_row_cs"]')
+                event_row_cs = driver.execute_script("return arguments[0].querySelectorAll('.event_row_cs');", event_row_item)
 
                 event_row_cs_item_1 = event_row_cs[0]
                 event_row_cs_item_2 = event_row_cs[1]
@@ -111,88 +124,164 @@ class list:
                 event_row_cs_item_4 = event_row_cs[3]
 
 
-                event_cs_mid_title = event_row_cs_item_1.find_element(By.XPATH, './/div[@class="event_cs_mid"]')
-                title_items = event_cs_mid_title.find_elements(By.XPATH, './/div[@class="title_wrap"]')
+                # event_cs_mid_title = event_row_cs_item_1.find_element(By.XPATH, './/div[@class="event_cs_mid"]')
+                # event_cs_mid_title = driver.execute_script("return arguments[0].querySelector('.event_cs_mid');", event_row_cs_item_1)
+                # title_items = event_cs_mid_title.find_elements(By.XPATH, './/div[@class="title_wrap"]')
+                # title_items = driver.execute_script("return arguments[0].querySelector('.title_wrap');", event_cs_mid_title)
+
+                titles = driver.execute_script("""
+                    var event_cs_mid_title = arguments[0].querySelector('.event_cs_mid');
+                    return Array.from(event_cs_mid_title.querySelectorAll('.title_wrap')).map(element => element.innerHTML);
+                    """, event_row_cs_item_1)
+                
+                # print(title_items)
 
 
                 # 全场开始
-                event_cs_mid_values_1 = event_row_cs_item_2.find_element(By.XPATH, './/div[@class="event_cs_mid"]')
-                event_cs_mid_values_line_1_array = event_cs_mid_values_1.find_elements(By.XPATH, './/div[@class="event_row_inner_content"]')
+                # event_cs_mid_values_1 = event_row_cs_item_2.find_element(By.XPATH, './/div[@class="event_cs_mid"]')
+                # event_cs_mid_values_1 = driver.execute_script("return arguments[0].querySelector('.event_cs_mid');", event_row_cs_item_2)
+                # # event_cs_mid_values_line_1_array = event_cs_mid_values_1.find_elements(By.XPATH, './/div[@class="event_row_inner_content"]')
+                # event_cs_mid_values_line_1_array = driver.execute_script("return arguments[0].querySelector('.event_row_inner_content');", event_cs_mid_values_1)
+
+                event_cs_mid_values_line_1_array = driver.execute_script("""
+                    var event_cs_mid = arguments[0].querySelector('.event_cs_mid');
+                    return event_cs_mid.querySelectorAll('.event_row_inner_content');
+                    """, event_row_cs_item_2)
+                
+                # print(event_cs_mid_values_line_1_array)
 
                 event_cs_mid_values_line_1_1 = event_cs_mid_values_line_1_array[0]
                 event_cs_mid_values_line_1_2 = event_cs_mid_values_line_1_array[1]
-                event_cs_mid_values_line_1_1_values = event_cs_mid_values_line_1_1.find_elements(By.XPATH, './/div[@class="odds_wrap"]')
-                event_cs_mid_values_line_1_2_values = event_cs_mid_values_line_1_2.find_elements(By.XPATH, './/div[@class="odds_wrap"]')
+                # event_cs_mid_values_line_1_1_values = event_cs_mid_values_line_1_1.find_elements(By.XPATH, './/div[@class="odds_wrap"]')
+                event_cs_mid_values_line_1_1_values = driver.execute_script("return arguments[0].querySelectorAll('.odds_wrap');", event_cs_mid_values_line_1_1)
+                # event_cs_mid_values_line_1_2_values = event_cs_mid_values_line_1_2.find_elements(By.XPATH, './/div[@class="odds_wrap"]')
+                event_cs_mid_values_line_1_2_values = driver.execute_script("return arguments[0].querySelectorAll('.odds_wrap');", event_cs_mid_values_line_1_2)
 
                 # event_cs_right
-                event_cs_right_values_1 = event_row_cs_item_2.find_element(By.XPATH, './/div[@class="event_cs_right"]')
-                event_cs_right_values_1_line = event_cs_right_values_1.find_element(By.XPATH, './/div[@class="event_row_inner_content"]')
-                event_cs_right_values_1_line_values = event_cs_right_values_1_line.find_elements(By.XPATH, './/div[@class="odds_wrap"]')
+                # event_cs_right_values_1 = event_row_cs_item_2.find_element(By.XPATH, './/div[@class="event_cs_right"]')
+                # event_cs_right_values_1 = driver.execute_script("return arguments[0].querySelector('.event_cs_right');", event_row_cs_item_2)
+                # # event_cs_right_values_1_line = event_cs_right_values_1.find_element(By.XPATH, './/div[@class="event_row_inner_content"]')
+                # event_cs_right_values_1_line = driver.execute_script("return arguments[0].querySelector('.event_row_inner_content');", event_cs_right_values_1)
+                # # event_cs_right_values_1_line_values = event_cs_right_values_1_line.find_elements(By.XPATH, './/div[@class="odds_wrap"]')
+                # event_cs_right_values_1_line_values = driver.execute_script("return arguments[0].querySelectorAll('.odds_wrap');", event_cs_right_values_1_line)
+
+                event_cs_right_values_1_line_values = driver.execute_script("""
+                    var event_cs_right = arguments[0].querySelector('.event_cs_right');
+                    var event_row_inner_content = event_cs_right.querySelector('.event_row_inner_content');
+                    var odds_wrap = event_row_inner_content.querySelectorAll('.odds_wrap');
+                    return odds_wrap;
+                    """, event_row_cs_item_2)
                 # 全场结束
                 
                 #上半场开始
-                event_cs_mid_values_2 = event_row_cs_item_3.find_element(By.XPATH, './/div[@class="event_cs_mid"]')
-                event_cs_mid_values_line_2_array = event_cs_mid_values_2.find_elements(By.XPATH, './/div[@class="event_row_inner_content"]')
+                # event_cs_mid_values_2 = event_row_cs_item_3.find_element(By.XPATH, './/div[@class="event_cs_mid"]')
+                event_cs_mid_values_2 = driver.execute_script("return arguments[0].querySelector('.event_cs_mid');", event_row_cs_item_3)
+                # event_cs_mid_values_line_2_array = event_cs_mid_values_2.find_elements(By.XPATH, './/div[@class="event_row_inner_content"]')
+                event_cs_mid_values_line_2_array = driver.execute_script("return arguments[0].querySelectorAll('.event_row_inner_content');", event_cs_mid_values_2)
+
 
                 event_cs_mid_values_line_2_1 = event_cs_mid_values_line_2_array[0]
                 event_cs_mid_values_line_2_2 = event_cs_mid_values_line_2_array[1]
-                event_cs_mid_values_line_2_1_values = event_cs_mid_values_line_2_1.find_elements(By.XPATH, './/div[@class="odds_wrap"]')
-                event_cs_mid_values_line_2_2_values = event_cs_mid_values_line_2_2.find_elements(By.XPATH, './/div[@class="odds_wrap"]')
+                # event_cs_mid_values_line_2_1_values = event_cs_mid_values_line_2_1.find_elements(By.XPATH, './/div[@class="odds_wrap"]')
+                event_cs_mid_values_line_2_1_values = driver.execute_script("return arguments[0].querySelectorAll('.odds_wrap');", event_cs_mid_values_line_2_1)
+                # event_cs_mid_values_line_2_2_values = event_cs_mid_values_line_2_2.find_elements(By.XPATH, './/div[@class="odds_wrap"]')
+                event_cs_mid_values_line_2_2_values = driver.execute_script("return arguments[0].querySelectorAll('.odds_wrap');", event_cs_mid_values_line_2_2)
 
                 # event_cs_right
-                event_cs_right_values_2 = event_row_cs_item_3.find_element(By.XPATH, './/div[@class="event_cs_right"]')
-                event_cs_right_values_2_line = event_cs_right_values_2.find_element(By.XPATH, './/div[@class="event_row_inner_content"]')
-                event_cs_right_values_2_line_values = event_cs_right_values_2_line.find_elements(By.XPATH, './/div[@class="odds_wrap"]')
+                # event_cs_right_values_2 = event_row_cs_item_3.find_element(By.XPATH, './/div[@class="event_cs_right"]')
+                # event_cs_right_values_2 = driver.execute_script("return arguments[0].querySelector('.event_cs_right');", event_row_cs_item_3)
+                # # event_cs_right_values_2_line = event_cs_right_values_2.find_element(By.XPATH, './/div[@class="event_row_inner_content"]')
+                # event_cs_right_values_2_line = driver.execute_script("return arguments[0].querySelector('.event_row_inner_content');", event_cs_right_values_2)
+                # # event_cs_right_values_2_line_values = event_cs_right_values_2_line.find_elements(By.XPATH, './/div[@class="odds_wrap"]')
+                # event_cs_right_values_2_line_values = driver.execute_script("return arguments[0].querySelectorAll('.odds_wrap');", event_cs_right_values_2_line)
+
+                event_cs_right_values_2_line_values = driver.execute_script("""
+                    var event_cs_right = arguments[0].querySelector('.event_cs_right');
+                    var event_row_inner_content = event_cs_right.querySelector('.event_row_inner_content');
+                    var odds_wrap = event_row_inner_content.querySelectorAll('.odds_wrap');
+                    return odds_wrap;
+                    """, event_row_cs_item_3)
                 # 上半场结束
 
+                
 
                 #下半场开始
-                event_cs_mid_values_3 = event_row_cs_item_4.find_element(By.XPATH, './/div[@class="event_cs_mid"]')
-                event_cs_mid_values_line_3_array = event_cs_mid_values_3.find_elements(By.XPATH, './/div[@class="event_row_inner_content"]')
+                # event_cs_mid_values_3 = event_row_cs_item_4.find_element(By.XPATH, './/div[@class="event_cs_mid"]')
+                event_cs_mid_values_3 = driver.execute_script("return arguments[0].querySelector('.event_cs_mid');", event_row_cs_item_4)
+                # event_cs_mid_values_line_3_array = event_cs_mid_values_3.find_elements(By.XPATH, './/div[@class="event_row_inner_content"]')
+                event_cs_mid_values_line_3_array = driver.execute_script("return arguments[0].querySelectorAll('.event_row_inner_content');", event_cs_mid_values_3)
+
+                
 
                 event_cs_mid_values_line_3_1 = event_cs_mid_values_line_3_array[0]
                 event_cs_mid_values_line_3_2 = event_cs_mid_values_line_3_array[1]
-                event_cs_mid_values_line_3_1_values = event_cs_mid_values_line_3_1.find_elements(By.XPATH, './/div[@class="odds_wrap"]')
-                event_cs_mid_values_line_3_2_values = event_cs_mid_values_line_3_2.find_elements(By.XPATH, './/div[@class="odds_wrap"]')
+                # event_cs_mid_values_line_3_1_values = event_cs_mid_values_line_3_1.find_elements(By.XPATH, './/div[@class="odds_wrap"]')
+                event_cs_mid_values_line_3_1_values = driver.execute_script("return arguments[0].querySelectorAll('.odds_wrap');", event_cs_mid_values_line_3_1)
+                # event_cs_mid_values_line_3_2_values = event_cs_mid_values_line_3_2.find_elements(By.XPATH, './/div[@class="odds_wrap"]')
+                event_cs_mid_values_line_3_2_values = driver.execute_script("return arguments[0].querySelectorAll('.odds_wrap');", event_cs_mid_values_line_3_2)
 
                 # event_cs_right
-                event_cs_right_values_3 = event_row_cs_item_4.find_element(By.XPATH, './/div[@class="event_cs_right"]')
-                event_cs_right_values_3_line = event_cs_right_values_3.find_element(By.XPATH, './/div[@class="event_row_inner_content"]')
-                event_cs_right_values_3_line_values = event_cs_right_values_3_line.find_elements(By.XPATH, './/div[@class="odds_wrap"]')
+                # event_cs_right_values_3 = event_row_cs_item_4.find_element(By.XPATH, './/div[@class="event_cs_right"]')
+                # event_cs_right_values_3 = driver.execute_script("return arguments[0].querySelector('.event_cs_right');", event_row_cs_item_4)
+                # # event_cs_right_values_3_line = event_cs_right_values_3.find_element(By.XPATH, './/div[@class="event_row_inner_content"]')
+                # event_cs_right_values_3_line = driver.execute_script("return arguments[0].querySelector('.event_row_inner_content');", event_cs_right_values_3)
+                # # event_cs_right_values_3_line_values = event_cs_right_values_3_line.find_elements(By.XPATH, './/div[@class="odds_wrap"]')
+                # event_cs_right_values_3_line_values = driver.execute_script("return arguments[0].querySelectorAll('.odds_wrap');", event_cs_right_values_3_line)
+
+                event_cs_right_values_3_line_values = driver.execute_script("""
+                    var event_cs_right = arguments[0].querySelector('.event_cs_right');
+                    var event_row_inner_content = event_cs_right.querySelector('.event_row_inner_content');
+                    var odds_wrap = event_row_inner_content.querySelectorAll('.odds_wrap');
+                    return odds_wrap;
+                    """, event_row_cs_item_4)
                 # 下半场结束
 
                 up_json_data = {}
                 down_json_data = {}
                 all_json_data = {}
-                for index, title_item in enumerate(title_items):
+                for index, title in enumerate(titles):
                     
                     # print('\n')
                     # print(title_item.get_attribute('outerHTML'))
                     # print('\n')
-                    title = title_item.get_attribute('innerHTML')
+                    # title = title_item.get_attribute('innerHTML')
                     # print(title)
-
+                    
                     # 全场开始
                     home_team_1_item = event_cs_mid_values_line_1_1_values[index]
                     away_team_1_item = event_cs_mid_values_line_1_2_values[index]
                     # print(home_team_item.get_attribute('outerHTML'))
 
-                    home_team_1_value = ""
-                    try:
-                        home_team_1_item_span = home_team_1_item.find_element(By.XPATH, './/span[@class="odds"]')
-                        if home_team_1_item_span:
-                            home_team_1_value = home_team_1_item_span.get_attribute('innerHTML')
-                    except Exception as e:
-                        home_team_1_value = ""
+                    home_team_1_value = driver.execute_script("""
+                        var odds = arguments[0].querySelector('.odds');
+                        if (odds) return odds.innerHTML;
+                        return '';
+                        """, home_team_1_item)
+                    
+                    # print(home_team_1_value)
+                    # try:
+                    #     # home_team_1_item_span = home_team_1_item.find_element(By.XPATH, './/span[@class="odds"]')
+                    #     home_team_1_item_span = driver.execute_script("return arguments[0].querySelector('.odds').innerHTML;", home_team_1_item)
+                    #     if home_team_1_item_span:
+                    #         home_team_1_value = home_team_1_item_span.get_attribute('innerHTML')
+                    # except Exception as e:
+                    #     home_team_1_value = ""
                         # print(e)
 
-                    away_team_1_value = ""
-                    try:
-                        away_team_1_item_span = away_team_1_item.find_element(By.XPATH, './/span[@class="odds"]')
-                        if away_team_1_item_span:
-                            away_team_1_value = away_team_1_item_span.get_attribute('innerHTML')
-                    except Exception as e:
-                        away_team_1_value = ""
+                    away_team_1_value = driver.execute_script("""
+                        var odds = arguments[0].querySelector('.odds');
+                        if(odds) return odds.innerHTML;
+                        return "";
+                        """, away_team_1_item)
+                    # try:
+                    #     # away_team_1_item_span = away_team_1_item.find_element(By.XPATH, './/span[@class="odds"]')
+                    #     away_team_1_item_span = driver.execute_script("""
+                    #         return arguments[0].querySelector('.odds').innerHTML;
+                    #         """, away_team_1_item)
+                    #     if away_team_1_item_span:
+                    #         away_team_1_value = away_team_1_item_span.get_attribute('innerHTML')
+                    # except Exception as e:
+                    #     away_team_1_value = ""
                         # print(e)
 
                     all_json_data[title] = {
@@ -200,28 +289,38 @@ class list:
                         "away_team": away_team_1_value
                     }
                     # 全场结束
-
+                    
                     # 上半场场开始
                     home_team_2_item = event_cs_mid_values_line_2_1_values[index]
                     away_team_2_item = event_cs_mid_values_line_2_2_values[index]
                     # print(home_team_item.get_attribute('outerHTML'))
 
-                    home_team_2_value = ""
-                    try:
-                        home_team_2_item_span = home_team_2_item.find_element(By.XPATH, './/span[@class="odds"]')
-                        if home_team_2_item_span:
-                            home_team_2_value = home_team_2_item_span.get_attribute('innerHTML')
-                    except Exception as e:
-                        home_team_2_value = ""
+                    home_team_2_value = driver.execute_script("""
+                        var odds = arguments[0].querySelector('.odds');
+                        if(odds) return odds.innerHTML;
+                        return "";
+                        """, home_team_2_item)
+                    # try:
+                    #     # home_team_2_item_span = home_team_2_item.find_element(By.XPATH, './/span[@class="odds"]')
+                    #     home_team_2_item_span = driver.execute_script("return arguments[0].querySelector('.odds');", home_team_2_item)
+                    #     if home_team_2_item_span:
+                    #         home_team_2_value = home_team_2_item_span.get_attribute('innerHTML')
+                    # except Exception as e:
+                    #     home_team_2_value = ""
                         # print(e)
 
-                    away_team_2_value = ""
-                    try:
-                        away_team_2_item_span = away_team_2_item.find_element(By.XPATH, './/span[@class="odds"]')
-                        if away_team_2_item_span:
-                            away_team_2_value = away_team_2_item_span.get_attribute('innerHTML')
-                    except Exception as e:
-                        away_team_2_value = ""
+                    away_team_2_value = driver.execute_script("""
+                            var odds = arguments[0].querySelector('.odds');
+                            if(odds) return odds.innerHTML;
+                            return "";
+                        """, away_team_2_item)
+                    # try:
+                    #     # away_team_2_item_span = away_team_2_item.find_element(By.XPATH, './/span[@class="odds"]')
+                    #     away_team_2_item_span = driver.execute_script("return arguments[0].querySelector('.odds');", away_team_2_item)
+                    #     if away_team_2_item_span:
+                    #         away_team_2_value = away_team_2_item_span.get_attribute('innerHTML')
+                    # except Exception as e:
+                    #     away_team_2_value = ""
                         # print(e)
 
                     
@@ -236,22 +335,32 @@ class list:
                     away_team_3_item = event_cs_mid_values_line_3_2_values[index]
                     # print(home_team_item.get_attribute('outerHTML'))
 
-                    home_team_3_value = ""
-                    try:
-                        home_team_3_item_span = home_team_3_item.find_element(By.XPATH, './/span[@class="odds"]')
-                        if home_team_3_item_span:
-                            home_team_3_value = home_team_3_item_span.get_attribute('innerHTML')
-                    except Exception as e:
-                        home_team_3_value = ""
+                    home_team_3_value = driver.execute_script("""
+                        var odds = arguments[0].querySelector('.odds');
+                        if(odds) return odds.innerHTML;
+                        return "";
+                        """, home_team_3_item)
+                    # try:
+                    #     # home_team_3_item_span = home_team_3_item.find_element(By.XPATH, './/span[@class="odds"]')
+                    #     home_team_3_item_span = driver.execute_script("return arguments[0].querySelector('.odds');", home_team_3_item)
+                    #     if home_team_3_item_span:
+                    #         home_team_3_value = home_team_3_item_span.get_attribute('innerHTML')
+                    # except Exception as e:
+                    #     home_team_3_value = ""
                         # print(e)
 
-                    away_team_3_value = ""
-                    try:
-                        away_team_3_item_span = away_team_3_item.find_element(By.XPATH, './/span[@class="odds"]')
-                        if away_team_3_item_span:
-                            away_team_3_value = away_team_3_item_span.get_attribute('innerHTML')
-                    except Exception as e:
-                        away_team_3_value = ""
+                    away_team_3_value = driver.execute_script("""
+                        var odds = arguments[0].querySelector('.odds');
+                        if(odds) return odds.innerHTML;
+                        return "";
+                        """, away_team_3_item)
+                    # try:
+                    #     # away_team_3_item_span = away_team_3_item.find_element(By.XPATH, './/span[@class="odds"]')
+                    #     away_team_3_item_span = driver.execute_script("return arguments[0].querySelector('.odds');", away_team_3_item)
+                    #     if away_team_3_item_span:
+                    #         away_team_3_value = away_team_3_item_span.get_attribute('innerHTML')
+                    # except Exception as e:
+                    #     away_team_3_value = ""
                         # print(e)
 
                     
@@ -261,64 +370,103 @@ class list:
                     }
                     # 下半场结束
 
+                
 
-                event_cs_right_title = event_row_cs_item_1.find_element(By.XPATH, './/div[@class="event_cs_right"]')
-                title_items = event_cs_right_title.find_elements(By.XPATH, './/div[@class="title_wrap"]')
+                # event_cs_right_title = event_row_cs_item_1.find_element(By.XPATH, './/div[@class="event_cs_right"]')
+                event_cs_right_title = driver.execute_script("return arguments[0].querySelector('.event_cs_right');", event_row_cs_item_1)
+                # title_items = event_cs_right_title.find_elements(By.XPATH, './/div[@class="title_wrap"]')
+                # title_items = driver.execute_script("return arguments[0].querySelectorAll('.title_wrap');", event_cs_right_title)
 
-                for index, title_item in enumerate(title_items):
-                    title = title_item.get_attribute('innerHTML')
-                    
+                titles = driver.execute_script(
+                    """
+                    var event_cs_right_title = arguments[0].querySelector('.event_cs_right');
+                    var title_items = event_cs_right_title.querySelectorAll('.title_wrap');
+                    var titles = [];
+                    title_items.forEach(function(item) {
+                        titles.push(item.innerText);
+                    });
+                    return titles;
+                    """,
+                    event_row_cs_item_1
+                )
+                
+                for index, title in enumerate(titles):
+                    # title = title_item.get_attribute('innerHTML')
+
                     # 全场开始
                     value_1_item = event_cs_right_values_1_line_values[index]
-                    value_1 = ""
-                    try:
-                        value_1_item_span = value_1_item.find_element(By.XPATH, './/span[@class="odds"]')
-                        if value_1_item_span:
-                            value_1 = value_1_item_span.get_attribute('innerHTML')
-                    except Exception as e:
-                        value_1 = ""
+                    value_1 = driver.execute_script("""
+                        var odds = arguments[0].querySelector('.odds');
+                        if(odds) return odds.innerHTML;
+                        return "";
+                        """, value_1_item)
+                    # try:
+                    #     # value_1_item_span = value_1_item.find_element(By.XPATH, './/span[@class="odds"]')
+                    #     value_1_item_span = driver.execute_script("return arguments[0].querySelector('.odds');", value_1_item)
+                    #     if value_1_item_span:
+                    #         value_1 = value_1_item_span.get_attribute('innerHTML')
+                    # except Exception as e:
+                    #     value_1 = ""
 
                     all_json_data[title] = value_1
                     # 全场结束
 
                     # 上半场开始
                     value_2_item = event_cs_right_values_2_line_values[index]
-                    value_2 = ""
-                    try:
-                        value_2_item_span = value_2_item.find_element(By.XPATH, './/span[@class="odds"]')
-                        if value_2_item_span:
-                            value_2 = value_2_item_span.get_attribute('innerHTML')
-                    except Exception as e:
-                        value_2 = ""
+                    value_2 = driver.execute_script("""
+                        var odds = arguments[0].querySelector('.odds');
+                        if(odds) return odds.innerHTML;
+                        return "";
+                        """, value_2_item)
+                    # try:
+                    #     # value_2_item_span = value_2_item.find_element(By.XPATH, './/span[@class="odds"]')
+                    #     value_2_item_span = driver.execute_script("return arguments[0].querySelector('.odds');", value_2_item)
+                    #     if value_2_item_span:
+                    #         value_2 = value_2_item_span.get_attribute('innerHTML')
+                    # except Exception as e:
+                    #     value_2 = ""
 
                     up_json_data[title] = value_2
                     # 上半场开始
 
                     # 下半场开始
                     value_3_item = event_cs_right_values_3_line_values[index]
-                    value_3 = ""
-                    try:
-                        value_3_item_span = value_3_item.find_element(By.XPATH, './/span[@class="odds"]')
-                        if value_3_item_span:
-                            value_3 = value_3_item_span.get_attribute('innerHTML')
-                    except Exception as e:
-                        value_3 = ""
+                    value_3 = driver.execute_script("""
+                        var odds = arguments[0].querySelector('.odds');
+                        if(odds) return odds.innerHTML;
+                        return "";
+                        """, value_3_item)
+                    # try:
+                    #     # value_3_item_span = value_3_item.find_element(By.XPATH, './/span[@class="odds"]')
+                    #     value_3_item_span = driver.execute_script("return arguments[0].querySelector('.odds');", value_3_item)
+                    #     if value_3_item_span:
+                    #         value_3 = value_3_item_span.get_attribute('innerHTML')
+                    # except Exception as e:
+                    #     value_3 = ""
 
                     down_json_data[title] = value_3
                     # 下半场开始
 
+                # print(123123123)
+                
                 # print(all_json_data)
                 # print(up_json_data)
                 # print(down_json_data)
 
-                datetime_content = event_row_item.find_element(By.XPATH, './/div[@class="datetime"]')
+                # datetime_content = event_row_item.find_element(By.XPATH, './/div[@class="datetime"]')
+                datetime_content = driver.execute_script("return arguments[0].querySelector('.datetime');", event_row_item)
 
-                match_score_value = ''
-                try:
-                    match_score = datetime_content.find_element(By.XPATH, './/div[@class="score"]')
-                    match_score_value = match_score.get_attribute('innerHTML')
-                except Exception as e:
-                    print("1元素失效，请重新定位或等待一段时间后重试")
+                match_score_value = driver.execute_script("""
+                        var score = arguments[0].querySelector('.score');
+                        if(score) return score.innerHTML;
+                        return "";
+                        """, datetime_content)
+                # try:
+                #     # match_score = datetime_content.find_element(By.XPATH, './/div[@class="score"]')
+                #     match_score = driver.execute_script("return arguments[0].querySelector('.score');", datetime_content)
+                #     match_score_value = match_score.get_attribute('innerHTML')
+                # except Exception as e:
+                #     print("1元素失效，请重新定位或等待一段时间后重试")
 
                 # event_row_item_data = event_row_item.find_element(By.XPATH, './/div[@class="team"]')
                 a_team = event_row_item.find_element(By.XPATH, './/a[@style="cursor: pointer; flex-grow: 1;"]')
@@ -349,7 +497,8 @@ class list:
                     print("元素失效，请重新定位或等待一段时间后重试")
 
                 # teamname_title
-                teamname_titles = event_row_item.find_elements(By.XPATH, './/div[@class="teamname_title"]')
+                # teamname_titles = event_row_item.find_elements(By.XPATH, './/div[@class="teamname_title"]')
+                teamname_titles = driver.execute_script("return arguments[0].querySelectorAll('.teamname_title');", event_row_item)
                 home_team = teamname_titles[0]
                 away_team = teamname_titles[1]
 
@@ -389,6 +538,9 @@ class list:
                 # print(data)
                 json_array.append(data)
 
+
+            # print(2222222)
+
             # 记录结束时间
             end_time = time.time()
 
@@ -401,7 +553,7 @@ class list:
                 "data": json_array
             }
 
-            print()
+            # print()
 
             param = json.dumps(result, ensure_ascii=False)
             print(json.loads(param))
@@ -431,7 +583,7 @@ class list:
             # asyncio.run(LoginYY.add_detail_tasks(pool, detail_urls))
             list.add_detail_tasks(produce, detail_urls)
 
-            print(f"list 解析+上传结果总耗时：{time.time() - start_time} 秒, 上传总耗时：{time.time() - submit_start_time} 秒")
+            print(f"list 解析+上传{len(detail_urls)}条结果总耗时：{time.time() - start_time} 秒, 上传总耗时：{time.time() - submit_start_time} 秒")
             # sleep(2)
             print('\n\n\n\n\n')
             # 退出 iframe
