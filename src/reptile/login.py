@@ -161,10 +161,10 @@ class login:
 
                 # 使用 execute_script 调用 JavaScript 的 SubmitLogin() 方法
                 driver.execute_script("SubmitLogin();")
-
+                # print(f'登陆成功，登录用时: {time.time() - start_time}')
                 try:
 
-                    notice_panl = wait.until(
+                    notice_panl = WebDriverWait(driver, 2, poll_frequency=0.1).until(
                         EC.visibility_of_element_located((By.ID, 'focus_announce'))
                     )
                     # cancel
@@ -174,6 +174,8 @@ class login:
 
                 except Exception as e:
                     print('公告界面可能不存在')
+                
+
 
                 game_panal = wait.until(
                     EC.visibility_of_element_located((By.XPATH, './/ul[@class="recreation_list active"]'))
@@ -201,14 +203,14 @@ class login:
 
                 handles = driver.window_handles
                 driver.switch_to.window(handles[1])  # 切换到第二个标签页（索引从0开始）
-
+                # print(f'登陆成功，登录用时: {time.time() - start_time}')
                 action_chains = ActionChains(driver)
                 flag = True
                 index = 0
                 try:
                     bg_mask = None
                     try:
-                        bg_mask = wait.until(
+                        bg_mask = WebDriverWait(driver, 2, poll_frequency=0.1).until(
                             EC.visibility_of_element_located((By.CLASS_NAME, 'bg_mask'))
                         )
                     except Exception as e:
